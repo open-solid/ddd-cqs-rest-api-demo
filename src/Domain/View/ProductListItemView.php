@@ -8,7 +8,7 @@ use OpenApi\Attributes\Schema;
 use Yceruto\OpenApiBundle\Attributes\Property;
 
 #[Schema]
-readonly class ProductView
+readonly class ProductListItemView
 {
     use ProductViewFactory;
 
@@ -19,20 +19,12 @@ readonly class ProductView
     public string $name;
 
     #[Property]
-    public string $description;
-
-    #[Property]
     public DateTimeImmutable $createdAt;
-
-    #[Property]
-    public ?DateTimeImmutable $updatedAt;
 
     private function __construct(Product $product)
     {
         $this->id = $product->id();
         $this->name = $product->name();
-        $this->description = $product->description();
         $this->createdAt = $product->createdAt();
-        $this->updatedAt = $product->updatedAt();
     }
 }

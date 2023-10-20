@@ -5,7 +5,7 @@ namespace App\Presentation\Controller\Post;
 use App\Application\Create\CreateProductCase;
 use App\Application\Create\CreateProductRequest;
 use App\Domain\Model\ProductId;
-use App\Domain\View\ProductView;
+use App\Domain\View\ProductNewView;
 use Symfony\Component\HttpKernel\Attribute\AsController;
 use Yceruto\OpenApiBundle\Attributes\Payload;
 use Yceruto\OpenApiBundle\Routing\Attribute\Post;
@@ -22,7 +22,7 @@ readonly class PostProductAction
         summary: 'Create a product',
         tags: ['Product'],
     )]
-    public function __invoke(#[Payload] PostProductPayload $payload): ProductView
+    public function __invoke(#[Payload] PostProductPayload $payload): ProductNewView
     {
         return $this->createProductCase->execute(new CreateProductRequest(
             $payload->id ?? ProductId::generate(),

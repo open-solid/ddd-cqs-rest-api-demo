@@ -5,7 +5,7 @@ namespace App\Application\Create;
 use App\Domain\Model\ProductDescription;
 use App\Domain\Model\ProductId;
 use App\Domain\Model\ProductName;
-use App\Domain\View\ProductView;
+use App\Domain\View\ProductNewView;
 
 readonly class CreateProductCase
 {
@@ -13,7 +13,7 @@ readonly class CreateProductCase
     {
     }
 
-    public function execute(CreateProductRequest $request): ProductView
+    public function execute(CreateProductRequest $request): ProductNewView
     {
         $product = $this->factory->create(
             ProductId::from($request->id),
@@ -21,6 +21,6 @@ readonly class CreateProductCase
             ProductDescription::from($request->description),
         );
 
-        return ProductView::from($product);
+        return ProductNewView::from($product);
     }
 }

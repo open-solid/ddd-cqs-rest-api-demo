@@ -3,7 +3,7 @@
 namespace App\Presentation\Controller\Get;
 
 use App\Application\Find\SearchProductsCase;
-use App\Domain\View\ProductView;
+use App\Domain\View\ProductListItemView;
 use Symfony\Component\HttpKernel\Attribute\AsController;
 use Yceruto\OpenApiBundle\Routing\Attribute\Get;
 
@@ -18,7 +18,7 @@ readonly class GetProductsAction
         path: '/products',
         summary: 'Get a collection of products',
         tags: ['Product'],
-        itemsType: ProductView::class,
+        itemsType: ProductListItemView::class,
     )]
     public function __invoke(): array
     {

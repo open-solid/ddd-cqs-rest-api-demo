@@ -2,7 +2,7 @@
 
 namespace App\Application\Find;
 
-use App\Domain\View\ProductView;
+use App\Domain\View\ProductListItemView;
 
 readonly class SearchProductsCase
 {
@@ -11,12 +11,12 @@ readonly class SearchProductsCase
     }
 
     /**
-     * @return array<ProductView>
+     * @return array<ProductListItemView>
      */
     public function execute(): array
     {
         $products = $this->finder->search();
 
-        return ProductView::fromMany($products);
+        return ProductListItemView::fromMany($products);
     }
 }
