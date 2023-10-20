@@ -18,6 +18,14 @@ framework:
     php_errors:
         log: true
 
+    exceptions:
+        Symfony\Component\Validator\Exception\ValidationFailedException:
+            status_code: 400
+        Ddd\Domain\Error\EntityNotFoundError:
+            status_code: 404
+        Ddd\Domain\Error\DomainError:
+            status_code: 422
+
 when@test:
     framework:
         test: true

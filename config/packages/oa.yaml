@@ -1,0 +1,8 @@
+openapi:
+    spec:
+        openapi: '3.1.0'
+        info:
+            title: 'Product API'
+            version: '1.0.0'
+        servers:
+            - url: '/'

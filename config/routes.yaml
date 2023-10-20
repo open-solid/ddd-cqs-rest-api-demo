@@ -1,5 +1,8 @@
 controllers:
     resource:
-        path: ../src/Controller/
-        namespace: App\Controller
+        path: ../src/Presentation/Controller/
+        namespace: App\Presentation\Controller
     type: attribute
+
+openapi:
+    resource: '@OpenApiBundle/config/routes.php'

@@ -1,20 +1,34 @@
 {
     "type": "project",
     "license": "proprietary",
-    "minimum-stability": "stable",
+    "minimum-stability": "dev",
     "prefer-stable": true,
     "require": {
-        "php": ">=8.1",
+        "php": ">=8.2",
         "ext-ctype": "*",
         "ext-iconv": "*",
-        "symfony/console": "6.3.*",
-        "symfony/dotenv": "6.3.*",
+        "symfony/console": "^7.0",
+        "symfony/dotenv": "^7.0",
+        "symfony/expression-language": "^7.0",
         "symfony/flex": "^2",
-        "symfony/framework-bundle": "6.3.*",
-        "symfony/runtime": "6.3.*",
-        "symfony/yaml": "6.3.*"
+        "symfony/framework-bundle": "^7.0",
+        "symfony/property-access": "^7.0",
+        "symfony/property-info": "^7.0",
+        "symfony/runtime": "^7.0",
+        "symfony/uid": "^7.0",
+        "symfony/yaml": "^7.0",
+        "yceruto/ddd": "*",
+        "yceruto/open-api-bundle": "*"
     },
-    "require-dev": {
+    "repositories": {
+        "yceruto/open-api-bundle": {
+            "type": "path",
+            "url": "/Users/yonelceruto/github/yceruto/open-api-bundle/"
+        },
+        "yceruto/ddd": {
+            "type": "path",
+            "url": "/Users/yonelceruto/github/yceruto/ddd/"
+        }
     },
     "config": {
         "allow-plugins": {
@@ -61,7 +75,7 @@
     "extra": {
         "symfony": {
             "allow-contrib": false,
-            "require": "6.3.*"
+            "require": "^7.0"
         }
     }
 }
