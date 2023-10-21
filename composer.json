@@ -18,6 +18,7 @@
         "symfony/uid": "^7.0",
         "symfony/yaml": "^7.0",
         "yceruto/ddd": "*",
+        "yceruto/cqs-bundle": "*",
         "yceruto/ddd-bundle": "*",
         "yceruto/open-api-bundle": "*"
     },
@@ -33,6 +34,14 @@
         "yceruto/ddd": {
             "type": "path",
             "url": "/Users/yonelceruto/github/yceruto/ddd/"
+        },
+        "yceruto/cqs-bundle": {
+            "type": "path",
+            "url": "/Users/yonelceruto/github/yceruto/cqs-bundle/"
+        },
+        "yceruto/cqs": {
+            "type": "path",
+            "url": "/Users/yonelceruto/github/yceruto/cqs/"
         }
     },
     "config": {

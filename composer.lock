@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "45658c315919b8c03d8ed61a666167b9",
+    "content-hash": "17aa528bc5eee7cc878b07e432779cee",
     "packages": [
         {
             "name": "doctrine/annotations",
@@ -1414,12 +1414,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/framework-bundle.git",
-                "reference": "413027b77c9136cb766eda5c70280925bd0b7f8f"
+                "reference": "870c5c445154efc7107ffce039e4b06f527bd26d"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/framework-bundle/zipball/413027b77c9136cb766eda5c70280925bd0b7f8f",
-                "reference": "413027b77c9136cb766eda5c70280925bd0b7f8f",
+                "url": "https://api.github.com/repos/symfony/framework-bundle/zipball/870c5c445154efc7107ffce039e4b06f527bd26d",
+                "reference": "870c5c445154efc7107ffce039e4b06f527bd26d",
                 "shasum": ""
             },
             "require": {
@@ -1457,6 +1457,7 @@
                 "symfony/mime": "<6.4",
                 "symfony/property-access": "<6.4",
                 "symfony/property-info": "<6.4",
+                "symfony/scheduler": "<6.4",
                 "symfony/security-core": "<6.4",
                 "symfony/security-csrf": "<6.4",
                 "symfony/serializer": "<6.4",
@@ -1550,7 +1551,7 @@
                     "type": "tidelift"
                 }
             ],
-            "time": "2023-10-20T16:58:08+00:00"
+            "time": "2023-10-21T10:31:54+00:00"
         },
         {
             "name": "symfony/http-foundation",
@@ -1558,12 +1559,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/http-foundation.git",
-                "reference": "59b567ea61f1e4b01888aa6ca406b67c8c7630e0"
+                "reference": "915282beba30fe65744a0f3cc4a440c498feabc8"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/http-foundation/zipball/59b567ea61f1e4b01888aa6ca406b67c8c7630e0",
-                "reference": "59b567ea61f1e4b01888aa6ca406b67c8c7630e0",
+                "url": "https://api.github.com/repos/symfony/http-foundation/zipball/915282beba30fe65744a0f3cc4a440c498feabc8",
+                "reference": "915282beba30fe65744a0f3cc4a440c498feabc8",
                 "shasum": ""
             },
             "require": {
@@ -1627,7 +1628,7 @@
                     "type": "tidelift"
                 }
             ],
-            "time": "2023-10-20T16:35:23+00:00"
+            "time": "2023-10-21T07:45:16+00:00"
         },
         {
             "name": "symfony/http-kernel",
@@ -3208,12 +3209,88 @@
             "time": "2023-09-27T14:05:33+00:00"
         },
         {
+            "name": "yceruto/cqs",
+            "version": "dev-main",
+            "dist": {
+                "type": "path",
+                "url": "/Users/yonelceruto/github/yceruto/cqs",
+                "reference": "7fb1d1905d66ebfc4f0d4eac1a84c9022d480965"
+            },
+            "require": {
+                "php": ">=8.2",
+                "yceruto/ddd": "*"
+            },
+            "require-dev": {
+                "phpunit/phpunit": "^10.0",
+                "psalm/plugin-phpunit": "^0.18",
+                "vimeo/psalm": "^6.0"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "Yceruto\\Cqs\\": "src/"
+                }
+            },
+            "autoload-dev": {
+                "psr-4": {
+                    "Yceruto\\Cqs\\Tests\\": "tests/"
+                }
+            },
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Yonel Ceruto",
+                    "email": "yonelceruto@gmail.com"
+                }
+            ],
+            "description": "Contract for Command Query Separation pattern",
+            "transport-options": {
+                "relative": false
+            }
+        },
+        {
+            "name": "yceruto/cqs-bundle",
+            "version": "dev-main",
+            "dist": {
+                "type": "path",
+                "url": "/Users/yonelceruto/github/yceruto/cqs-bundle",
+                "reference": "13c4ebee6a913f370f00fe23b31a10e2a25ffdb5"
+            },
+            "require": {
+                "php": ">=8.2",
+                "symfony/dependency-injection": "^7.0",
+                "symfony/http-kernel": "^7.0",
+                "yceruto/cqs": "*"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "Yceruto\\CqsBundle\\": "src/"
+                }
+            },
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Yonel Ceruto",
+                    "email": "yonelceruto@gmail.com"
+                }
+            ],
+            "description": "Symfony integration for Command Query Separation pattern",
+            "transport-options": {
+                "relative": false
+            }
+        },
+        {
             "name": "yceruto/ddd",
             "version": "dev-main",
             "dist": {
                 "type": "path",
                 "url": "/Users/yonelceruto/github/yceruto/ddd",
-                "reference": "00a6f72eacc03a3a32386f42c042bfc5853bc44d"
+                "reference": "2141930126184676024aa28114ab0a3ba379d9a5"
             },
             "require": {
                 "php": ">=8.2",
@@ -3222,8 +3299,8 @@
             },
             "require-dev": {
                 "phpunit/phpunit": "^10.0",
-                "psalm/plugin-phpunit": "dev-master",
-                "vimeo/psalm": "6.x-dev"
+                "psalm/plugin-phpunit": "^0.18",
+                "vimeo/psalm": "^6.0"
             },
             "type": "library",
             "autoload": {
