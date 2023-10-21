@@ -13,7 +13,7 @@ readonly class ProductDeleter
     public function __construct(
         private ProductFinder $finder,
         private ProductRepository $repository,
-        private DomainEventPublisher $DomainEventPublisher,
+        private DomainEventPublisher $domainEventPublisher,
     ) {
     }
 
@@ -23,6 +23,6 @@ readonly class ProductDeleter
 
         $this->repository->remove($product);
 
-        $this->DomainEventPublisher->publish(new ProductDeleted($id->value()));
+        $this->domainEventPublisher->publish(new ProductDeleted($id->value()));
     }
 }

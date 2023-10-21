@@ -13,16 +13,17 @@ readonly class ProductUpdater
 {
     public function __construct(
         private ProductFinder $finder,
-        private DomainEventPublisher $DomainEventPublisher,
+        private DomainEventPublisher $domainEventPublisher,
     ) {
     }
 
     public function update(ProductId $id, ProductName $name, ProductDescription $description): Product
     {
         $product = $this->finder->findOne($id);
+
         $product->update($name, $description);
 
-        $this->DomainEventPublisher->publish(...$product->pullDomainEvents());
+        $this->domainEventPublisher->publish(...$product->pullDomainEvents());
 
         return $product;
     }

@@ -13,7 +13,7 @@ readonly class ProductFactory
 {
     public function __construct(
         private ProductRepository $repository,
-        private DomainEventPublisher $DomainEventPublisher,
+        private DomainEventPublisher $domainEventPublisher,
     ) {
     }
 
@@ -23,7 +23,7 @@ readonly class ProductFactory
 
         $this->repository->add($product);
 
-        $this->DomainEventPublisher->publish(...$product->pullDomainEvents());
+        $this->domainEventPublisher->publish(...$product->pullDomainEvents());
 
         return $product;
     }
