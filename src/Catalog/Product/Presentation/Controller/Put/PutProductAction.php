@@ -11,19 +11,20 @@ use Yceruto\OpenApiBundle\Attributes\Payload;
 use Yceruto\OpenApiBundle\Routing\Attribute\Put;
 
 #[AsController]
-class PutProductAction
+readonly class PutProductAction
 {
+    public function __construct(private UpdateProductHandler $updateProductHandler)
+    {
+    }
+
     #[Put(
         path: '/products/{id}',
         summary: 'Update a product',
         tags: ['Product'],
     )]
-    public function __invoke(
-        #[Path(format: 'uuid')] string $id,
-        #[Payload] PutProductPayload $payload,
-        UpdateProductHandler $updateProductHandler,
-    ): ProductView {
-        return $updateProductHandler->handle(new UpdateProduct(
+    public function __invoke(#[Path(format: 'uuid')] string $id, #[Payload] PutProductPayload $payload): ProductView
+    {
+        return $this->updateProductHandler->handle(new UpdateProduct(
             $id,
             $payload->name,
             $payload->description,

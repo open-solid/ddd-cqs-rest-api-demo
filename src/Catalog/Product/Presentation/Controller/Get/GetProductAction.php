@@ -10,15 +10,19 @@ use Yceruto\OpenApiBundle\Attributes\Path;
 use Yceruto\OpenApiBundle\Routing\Attribute\Get;
 
 #[AsController]
-class GetProductAction
+readonly class GetProductAction
 {
+    public function __construct(private FindProductHandler $findProductHandler)
+    {
+    }
+
     #[Get(
         path: '/products/{id}',
         summary: 'Get a product',
         tags: ['Product'],
     )]
-    public function __invoke(#[Path(format: 'uuid')] string $id, FindProductHandler $findProductHandler): ProductView
+    public function __invoke(#[Path(format: 'uuid')] string $id): ProductView
     {
-        return $findProductHandler->handle(new FindProduct($id));
+        return $this->findProductHandler->handle(new FindProduct($id));
     }
 }

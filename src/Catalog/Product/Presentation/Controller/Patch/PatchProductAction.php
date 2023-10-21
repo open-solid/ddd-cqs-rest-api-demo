@@ -13,22 +13,24 @@ use Yceruto\OpenApiBundle\Attributes\Payload;
 use Yceruto\OpenApiBundle\Routing\Attribute\Patch;
 
 #[AsController]
-class PatchProductAction
+readonly class PatchProductAction
 {
+    public function __construct(
+        private FindProductHandler $findProductHandler,
+        private UpdateProductHandler $updateProductHandler,
+    ) {
+    }
+
     #[Patch(
         path: '/products/{id}',
         summary: 'Update a product partially',
         tags: ['Product'],
     )]
-    public function __invoke(
-        #[Path(format: 'uuid')] string $id,
-        #[Payload] PatchProductPayload $payload,
-        FindProductHandler $findProductHandler,
-        UpdateProductHandler $updateProductHandler,
-    ): ProductView {
-        $product = $findProductHandler->handle(new FindProduct($id));
+    public function __invoke(#[Path(format: 'uuid')] string $id, #[Payload] PatchProductPayload $payload): ProductView
+    {
+        $product = $this->findProductHandler->handle(new FindProduct($id));
 
-        return $updateProductHandler->handle(new UpdateProduct(
+        return $this->updateProductHandler->handle(new UpdateProduct(
             $id,
             $payload->name ?? $product->name,
             $payload->description ?? $product->description,

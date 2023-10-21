@@ -9,16 +9,20 @@ use Symfony\Component\HttpKernel\Attribute\AsController;
 use Yceruto\OpenApiBundle\Routing\Attribute\Get;
 
 #[AsController]
-class GetProductsAction
+readonly class GetProductsAction
 {
+    public function __construct(private FindProductsHandler $findProductsHandler)
+    {
+    }
+
     #[Get(
         path: '/products',
         summary: 'Get a collection of products',
         tags: ['Product'],
         itemsType: ProductListItemView::class,
     )]
-    public function __invoke(FindProductsHandler $findProductsHandler): array
+    public function __invoke(): array
     {
-        return $findProductsHandler->handle(new FindProducts());
+        return $this->findProductsHandler->handle(new FindProducts());
     }
 }

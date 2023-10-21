@@ -9,16 +9,20 @@ use Yceruto\OpenApiBundle\Attributes\Path;
 use Yceruto\OpenApiBundle\Routing\Attribute\Delete;
 
 #[AsController]
-class DeleteProductAction
+readonly class DeleteProductAction
 {
+    public function __construct(private DeleteProductHandler $deleteProductHandler)
+    {
+    }
+
     #[Delete(
         path: '/products/{id}',
         summary: 'Delete a product',
         tags: ['Product'],
         defaults: ['_format' => 'json']
     )]
-    public function __invoke(#[Path(format: 'uuid')] string $id, DeleteProductHandler $deleteProductHandler): void
+    public function __invoke(#[Path(format: 'uuid')] string $id): void
     {
-        $deleteProductHandler->handle(new DeleteProduct($id));
+        $this->deleteProductHandler->handle(new DeleteProduct($id));
     }
 }
