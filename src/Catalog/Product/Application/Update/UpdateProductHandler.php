@@ -13,7 +13,7 @@ readonly class UpdateProductHandler
     {
     }
 
-    public function handle(UpdateProduct $command): ProductView
+    public function __invoke(UpdateProduct $command): ProductView
     {
         $product = $this->updater->update(
             ProductId::from($command->id),

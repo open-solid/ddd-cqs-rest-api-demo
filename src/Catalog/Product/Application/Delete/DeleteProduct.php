@@ -2,7 +2,9 @@
 
 namespace App\Catalog\Product\Application\Delete;
 
-readonly class DeleteProduct
+use Cqs\Command\Command;
+
+readonly class DeleteProduct implements Command
 {
     public function __construct(public string $id)
     {

@@ -8,6 +8,58 @@ services:
         exclude:
             - '../src/Kernel.php'
 
-    Ddd\Infrastructure\Event\InMemoryDomainEventPublisher: ~
+    # DDD
 
-    Ddd\Domain\Event\DomainEventPublisher: '@Ddd\Infrastructure\Event\InMemoryDomainEventPublisher'
+    Ddd\Domain\Event\NativeDomainEventPublisher: ~
+    Ddd\Domain\Event\DomainEventPublisher: '@Ddd\Domain\Event\NativeDomainEventPublisher'
+
+    # CQS
+
+    cqs.command.handler_middleware:
+        class: Cqs\Messenger\Middleware\HandlerMiddleware
+        arguments:
+            $handlers:
+                App\Catalog\Product\Application\Create\CreateProduct: '@App\Catalog\Product\Application\Create\CreateProductHandler'
+                App\Catalog\Product\Application\Delete\DeleteProduct: '@App\Catalog\Product\Application\Delete\DeleteProductHandler'
+                App\Catalog\Product\Application\Update\UpdateProduct: '@App\Catalog\Product\Application\Update\UpdateProductHandler'
+
+    cqs.command.middlewares:
+        class: Cqs\Messenger\Middleware\MiddlewareChain
+        arguments:
+            $middlewares:
+                - '@cqs.command.handler_middleware'
+
+    cqs.command_bus:
+        class: Cqs\Messenger\NativeMessageBus
+        arguments:
+            $middlewares: '@cqs.command.middlewares'
+
+    Cqs\Command\NativeCommandBus:
+        arguments:
+            $messageBus: '@cqs.command_bus'
+
+    Cqs\Command\CommandBus: '@Cqs\Command\NativeCommandBus'
+
+    cqs.query.handler_middleware:
+        class: Cqs\Messenger\Middleware\HandlerMiddleware
+        arguments:
+            $handlers:
+                App\Catalog\Product\Application\Find\FindProduct: '@App\Catalog\Product\Application\Find\FindProductHandler'
+                App\Catalog\Product\Application\Find\FindProducts: '@App\Catalog\Product\Application\Find\FindProductsHandler'
+
+    cqs.query.middlewares:
+        class: Cqs\Messenger\Middleware\MiddlewareChain
+        arguments:
+            $middlewares:
+                - '@cqs.query.handler_middleware'
+
+    cqs.query_bus:
+        class: Cqs\Messenger\NativeMessageBus
+        arguments:
+            $middlewares: '@cqs.query.middlewares'
+
+    Cqs\Query\NativeQueryBus:
+        arguments:
+            $messageBus: '@cqs.query_bus'
+
+    Cqs\Query\QueryBus: '@Cqs\Query\NativeQueryBus'

@@ -2,7 +2,9 @@
 
 namespace App\Catalog\Product\Application\Update;
 
-class UpdateProduct
+use Cqs\Command\Command;
+
+class UpdateProduct implements Command
 {
     public function __construct(
         public string $id,

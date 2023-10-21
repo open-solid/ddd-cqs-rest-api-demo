@@ -10,7 +10,7 @@ readonly class DeleteProductHandler
     {
     }
 
-    public function handle(DeleteProduct $command): void
+    public function __invoke(DeleteProduct $command): void
     {
         $this->deleter->delete(ProductId::from($command->id));
     }

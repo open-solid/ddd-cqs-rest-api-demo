@@ -2,7 +2,9 @@
 
 namespace App\Catalog\Product\Application\Create;
 
-readonly class CreateProduct
+use Cqs\Command\Command;
+
+readonly class CreateProduct implements Command
 {
     public function __construct(
          public string $id,

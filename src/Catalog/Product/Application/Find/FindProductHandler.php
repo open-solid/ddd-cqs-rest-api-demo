@@ -11,7 +11,7 @@ readonly class FindProductHandler
     {
     }
 
-    public function handle(FindProduct $query): ProductView
+    public function __invoke(FindProduct $query): ProductView
     {
         $product = $this->finder->findOne(ProductId::from($query->id));
 

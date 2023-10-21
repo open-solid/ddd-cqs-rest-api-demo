@@ -10,10 +10,7 @@ readonly class FindProductsHandler
     {
     }
 
-    /**
-     * @return array<ProductListItemView>
-     */
-    public function handle(FindProducts $query): array
+    public function __invoke(FindProducts $query): array
     {
         $products = $this->finder->findAll();
 

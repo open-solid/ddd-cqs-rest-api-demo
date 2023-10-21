@@ -13,7 +13,7 @@ readonly class CreateProductHandler
     {
     }
 
-    public function handle(CreateProduct $command): ProductNewView
+    public function __invoke(CreateProduct $command): ProductNewView
     {
         $product = $this->factory->create(
             ProductId::from($command->id),
