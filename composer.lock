@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "d2757f1b2d7132a5cbcda8c3ada5b1aa",
+    "content-hash": "45658c315919b8c03d8ed61a666167b9",
     "packages": [
         {
             "name": "doctrine/annotations",
@@ -1635,12 +1635,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/http-kernel.git",
-                "reference": "ea8a74c0063332cbf760ac5abbd3b4a69453f644"
+                "reference": "1e5b3a76136edaa981ef35b8b9cc5a638ddcd9df"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/http-kernel/zipball/ea8a74c0063332cbf760ac5abbd3b4a69453f644",
-                "reference": "ea8a74c0063332cbf760ac5abbd3b4a69453f644",
+                "url": "https://api.github.com/repos/symfony/http-kernel/zipball/1e5b3a76136edaa981ef35b8b9cc5a638ddcd9df",
+                "reference": "1e5b3a76136edaa981ef35b8b9cc5a638ddcd9df",
                 "shasum": ""
             },
             "require": {
@@ -1739,7 +1739,7 @@
                     "type": "tidelift"
                 }
             ],
-            "time": "2023-10-20T17:29:53+00:00"
+            "time": "2023-10-20T19:57:42+00:00"
         },
         {
             "name": "symfony/polyfill-intl-grapheme",
@@ -3213,7 +3213,7 @@
             "dist": {
                 "type": "path",
                 "url": "/Users/yonelceruto/github/yceruto/ddd",
-                "reference": "7292cc2f825ecea1528c02d93865906c3f334665"
+                "reference": "00a6f72eacc03a3a32386f42c042bfc5853bc44d"
             },
             "require": {
                 "php": ">=8.2",
@@ -3256,12 +3256,54 @@
             }
         },
         {
+            "name": "yceruto/ddd-bundle",
+            "version": "dev-main",
+            "dist": {
+                "type": "path",
+                "url": "/Users/yonelceruto/github/yceruto/ddd-bundle",
+                "reference": "2fe141ae9b0dab4312de1e6701e08ee99fbd71fa"
+            },
+            "require": {
+                "php": ">=8.2",
+                "symfony/dependency-injection": "^7.0",
+                "symfony/http-kernel": "^7.0",
+                "yceruto/ddd": "*"
+            },
+            "require-dev": {
+                "phpunit/phpunit": "^10.0"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "Yceruto\\DddBundle\\": "src/"
+                }
+            },
+            "autoload-dev": {
+                "psr-4": {
+                    "Yceruto\\DddBundle\\Tests\\": "tests/"
+                }
+            },
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Yonel Ceruto",
+                    "email": "yonelceruto@gmail.com"
+                }
+            ],
+            "description": "DDD (Domain-Driven Design) building blocks for Symfony framework",
+            "transport-options": {
+                "relative": false
+            }
+        },
+        {
             "name": "yceruto/open-api-bundle",
             "version": "dev-main",
             "dist": {
                 "type": "path",
                 "url": "/Users/yonelceruto/github/yceruto/open-api-bundle",
-                "reference": "c10366c3d47d57bbb97ac8e96587dd5f06479fed"
+                "reference": "4066542b3524225d902e9266144c1472712e86e8"
             },
             "require": {
                 "php": ">=8.2",

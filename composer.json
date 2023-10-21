@@ -18,12 +18,17 @@
         "symfony/uid": "^7.0",
         "symfony/yaml": "^7.0",
         "yceruto/ddd": "*",
+        "yceruto/ddd-bundle": "*",
         "yceruto/open-api-bundle": "*"
     },
     "repositories": {
         "yceruto/open-api-bundle": {
             "type": "path",
             "url": "/Users/yonelceruto/github/yceruto/open-api-bundle/"
+        },
+        "yceruto/ddd-bundle": {
+            "type": "path",
+            "url": "/Users/yonelceruto/github/yceruto/ddd-bundle/"
         },
         "yceruto/ddd": {
             "type": "path",

@@ -8,6 +8,6 @@ services:
         exclude:
             - '../src/Kernel.php'
 
-    Ddd\Infrastructure\Event\InMemoryDomainEventBus: ~
+    Ddd\Infrastructure\Event\InMemoryDomainEventPublisher: ~
 
-    Ddd\Domain\Event\DomainEventBus: '@Ddd\Infrastructure\Event\InMemoryDomainEventBus'
+    Ddd\Domain\Event\DomainEventPublisher: '@Ddd\Infrastructure\Event\InMemoryDomainEventPublisher'

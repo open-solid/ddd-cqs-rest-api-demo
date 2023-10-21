@@ -88,6 +88,9 @@
             "config/packages/validator.yaml"
         ]
     },
+    "yceruto/ddd-bundle": {
+        "version": "dev-main"
+    },
     "yceruto/open-api-bundle": {
         "version": "dev-main"
     }

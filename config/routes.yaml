@@ -1,7 +1,7 @@
-controllers:
+catalog_product:
     resource:
-        path: ../src/Presentation/Controller/
-        namespace: App\Presentation\Controller
+        path: ../src/Catalog/Product/Presentation/Controller/
+        namespace: App\Catalog\Product\Presentation\Controller
     type: attribute
 
 openapi:
