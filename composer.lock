@@ -210,21 +210,22 @@
         },
         {
             "name": "psr/container",
-            "version": "2.0.2",
+            "version": "dev-master",
             "source": {
                 "type": "git",
                 "url": "https://github.com/php-fig/container.git",
-                "reference": "c71ecc56dfe541dbd90c5360474fbc405f8d5963"
+                "reference": "707984727bd5b2b670e59559d3ed2500240cf875"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/php-fig/container/zipball/c71ecc56dfe541dbd90c5360474fbc405f8d5963",
-                "reference": "c71ecc56dfe541dbd90c5360474fbc405f8d5963",
+                "url": "https://api.github.com/repos/php-fig/container/zipball/707984727bd5b2b670e59559d3ed2500240cf875",
+                "reference": "707984727bd5b2b670e59559d3ed2500240cf875",
                 "shasum": ""
             },
             "require": {
                 "php": ">=7.4.0"
             },
+            "default-branch": true,
             "type": "library",
             "extra": {
                 "branch-alias": {
@@ -257,9 +258,9 @@
             ],
             "support": {
                 "issues": "https://github.com/php-fig/container/issues",
-                "source": "https://github.com/php-fig/container/tree/2.0.2"
+                "source": "https://github.com/php-fig/container"
             },
-            "time": "2021-11-05T16:47:00+00:00"
+            "time": "2023-09-22T11:11:30+00:00"
         },
         {
             "name": "psr/event-dispatcher",
@@ -3214,10 +3215,11 @@
             "dist": {
                 "type": "path",
                 "url": "/Users/yonelceruto/github/yceruto/cqs",
-                "reference": "9b46c20c6005fa803135144ee2c2a947eebc9b33"
+                "reference": "dbd408f6982970395c21dd26e4a2b856aa3d5b9c"
             },
             "require": {
                 "php": ">=8.2",
+                "psr/container": "2.0.x-dev",
                 "yceruto/ddd": "*"
             },
             "require-dev": {
@@ -3256,7 +3258,7 @@
             "dist": {
                 "type": "path",
                 "url": "/Users/yonelceruto/github/yceruto/cqs-bundle",
-                "reference": "13c4ebee6a913f370f00fe23b31a10e2a25ffdb5"
+                "reference": "dfc5867b2862e1a6f65c29d576a470f4f5315516"
             },
             "require": {
                 "php": ">=8.2",

@@ -88,6 +88,9 @@
             "config/packages/validator.yaml"
         ]
     },
+    "yceruto/cqs-bundle": {
+        "version": "dev-main"
+    },
     "yceruto/ddd-bundle": {
         "version": "dev-main"
     },

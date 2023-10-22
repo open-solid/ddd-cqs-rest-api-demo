@@ -3,7 +3,9 @@
 namespace App\Catalog\Product\Application\Find;
 
 use App\Catalog\Product\Domain\View\ProductListItemView;
+use Yceruto\CqsBundle\Attribute\AsQueryHandler;
 
+#[AsQueryHandler]
 readonly class FindProductsHandler
 {
     public function __construct(private ProductFinder $finder)

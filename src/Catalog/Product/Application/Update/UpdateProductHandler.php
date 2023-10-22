@@ -6,7 +6,9 @@ use App\Catalog\Product\Domain\Model\ProductDescription;
 use App\Catalog\Product\Domain\Model\ProductId;
 use App\Catalog\Product\Domain\Model\ProductName;
 use App\Catalog\Product\Domain\View\ProductView;
+use Yceruto\CqsBundle\Attribute\AsCommandHandler;
 
+#[AsCommandHandler]
 readonly class UpdateProductHandler
 {
     public function __construct(private ProductUpdater $updater)

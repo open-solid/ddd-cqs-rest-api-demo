@@ -3,7 +3,9 @@
 namespace App\Catalog\Product\Application\Delete;
 
 use App\Catalog\Product\Domain\Model\ProductId;
+use Yceruto\CqsBundle\Attribute\AsCommandHandler;
 
+#[AsCommandHandler]
 readonly class DeleteProductHandler
 {
     public function __construct(private ProductDeleter $deleter)
