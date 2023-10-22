@@ -5,7 +5,7 @@ namespace App\Catalog\Product\Presentation\Controller\Patch;
 use OpenApi\Attributes\Schema;
 use Yceruto\OpenApiBundle\Attributes\Property;
 
-#[Schema]
+#[Schema(writeOnly: true)]
 class PatchProductPayload
 {
     #[Property(maxLength: 255, minLength: 3)]

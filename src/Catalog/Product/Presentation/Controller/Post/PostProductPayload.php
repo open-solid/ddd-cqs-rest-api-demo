@@ -5,7 +5,7 @@ namespace App\Catalog\Product\Presentation\Controller\Post;
 use OpenApi\Attributes\Schema;
 use Yceruto\OpenApiBundle\Attributes\Property;
 
-#[Schema]
+#[Schema(writeOnly: true)]
 class PostProductPayload
 {
     #[Property(format: 'uuid')]
