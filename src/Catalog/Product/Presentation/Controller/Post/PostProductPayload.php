@@ -5,15 +5,31 @@ namespace App\Catalog\Product\Presentation\Controller\Post;
 use OpenApi\Attributes\Schema;
 use Yceruto\OpenApiBundle\Attributes\Property;
 
-#[Schema(writeOnly: true)]
+#[Schema(
+    title: 'Create Product',
+    description: 'Create a new product',
+    required: ['name', 'description'],
+    writeOnly: true,
+)]
 class PostProductPayload
 {
-    #[Property(format: 'uuid')]
+    #[Property(
+        description: 'The unique identifier of the product',
+        format: 'uuid',
+    )]
     public ?string $id = null;
 
-    #[Property(maxLength: 255, minLength: 3)]
+    #[Property(
+        description: 'The name of the product',
+        maxLength: 255,
+        minLength: 3,
+    )]
     public string $name;
 
-    #[Property(maxLength: 255, minLength: 10)]
+    #[Property(
+        description: 'The description of the product',
+        maxLength: 255,
+        minLength: 10,
+    )]
     public string $description;
 }
