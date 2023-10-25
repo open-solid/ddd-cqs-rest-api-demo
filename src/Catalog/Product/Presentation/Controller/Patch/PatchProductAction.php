@@ -5,13 +5,11 @@ namespace App\Catalog\Product\Presentation\Controller\Patch;
 use App\Catalog\Product\Application\Find\FindProduct;
 use App\Catalog\Product\Application\Update\UpdateProduct;
 use App\Catalog\Product\Domain\View\ProductView;
-use Symfony\Component\HttpKernel\Attribute\AsController;
 use Yceruto\CqsBundle\Controller\CqsAction;
 use Yceruto\OpenApiBundle\Attributes\Path;
 use Yceruto\OpenApiBundle\Attributes\Payload;
 use Yceruto\OpenApiBundle\Routing\Attribute\Patch;
 
-#[AsController]
 class PatchProductAction extends CqsAction
 {
     #[Patch(

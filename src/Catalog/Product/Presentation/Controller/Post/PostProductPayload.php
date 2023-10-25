@@ -8,7 +8,7 @@ use Yceruto\OpenApiBundle\Attributes\Property;
 #[Schema(
     title: 'Create Product',
     description: 'Create a new product',
-    required: ['name', 'description'],
+    required: ['name', 'description'], // @TODO: auto-populate from properties
     writeOnly: true,
 )]
 class PostProductPayload

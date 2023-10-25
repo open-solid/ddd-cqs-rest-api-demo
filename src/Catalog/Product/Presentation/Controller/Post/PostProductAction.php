@@ -5,12 +5,10 @@ namespace App\Catalog\Product\Presentation\Controller\Post;
 use App\Catalog\Product\Application\Create\CreateProduct;
 use App\Catalog\Product\Domain\Model\ProductId;
 use App\Catalog\Product\Domain\View\ProductNewView;
-use Symfony\Component\HttpKernel\Attribute\AsController;
 use Yceruto\CqsBundle\Controller\CommandAction;
 use Yceruto\OpenApiBundle\Attributes\Payload;
 use Yceruto\OpenApiBundle\Routing\Attribute\Post;
 
-#[AsController]
 class PostProductAction extends CommandAction
 {
     #[Post(
