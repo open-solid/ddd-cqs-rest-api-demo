@@ -6,6 +6,7 @@ use App\Catalog\Product\Application\Find\FindProducts;
 use App\Catalog\Product\Domain\View\ProductListItemView;
 use Symfony\Component\HttpKernel\Attribute\AsController;
 use Yceruto\CqsBundle\Controller\QueryAction;
+use Yceruto\OpenApiBundle\Attribute\Query;
 use Yceruto\OpenApiBundle\Routing\Attribute\Get;
 
 #[AsController]
@@ -17,8 +18,8 @@ class GetProductsAction extends QueryAction
         tags: ['Product'],
         itemsType: ProductListItemView::class,
     )]
-    public function __invoke(): array
+    public function __invoke(#[Query] GetProductsQuery $query = null): array
     {
-        return $this->queryBus()->ask(new FindProducts());
+        return $this->queryBus()->ask(new FindProducts($query?->name));
     }
 }
