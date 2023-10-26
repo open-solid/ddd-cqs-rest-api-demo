@@ -7,8 +7,3 @@ services:
         resource: '../src/'
         exclude:
             - '../src/Kernel.php'
-
-    # DDD
-
-    Ddd\Domain\Event\NativeDomainEventPublisher: ~
-    Ddd\Domain\Event\DomainEventPublisher: '@Ddd\Domain\Event\NativeDomainEventPublisher'

@@ -3339,7 +3339,7 @@
             "dist": {
                 "type": "path",
                 "url": "/Users/yonelceruto/github/yceruto/ddd-bundle",
-                "reference": "2fe141ae9b0dab4312de1e6701e08ee99fbd71fa"
+                "reference": "1008a42ecc277859810807dc45b9364d94049c22"
             },
             "require": {
                 "php": ">=8.2",
@@ -3381,7 +3381,7 @@
             "dist": {
                 "type": "path",
                 "url": "/Users/yonelceruto/github/yceruto/open-api-bundle",
-                "reference": "d77cac6236f51907fb2ca8a67bbc0be6f6c671ed"
+                "reference": "92b8b6cee7b2ca56c1de9037e440191a2059a55d"
             },
             "require": {
                 "php": ">=8.2",
