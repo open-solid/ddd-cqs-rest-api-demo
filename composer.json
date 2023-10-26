@@ -17,7 +17,6 @@
         "symfony/runtime": "^7.0",
         "symfony/uid": "^7.0",
         "symfony/yaml": "^7.0",
-        "yceruto/ddd": "*",
         "yceruto/cqs-bundle": "*",
         "yceruto/ddd-bundle": "*",
         "yceruto/open-api-bundle": "*"

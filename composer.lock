@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "17aa528bc5eee7cc878b07e432779cee",
+    "content-hash": "b92676272e336de1027413720ccc30c5",
     "packages": [
         {
             "name": "doctrine/annotations",
@@ -3339,7 +3339,7 @@
             "dist": {
                 "type": "path",
                 "url": "/Users/yonelceruto/github/yceruto/ddd-bundle",
-                "reference": "1008a42ecc277859810807dc45b9364d94049c22"
+                "reference": "39bab4a6e26b4c6cc066637683f7f0811e459c5b"
             },
             "require": {
                 "php": ">=8.2",
@@ -3381,7 +3381,7 @@
             "dist": {
                 "type": "path",
                 "url": "/Users/yonelceruto/github/yceruto/open-api-bundle",
-                "reference": "92b8b6cee7b2ca56c1de9037e440191a2059a55d"
+                "reference": "c22b460fd76276d937c286a0635f24dc9b1b524e"
             },
             "require": {
                 "php": ">=8.2",
