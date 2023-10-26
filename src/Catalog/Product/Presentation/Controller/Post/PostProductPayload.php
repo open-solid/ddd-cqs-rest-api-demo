@@ -13,20 +13,20 @@ use Yceruto\OpenApiBundle\Attribute\Property;
 class PostProductPayload
 {
     #[Property(
-        description: 'The unique identifier of the product',
+        description: 'The unique identifier of the new product',
         format: 'uuid',
     )]
     public ?string $id = null;
 
     #[Property(
-        description: 'The name of the product',
+        description: 'The name of the new product',
         maxLength: 255,
         minLength: 3,
     )]
     public string $name;
 
     #[Property(
-        description: 'The description of the product',
+        description: 'The description of the new product',
         maxLength: 255,
         minLength: 10,
     )]
