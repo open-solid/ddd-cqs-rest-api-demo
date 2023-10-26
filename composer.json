@@ -17,37 +17,15 @@
         "symfony/runtime": "^7.0",
         "symfony/uid": "^7.0",
         "symfony/yaml": "^7.0",
-        "yceruto/cqs-bundle": "*",
-        "yceruto/ddd-bundle": "*",
-        "yceruto/open-api-bundle": "*"
+        "yceruto/cqs-bundle": "dev-main",
+        "yceruto/ddd-bundle": "dev-main",
+        "yceruto/open-api-bundle": "dev-main"
     },
     "require-dev": {
         "phpunit/phpunit": "^9.5",
         "symfony/browser-kit": "^7.0",
         "symfony/css-selector": "^7.0",
         "symfony/phpunit-bridge": "^6.3"
-    },
-    "repositories": {
-        "yceruto/open-api-bundle": {
-            "type": "path",
-            "url": "/Users/yonelceruto/github/yceruto/open-api-bundle/"
-        },
-        "yceruto/ddd-bundle": {
-            "type": "path",
-            "url": "/Users/yonelceruto/github/yceruto/ddd-bundle/"
-        },
-        "yceruto/ddd": {
-            "type": "path",
-            "url": "/Users/yonelceruto/github/yceruto/ddd/"
-        },
-        "yceruto/cqs-bundle": {
-            "type": "path",
-            "url": "/Users/yonelceruto/github/yceruto/cqs-bundle/"
-        },
-        "yceruto/cqs": {
-            "type": "path",
-            "url": "/Users/yonelceruto/github/yceruto/cqs/"
-        }
     },
     "config": {
         "allow-plugins": {
