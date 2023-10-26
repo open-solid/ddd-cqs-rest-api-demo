@@ -6,8 +6,8 @@ use App\Catalog\Product\Application\Update\UpdateProduct;
 use App\Catalog\Product\Domain\View\ProductView;
 use Symfony\Component\HttpKernel\Attribute\AsController;
 use Yceruto\CqsBundle\Controller\CommandAction;
-use Yceruto\OpenApiBundle\Attributes\Path;
-use Yceruto\OpenApiBundle\Attributes\Payload;
+use Yceruto\OpenApiBundle\Attribute\Path;
+use Yceruto\OpenApiBundle\Attribute\Payload;
 use Yceruto\OpenApiBundle\Routing\Attribute\Put;
 
 #[AsController]

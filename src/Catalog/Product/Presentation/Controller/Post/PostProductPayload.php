@@ -3,7 +3,7 @@
 namespace App\Catalog\Product\Presentation\Controller\Post;
 
 use OpenApi\Attributes\Schema;
-use Yceruto\OpenApiBundle\Attributes\Property;
+use Yceruto\OpenApiBundle\Attribute\Property;
 
 #[Schema(
     title: 'Create Product',

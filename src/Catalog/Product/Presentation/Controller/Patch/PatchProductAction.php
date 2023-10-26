@@ -6,8 +6,8 @@ use App\Catalog\Product\Application\Find\FindProduct;
 use App\Catalog\Product\Application\Update\UpdateProduct;
 use App\Catalog\Product\Domain\View\ProductView;
 use Yceruto\CqsBundle\Controller\CqsAction;
-use Yceruto\OpenApiBundle\Attributes\Path;
-use Yceruto\OpenApiBundle\Attributes\Payload;
+use Yceruto\OpenApiBundle\Attribute\Path;
+use Yceruto\OpenApiBundle\Attribute\Payload;
 use Yceruto\OpenApiBundle\Routing\Attribute\Patch;
 
 class PatchProductAction extends CqsAction

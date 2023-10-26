@@ -5,7 +5,7 @@ namespace App\Catalog\Product\Domain\View;
 use App\Catalog\Product\Domain\Model\Product;
 use DateTimeImmutable;
 use OpenApi\Attributes\Schema;
-use Yceruto\OpenApiBundle\Attributes\Property;
+use Yceruto\OpenApiBundle\Attribute\Property;
 
 #[Schema]
 readonly class ProductNewView

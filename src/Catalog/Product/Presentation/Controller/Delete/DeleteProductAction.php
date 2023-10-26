@@ -4,7 +4,7 @@ namespace App\Catalog\Product\Presentation\Controller\Delete;
 
 use App\Catalog\Product\Application\Delete\DeleteProduct;
 use Yceruto\CqsBundle\Controller\CommandAction;
-use Yceruto\OpenApiBundle\Attributes\Path;
+use Yceruto\OpenApiBundle\Attribute\Path;
 use Yceruto\OpenApiBundle\Routing\Attribute\Delete;
 
 class DeleteProductAction extends CommandAction
