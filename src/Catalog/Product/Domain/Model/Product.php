@@ -13,6 +13,7 @@ class Product
     use AggregateRoot;
     use Timestamp;
 
+    private int $pk;
     private readonly ProductId $id;
     private ProductName $name;
     private ProductDescription $description;

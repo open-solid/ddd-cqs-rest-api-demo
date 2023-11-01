@@ -5,7 +5,7 @@ namespace App\Catalog\Product\Application\Delete;
 use App\Catalog\Product\Application\Find\ProductFinder;
 use App\Catalog\Product\Domain\Event\ProductDeleted;
 use App\Catalog\Product\Domain\Model\ProductId;
-use App\Catalog\Product\Domain\Model\ProductRepository;
+use App\Catalog\Product\Domain\Repository\ProductRepository;
 use Ddd\Domain\Event\DomainEventPublisher;
 
 readonly class ProductDeleter

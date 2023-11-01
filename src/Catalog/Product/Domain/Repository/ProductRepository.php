@@ -1,6 +1,9 @@
 <?php
 
-namespace App\Catalog\Product\Domain\Model;
+namespace App\Catalog\Product\Domain\Repository;
+
+use App\Catalog\Product\Domain\Model\Product;
+use App\Catalog\Product\Domain\Model\ProductId;
 
 interface ProductRepository
 {

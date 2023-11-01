@@ -6,7 +6,7 @@ use App\Catalog\Product\Domain\Model\Product;
 use App\Catalog\Product\Domain\Model\ProductDescription;
 use App\Catalog\Product\Domain\Model\ProductId;
 use App\Catalog\Product\Domain\Model\ProductName;
-use App\Catalog\Product\Domain\Model\ProductRepository;
+use App\Catalog\Product\Domain\Repository\ProductRepository;
 
 class InMemoryProductRepository implements ProductRepository
 {

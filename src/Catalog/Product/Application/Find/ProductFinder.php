@@ -5,7 +5,7 @@ namespace App\Catalog\Product\Application\Find;
 use App\Catalog\Product\Domain\Error\ProductNotFound;
 use App\Catalog\Product\Domain\Model\Product;
 use App\Catalog\Product\Domain\Model\ProductId;
-use App\Catalog\Product\Domain\Model\ProductRepository;
+use App\Catalog\Product\Domain\Repository\ProductRepository;
 
 readonly class ProductFinder
 {
