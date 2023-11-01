@@ -3215,12 +3215,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/yceruto/cqs.git",
-                "reference": "dcace88f29b32cdb461497e683d39b2434e87136"
+                "reference": "5e93758c1fb1d444b284934d00d58282d3a76be4"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/yceruto/cqs/zipball/dcace88f29b32cdb461497e683d39b2434e87136",
-                "reference": "dcace88f29b32cdb461497e683d39b2434e87136",
+                "url": "https://api.github.com/repos/yceruto/cqs/zipball/5e93758c1fb1d444b284934d00d58282d3a76be4",
+                "reference": "5e93758c1fb1d444b284934d00d58282d3a76be4",
                 "shasum": ""
             },
             "require": {
@@ -3254,7 +3254,7 @@
                 "issues": "https://github.com/yceruto/cqs/issues",
                 "source": "https://github.com/yceruto/cqs/tree/main"
             },
-            "time": "2023-10-22T01:51:55+00:00"
+            "time": "2023-11-01T18:38:06+00:00"
         },
         {
             "name": "yceruto/cqs-bundle",
@@ -3401,12 +3401,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/yceruto/open-api-bundle.git",
-                "reference": "c205b5076d0e3a2d3d6a576694ba8b6300ebef8d"
+                "reference": "2f84d21ccd52d2c8369a7fa1b69b953e168a088f"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/yceruto/open-api-bundle/zipball/c205b5076d0e3a2d3d6a576694ba8b6300ebef8d",
-                "reference": "c205b5076d0e3a2d3d6a576694ba8b6300ebef8d",
+                "url": "https://api.github.com/repos/yceruto/open-api-bundle/zipball/2f84d21ccd52d2c8369a7fa1b69b953e168a088f",
+                "reference": "2f84d21ccd52d2c8369a7fa1b69b953e168a088f",
                 "shasum": ""
             },
             "require": {
@@ -3417,6 +3417,7 @@
                 "zircote/swagger-php": "^4.7"
             },
             "require-dev": {
+                "phpunit/phpunit": "^10.0",
                 "roave/security-advisories": "dev-latest"
             },
             "default-branch": true,
@@ -3447,7 +3448,7 @@
                 "issues": "https://github.com/yceruto/open-api-bundle/issues",
                 "source": "https://github.com/yceruto/open-api-bundle/tree/main"
             },
-            "time": "2023-11-01T18:05:25+00:00"
+            "time": "2023-11-01T18:16:27+00:00"
         },
         {
             "name": "zircote/swagger-php",
