@@ -13,7 +13,7 @@ class DeleteProductAction extends CommandAction
         path: '/products/{id}',
         summary: 'Delete a product',
         tags: ['Product'],
-        defaults: ['_format' => 'json']
+        defaults: ['_format' => 'json'],
     )]
     public function __invoke(#[Path(format: 'uuid')] string $id): void
     {
