@@ -4373,12 +4373,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/yceruto/cqs.git",
-                "reference": "5e93758c1fb1d444b284934d00d58282d3a76be4"
+                "reference": "8076f9476129d1a385e4e4b1c514e4d71114dd54"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/yceruto/cqs/zipball/5e93758c1fb1d444b284934d00d58282d3a76be4",
-                "reference": "5e93758c1fb1d444b284934d00d58282d3a76be4",
+                "url": "https://api.github.com/repos/yceruto/cqs/zipball/8076f9476129d1a385e4e4b1c514e4d71114dd54",
+                "reference": "8076f9476129d1a385e4e4b1c514e4d71114dd54",
                 "shasum": ""
             },
             "require": {
@@ -4412,7 +4412,7 @@
                 "issues": "https://github.com/yceruto/cqs/issues",
                 "source": "https://github.com/yceruto/cqs/tree/main"
             },
-            "time": "2023-11-01T18:38:06+00:00"
+            "time": "2023-11-01T21:11:29+00:00"
         },
         {
             "name": "yceruto/cqs-bundle",
@@ -4420,19 +4420,23 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/yceruto/cqs-bundle.git",
-                "reference": "0ddab21a96d0c9ac8aed338167b08256d940a5f1"
+                "reference": "96a69123d6d2613f6bf6f9348eda2fde689d89d6"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/yceruto/cqs-bundle/zipball/0ddab21a96d0c9ac8aed338167b08256d940a5f1",
-                "reference": "0ddab21a96d0c9ac8aed338167b08256d940a5f1",
+                "url": "https://api.github.com/repos/yceruto/cqs-bundle/zipball/96a69123d6d2613f6bf6f9348eda2fde689d89d6",
+                "reference": "96a69123d6d2613f6bf6f9348eda2fde689d89d6",
                 "shasum": ""
             },
             "require": {
                 "php": ">=8.2",
+                "symfony/config": "^7.0",
                 "symfony/dependency-injection": "^7.0",
                 "symfony/http-kernel": "^7.0",
                 "yceruto/cqs": "dev-main"
+            },
+            "require-dev": {
+                "doctrine/orm": "^3.0"
             },
             "default-branch": true,
             "type": "library",
@@ -4456,7 +4460,7 @@
                 "issues": "https://github.com/yceruto/cqs-bundle/issues",
                 "source": "https://github.com/yceruto/cqs-bundle/tree/main"
             },
-            "time": "2023-10-26T20:50:37+00:00"
+            "time": "2023-11-02T13:23:08+00:00"
         },
         {
             "name": "yceruto/ddd",
@@ -4464,12 +4468,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/yceruto/ddd.git",
-                "reference": "8d0565b0a986cc4c99a5360d2abcdab9f9ef204c"
+                "reference": "64e16790c20c092fa792c630b2610e0d5984e0d0"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/yceruto/ddd/zipball/8d0565b0a986cc4c99a5360d2abcdab9f9ef204c",
-                "reference": "8d0565b0a986cc4c99a5360d2abcdab9f9ef204c",
+                "url": "https://api.github.com/repos/yceruto/ddd/zipball/64e16790c20c092fa792c630b2610e0d5984e0d0",
+                "reference": "64e16790c20c092fa792c630b2610e0d5984e0d0",
                 "shasum": ""
             },
             "require": {
@@ -4504,7 +4508,7 @@
                 "issues": "https://github.com/yceruto/ddd/issues",
                 "source": "https://github.com/yceruto/ddd/tree/main"
             },
-            "time": "2023-10-26T20:40:54+00:00"
+            "time": "2023-11-01T20:49:49+00:00"
         },
         {
             "name": "yceruto/ddd-bundle",
