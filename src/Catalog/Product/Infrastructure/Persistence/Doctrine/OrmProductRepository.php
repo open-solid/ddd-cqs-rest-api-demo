@@ -25,7 +25,7 @@ readonly class OrmProductRepository implements ProductRepository
 
     public function ofId(ProductId $id): ?Product
     {
-        return $this->em->find(Product::class, $id->value());
+        return $this->em->getRepository(Product::class)->findOneBy(['id.value' => $id->value()]);
     }
 
     /**
