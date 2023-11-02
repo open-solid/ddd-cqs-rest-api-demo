@@ -74,8 +74,7 @@
     },
     "extra": {
         "symfony": {
-            "allow-contrib": false,
-            "require": "^7.0"
+            "allow-contrib": false
         }
     }
 }

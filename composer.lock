@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "2682171adde12ea6792b484b97c677cc",
+    "content-hash": "6effada4254b8af1ae034dda5e1e008d",
     "packages": [
         {
             "name": "doctrine/annotations",
@@ -5413,12 +5413,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/Roave/SecurityAdvisories.git",
-                "reference": "9166a1fe39cf6eb6d2b641d84e38e2fb3ad16fff"
+                "reference": "a21ad4bc3052f3f1fd5fa2e2f215d655cd472021"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/Roave/SecurityAdvisories/zipball/9166a1fe39cf6eb6d2b641d84e38e2fb3ad16fff",
-                "reference": "9166a1fe39cf6eb6d2b641d84e38e2fb3ad16fff",
+                "url": "https://api.github.com/repos/Roave/SecurityAdvisories/zipball/a21ad4bc3052f3f1fd5fa2e2f215d655cd472021",
+                "reference": "a21ad4bc3052f3f1fd5fa2e2f215d655cd472021",
                 "shasum": ""
             },
             "conflict": {
@@ -5560,7 +5560,7 @@
                 "ezsystems/ezplatform-richtext": ">=2.3,<2.3.7.1-dev",
                 "ezsystems/ezplatform-user": ">=1,<1.0.1",
                 "ezsystems/ezpublish-kernel": "<6.13.8.2-dev|>=7,<7.5.30",
-                "ezsystems/ezpublish-legacy": "<=2017.12.7.3|>=2018.06,<=2019.03.5.1",
+                "ezsystems/ezpublish-legacy": "<=2017.12.7.3|>=2018.6,<=2019.03.5.1",
                 "ezsystems/platform-ui-assets-bundle": ">=4.2,<4.2.3",
                 "ezsystems/repository-forms": ">=2.3,<2.3.2.1-dev|>=2.5,<2.5.15",
                 "ezyang/htmlpurifier": "<4.1.1",
@@ -6091,7 +6091,7 @@
                     "type": "tidelift"
                 }
             ],
-            "time": "2023-11-01T18:04:40+00:00"
+            "time": "2023-11-02T10:04:43+00:00"
         },
         {
             "name": "sebastian/cli-parser",

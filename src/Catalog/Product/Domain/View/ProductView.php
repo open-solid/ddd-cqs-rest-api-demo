@@ -3,6 +3,7 @@
 namespace App\Catalog\Product\Domain\View;
 
 use App\Catalog\Product\Domain\Model\Product;
+use App\Catalog\Product\Domain\Model\ProductStatus;
 use DateTimeImmutable;
 use OpenApi\Attributes\Schema;
 use Yceruto\OpenApiBundle\Attribute\Property;
@@ -22,6 +23,9 @@ readonly class ProductView
     public string $description;
 
     #[Property]
+    public ProductStatus $status;
+
+    #[Property]
     public DateTimeImmutable $createdAt;
 
     #[Property]
@@ -32,6 +36,7 @@ readonly class ProductView
         $this->id = $product->id();
         $this->name = $product->name();
         $this->description = $product->description();
+        $this->status = $product->status();
         $this->createdAt = $product->createdAt();
         $this->updatedAt = $product->updatedAt();
     }

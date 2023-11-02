@@ -7,6 +7,7 @@ use App\Catalog\Product\Domain\Event\ProductUpdated;
 use DateTimeImmutable;
 use Ddd\Domain\Entity\AggregateRoot;
 use Ddd\Domain\Trait\Time\Timestamp;
+use StringBackedEnum;
 
 class Product
 {
@@ -17,6 +18,7 @@ class Product
     private readonly ProductId $id;
     private ProductName $name;
     private ProductDescription $description;
+    private ProductStatus $status;
 
     public static function create(ProductId $id, ProductName $name, ProductDescription $description): self
     {
@@ -25,6 +27,7 @@ class Product
         $self->name = $name;
         $self->description = $description;
         $self->createdAt = new DateTimeImmutable();
+        $self->status = ProductStatus::DRAFT;
         $self->pushDomainEvent(new ProductCreated($id->value()));
 
         return $self;
@@ -43,6 +46,11 @@ class Product
     public function description(): ProductDescription
     {
         return $this->description;
+    }
+
+    public function status(): ProductStatus
+    {
+        return $this->status;
     }
 
     public function update(ProductName $name, ProductDescription $description): void
