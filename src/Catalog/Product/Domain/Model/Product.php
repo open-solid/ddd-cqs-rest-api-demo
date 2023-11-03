@@ -21,7 +21,8 @@ class Product
     private ProductDescription $description;
     private ProductStatus $status;
 
-    public static function create(CreateProductProps $props): self {
+    public static function create(CreateProductProps $props): self
+    {
         $self = new self();
         $self->id = $props->id;
         $self->name = $props->name;
