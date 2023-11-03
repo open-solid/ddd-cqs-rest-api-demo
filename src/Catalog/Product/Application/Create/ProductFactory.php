@@ -3,10 +3,7 @@
 namespace App\Catalog\Product\Application\Create;
 
 use App\Catalog\Product\Domain\Model\Product;
-use App\Catalog\Product\Domain\Model\ProductDescription;
-use App\Catalog\Product\Domain\Model\ProductId;
-use App\Catalog\Product\Domain\Model\ProductName;
-use App\Catalog\Product\Domain\Model\ProductStatus;
+use App\Catalog\Product\Domain\Model\Props\CreateProductProps;
 use App\Catalog\Product\Domain\Repository\ProductRepository;
 use Ddd\Domain\Event\DomainEventPublisher;
 
@@ -18,9 +15,9 @@ readonly class ProductFactory
     ) {
     }
 
-    public function create(ProductId $id, ProductName $name, ProductDescription $description, ProductStatus $status): Product
+    public function create(CreateProductProps $props): Product
     {
-        $product = Product::create($id, $name, $description, $status);
+        $product = Product::create($props);
 
         $this->repository->add($product);
 

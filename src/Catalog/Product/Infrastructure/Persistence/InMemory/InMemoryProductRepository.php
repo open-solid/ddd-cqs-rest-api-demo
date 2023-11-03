@@ -6,6 +6,8 @@ use App\Catalog\Product\Domain\Model\Product;
 use App\Catalog\Product\Domain\Model\ProductDescription;
 use App\Catalog\Product\Domain\Model\ProductId;
 use App\Catalog\Product\Domain\Model\ProductName;
+use App\Catalog\Product\Domain\Model\ProductStatus;
+use App\Catalog\Product\Domain\Model\Props\CreateProductProps;
 use App\Catalog\Product\Domain\Repository\ProductRepository;
 
 class InMemoryProductRepository implements ProductRepository
@@ -14,11 +16,12 @@ class InMemoryProductRepository implements ProductRepository
 
     public function __construct()
     {
-        $this->add(Product::create(
+        $this->add(Product::create(new CreateProductProps(
             ProductId::from('f81d4fae-7dec-11d0-a765-00a0c91e6bf9'),
             ProductName::from('Product A'),
             ProductDescription::from('Product description'),
-        ));
+            ProductStatus::DRAFT,
+        )));
     }
 
     public function add(Product $product): void

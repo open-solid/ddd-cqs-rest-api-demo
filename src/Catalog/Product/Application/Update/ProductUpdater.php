@@ -4,10 +4,8 @@ namespace App\Catalog\Product\Application\Update;
 
 use App\Catalog\Product\Application\Find\ProductFinder;
 use App\Catalog\Product\Domain\Model\Product;
-use App\Catalog\Product\Domain\Model\ProductDescription;
 use App\Catalog\Product\Domain\Model\ProductId;
-use App\Catalog\Product\Domain\Model\ProductName;
-use App\Catalog\Product\Domain\Model\ProductStatus;
+use App\Catalog\Product\Domain\Model\Props\UpdateProductProps;
 use Ddd\Domain\Event\DomainEventPublisher;
 
 readonly class ProductUpdater
@@ -18,11 +16,11 @@ readonly class ProductUpdater
     ) {
     }
 
-    public function update(ProductId $id, ProductName $name, ProductDescription $description, ProductStatus $status): Product
+    public function update(ProductId $id, UpdateProductProps $props): Product
     {
         $product = $this->finder->findOne($id);
 
-        $product->update($name, $description, $status);
+        $product->update($props);
 
         $this->domainEventPublisher->publish(...$product->pullDomainEvents());
 

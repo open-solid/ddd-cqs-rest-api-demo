@@ -4,10 +4,11 @@ namespace App\Catalog\Product\Domain\Model;
 
 use App\Catalog\Product\Domain\Event\ProductCreated;
 use App\Catalog\Product\Domain\Event\ProductUpdated;
+use App\Catalog\Product\Domain\Model\Props\CreateProductProps;
+use App\Catalog\Product\Domain\Model\Props\UpdateProductProps;
 use DateTimeImmutable;
 use Ddd\Domain\Entity\AggregateRoot;
 use Ddd\Domain\Trait\Time\Timestamp;
-use StringBackedEnum;
 
 class Product
 {
@@ -20,17 +21,26 @@ class Product
     private ProductDescription $description;
     private ProductStatus $status;
 
-    public static function create(ProductId $id, ProductName $name, ProductDescription $description, ProductStatus $status = ProductStatus::DRAFT): self
-    {
+    public static function create(CreateProductProps $props): self {
         $self = new self();
-        $self->id = $id;
-        $self->name = $name;
-        $self->description = $description;
+        $self->id = $props->id;
+        $self->name = $props->name;
+        $self->description = $props->description;
+        $self->status = $props->status;
         $self->createdAt = new DateTimeImmutable();
-        $self->status = $status;
-        $self->pushDomainEvent(new ProductCreated($id->value()));
+
+        $self->pushDomainEvent(new ProductCreated($props->id->value()));
 
         return $self;
+    }
+
+    public function update(UpdateProductProps $props): void
+    {
+        $this->name = $props->name;
+        $this->description = $props->description;
+        $this->status = $props->status;
+        $this->updatedAt = new DateTimeImmutable();
+        $this->pushDomainEvent(new ProductUpdated($this->id->value()));
     }
 
     public function id(): ProductId
@@ -51,15 +61,6 @@ class Product
     public function status(): ProductStatus
     {
         return $this->status;
-    }
-
-    public function update(ProductName $name, ProductDescription $description, ProductStatus $status): void
-    {
-        $this->name = $name;
-        $this->description = $description;
-        $this->status = $status;
-        $this->updatedAt = new DateTimeImmutable();
-        $this->pushDomainEvent(new ProductUpdated($this->id->value()));
     }
 
     private function __construct()
