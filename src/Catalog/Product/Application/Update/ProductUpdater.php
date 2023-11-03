@@ -19,7 +19,6 @@ readonly class ProductUpdater
     public function update(ProductId $id, UpdateProductProps $props): Product
     {
         $product = $this->finder->findOne($id);
-
         $product->update($props);
 
         $this->domainEventPublisher->publish(...$product->pullDomainEvents());
