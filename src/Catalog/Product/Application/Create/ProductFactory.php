@@ -6,6 +6,7 @@ use App\Catalog\Product\Domain\Model\Product;
 use App\Catalog\Product\Domain\Model\ProductDescription;
 use App\Catalog\Product\Domain\Model\ProductId;
 use App\Catalog\Product\Domain\Model\ProductName;
+use App\Catalog\Product\Domain\Model\ProductStatus;
 use App\Catalog\Product\Domain\Repository\ProductRepository;
 use Ddd\Domain\Event\DomainEventPublisher;
 
@@ -17,9 +18,9 @@ readonly class ProductFactory
     ) {
     }
 
-    public function create(ProductId $id, ProductName $name, ProductDescription $description): Product
+    public function create(ProductId $id, ProductName $name, ProductDescription $description, ProductStatus $status): Product
     {
-        $product = Product::create($id, $name, $description);
+        $product = Product::create($id, $name, $description, $status);
 
         $this->repository->add($product);
 

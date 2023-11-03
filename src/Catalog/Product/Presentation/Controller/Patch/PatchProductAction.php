@@ -25,6 +25,7 @@ class PatchProductAction extends CqsAction
             $id,
             $payload->name ?? $product->name,
             $payload->description ?? $product->description,
+            $payload->status ?? $product->status,
         ));
     }
 }

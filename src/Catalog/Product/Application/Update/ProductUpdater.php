@@ -7,6 +7,7 @@ use App\Catalog\Product\Domain\Model\Product;
 use App\Catalog\Product\Domain\Model\ProductDescription;
 use App\Catalog\Product\Domain\Model\ProductId;
 use App\Catalog\Product\Domain\Model\ProductName;
+use App\Catalog\Product\Domain\Model\ProductStatus;
 use Ddd\Domain\Event\DomainEventPublisher;
 
 readonly class ProductUpdater
@@ -17,11 +18,11 @@ readonly class ProductUpdater
     ) {
     }
 
-    public function update(ProductId $id, ProductName $name, ProductDescription $description): Product
+    public function update(ProductId $id, ProductName $name, ProductDescription $description, ProductStatus $status): Product
     {
         $product = $this->finder->findOne($id);
 
-        $product->update($name, $description);
+        $product->update($name, $description, $status);
 
         $this->domainEventPublisher->publish(...$product->pullDomainEvents());
 

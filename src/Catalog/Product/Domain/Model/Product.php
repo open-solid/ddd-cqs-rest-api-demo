@@ -20,14 +20,14 @@ class Product
     private ProductDescription $description;
     private ProductStatus $status;
 
-    public static function create(ProductId $id, ProductName $name, ProductDescription $description): self
+    public static function create(ProductId $id, ProductName $name, ProductDescription $description, ProductStatus $status = ProductStatus::DRAFT): self
     {
         $self = new self();
         $self->id = $id;
         $self->name = $name;
         $self->description = $description;
         $self->createdAt = new DateTimeImmutable();
-        $self->status = ProductStatus::DRAFT;
+        $self->status = $status;
         $self->pushDomainEvent(new ProductCreated($id->value()));
 
         return $self;
@@ -53,10 +53,11 @@ class Product
         return $this->status;
     }
 
-    public function update(ProductName $name, ProductDescription $description): void
+    public function update(ProductName $name, ProductDescription $description, ProductStatus $status): void
     {
         $this->name = $name;
         $this->description = $description;
+        $this->status = $status;
         $this->updatedAt = new DateTimeImmutable();
         $this->pushDomainEvent(new ProductUpdated($this->id->value()));
     }

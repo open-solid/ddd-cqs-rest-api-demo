@@ -24,6 +24,7 @@ class PutProductAction extends CommandAction
             $id,
             $payload->name,
             $payload->description,
+            $payload->status,
         ));
     }
 }

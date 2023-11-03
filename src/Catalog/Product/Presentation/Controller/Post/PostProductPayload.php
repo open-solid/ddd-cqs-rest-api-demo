@@ -2,6 +2,7 @@
 
 namespace App\Catalog\Product\Presentation\Controller\Post;
 
+use App\Catalog\Product\Domain\Model\ProductStatus;
 use OpenApi\Attributes\Schema;
 use Yceruto\OpenApiBundle\Attribute\Property;
 
@@ -31,4 +32,7 @@ class PostProductPayload
         minLength: 10,
     )]
     public string $description;
+
+    #[Property(enum: [ProductStatus::DRAFT, ProductStatus::PUBLISHED])]
+    public string $status;
 }

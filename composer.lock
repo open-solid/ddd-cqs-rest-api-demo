@@ -4420,12 +4420,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/yceruto/cqs-bundle.git",
-                "reference": "96a69123d6d2613f6bf6f9348eda2fde689d89d6"
+                "reference": "bbd292d8c7dd7b62fa1927525d24c42dee3cdcdf"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/yceruto/cqs-bundle/zipball/96a69123d6d2613f6bf6f9348eda2fde689d89d6",
-                "reference": "96a69123d6d2613f6bf6f9348eda2fde689d89d6",
+                "url": "https://api.github.com/repos/yceruto/cqs-bundle/zipball/bbd292d8c7dd7b62fa1927525d24c42dee3cdcdf",
+                "reference": "bbd292d8c7dd7b62fa1927525d24c42dee3cdcdf",
                 "shasum": ""
             },
             "require": {
@@ -4460,7 +4460,7 @@
                 "issues": "https://github.com/yceruto/cqs-bundle/issues",
                 "source": "https://github.com/yceruto/cqs-bundle/tree/main"
             },
-            "time": "2023-11-02T13:23:08+00:00"
+            "time": "2023-11-03T14:43:22+00:00"
         },
         {
             "name": "yceruto/ddd",
@@ -5413,12 +5413,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/Roave/SecurityAdvisories.git",
-                "reference": "a21ad4bc3052f3f1fd5fa2e2f215d655cd472021"
+                "reference": "2f42c940aab53728fa307ebd78c42494fcd663d1"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/Roave/SecurityAdvisories/zipball/a21ad4bc3052f3f1fd5fa2e2f215d655cd472021",
-                "reference": "a21ad4bc3052f3f1fd5fa2e2f215d655cd472021",
+                "url": "https://api.github.com/repos/Roave/SecurityAdvisories/zipball/2f42c940aab53728fa307ebd78c42494fcd663d1",
+                "reference": "2f42c940aab53728fa307ebd78c42494fcd663d1",
                 "shasum": ""
             },
             "conflict": {
@@ -5581,6 +5581,7 @@
                 "fluidtypo3/vhs": "<5.1.1",
                 "fof/byobu": ">=0.3.0.0-beta2,<1.1.7",
                 "fof/upload": "<1.2.3",
+                "foodcoopshop/foodcoopshop": "<3.6.1",
                 "fooman/tcpdf": "<6.2.22",
                 "forkcms/forkcms": "<5.11.1",
                 "fossar/tcpdf-parser": "<6.2.22",
@@ -6091,7 +6092,7 @@
                     "type": "tidelift"
                 }
             ],
-            "time": "2023-11-02T10:04:43+00:00"
+            "time": "2023-11-02T21:04:20+00:00"
         },
         {
             "name": "sebastian/cli-parser",
