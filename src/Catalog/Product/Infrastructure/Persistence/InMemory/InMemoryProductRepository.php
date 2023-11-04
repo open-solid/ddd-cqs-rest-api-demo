@@ -9,6 +9,7 @@ use App\Catalog\Product\Domain\Model\ProductName;
 use App\Catalog\Product\Domain\Model\ProductStatus;
 use App\Catalog\Product\Domain\Model\Props\CreateProductProps;
 use App\Catalog\Product\Domain\Repository\ProductRepository;
+use Money\Money;
 
 class InMemoryProductRepository implements ProductRepository
 {
@@ -20,6 +21,7 @@ class InMemoryProductRepository implements ProductRepository
             ProductId::from('f81d4fae-7dec-11d0-a765-00a0c91e6bf9'),
             ProductName::from('Product A'),
             ProductDescription::from('Product description'),
+            Money::EUR(1499),
             ProductStatus::DRAFT,
         )));
     }

@@ -22,6 +22,8 @@ class PostProductAction extends CommandAction
             $payload->id ?? ProductId::generate(),
             $payload->name,
             $payload->description,
+            $payload->price->amount,
+            $payload->price->currency,
             $payload->status,
         ));
     }

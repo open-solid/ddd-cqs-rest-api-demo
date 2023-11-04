@@ -19,6 +19,10 @@ doctrine:
                 type: xml
                 dir: '%kernel.project_dir%/src/Catalog/Product/Infrastructure/Persistence/Doctrine/Mapping'
                 prefix: 'App\Catalog\Product\Domain\Model'
+            Money:
+                type: xml
+                dir: '%kernel.project_dir%/src/Catalog/Product/Infrastructure/Persistence/Doctrine/Money/Mapping'
+                prefix: 'Money'
 
 when@test:
     doctrine:

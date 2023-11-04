@@ -9,6 +9,7 @@ use App\Catalog\Product\Domain\Model\Props\UpdateProductProps;
 use DateTimeImmutable;
 use Ddd\Domain\Entity\AggregateRoot;
 use Ddd\Domain\Trait\Time\Timestamp;
+use Money\Money;
 
 class Product
 {
@@ -20,25 +21,28 @@ class Product
     private ProductName $name;
     private ProductDescription $description;
     private ProductStatus $status;
+    private Money $price;
 
     public static function create(CreateProductProps $props): self
     {
-        $self = new self();
-        $self->id = $props->id;
-        $self->name = $props->name;
-        $self->description = $props->description;
-        $self->status = $props->status;
-        $self->createdAt = new DateTimeImmutable();
+        $product = new self();
+        $product->id = $props->id;
+        $product->name = $props->name;
+        $product->description = $props->description;
+        $product->price = $props->price;
+        $product->status = $props->status;
+        $product->createdAt = new DateTimeImmutable();
 
-        $self->pushDomainEvent(new ProductCreated($props->id->value()));
+        $product->pushDomainEvent(new ProductCreated($props->id->value()));
 
-        return $self;
+        return $product;
     }
 
     public function update(UpdateProductProps $props): void
     {
         $this->name = $props->name;
         $this->description = $props->description;
+        $this->price = $props->price;
         $this->status = $props->status;
         $this->updatedAt = new DateTimeImmutable();
         $this->pushDomainEvent(new ProductUpdated($this->id->value()));
@@ -57,6 +61,11 @@ class Product
     public function description(): ProductDescription
     {
         return $this->description;
+    }
+
+    public function price(): Money
+    {
+        return $this->price;
     }
 
     public function status(): ProductStatus

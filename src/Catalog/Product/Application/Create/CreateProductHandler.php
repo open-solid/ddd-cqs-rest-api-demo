@@ -8,6 +8,8 @@ use App\Catalog\Product\Domain\Model\ProductName;
 use App\Catalog\Product\Domain\Model\ProductStatus;
 use App\Catalog\Product\Domain\Model\Props\CreateProductProps;
 use App\Catalog\Product\Domain\View\ProductNewView;
+use Money\Currency;
+use Money\Money;
 use Yceruto\CqsBundle\Attribute\AsCommandHandler;
 
 #[AsCommandHandler]
@@ -23,6 +25,7 @@ readonly class CreateProductHandler
             ProductId::from($command->id),
             ProductName::from($command->name),
             ProductDescription::from($command->description),
+            new Money($command->priceAmount, new Currency($command->priceCurrency)),
             ProductStatus::from($command->status),
         ));
 

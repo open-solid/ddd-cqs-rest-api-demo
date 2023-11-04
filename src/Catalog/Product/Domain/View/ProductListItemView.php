@@ -5,6 +5,7 @@ namespace App\Catalog\Product\Domain\View;
 use App\Catalog\Product\Domain\Model\Product;
 use App\Catalog\Product\Domain\Model\ProductStatus;
 use DateTimeImmutable;
+use Money\Money;
 use OpenApi\Attributes\Schema;
 use Yceruto\OpenApiBundle\Attribute\Property;
 
@@ -20,6 +21,9 @@ readonly class ProductListItemView
     public string $name;
 
     #[Property]
+    public ProductPriceView $price;
+
+    #[Property]
     public ProductStatus $status;
 
     #[Property]
@@ -29,6 +33,7 @@ readonly class ProductListItemView
     {
         $this->id = $product->id();
         $this->name = $product->name();
+        $this->price = ProductPriceView::from($product->price());
         $this->status = $product->status();
         $this->createdAt = $product->createdAt();
     }

@@ -11,6 +11,7 @@
         <embedded name="id"/>
         <embedded name="name"/>
         <embedded name="description"/>
+        <embedded name="price"/>
         <field name="status" length="10"/>
         <field name="createdAt"/>
         <field name="updatedAt" nullable="true"/>

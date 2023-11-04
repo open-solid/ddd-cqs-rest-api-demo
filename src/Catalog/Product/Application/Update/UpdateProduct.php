@@ -14,6 +14,8 @@ class UpdateProduct implements Command
         public string $id,
         public string $name,
         public string $description,
+        public string $priceAmount,
+        public string $priceCurrency,
         public string $status,
     ) {
     }
