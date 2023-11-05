@@ -5,13 +5,13 @@ namespace App\Catalog\Product\Application\Create;
 use App\Catalog\Product\Domain\Model\Product;
 use App\Catalog\Product\Domain\Model\Props\CreateProductProps;
 use App\Catalog\Product\Domain\Repository\ProductRepository;
-use Ddd\Domain\Event\DomainEventPublisher;
+use Ddd\Domain\Event\DomainEventBus;
 
 readonly class ProductFactory
 {
     public function __construct(
         private ProductRepository $repository,
-        private DomainEventPublisher $domainEventPublisher,
+        private DomainEventBus $domainEventBus,
     ) {
     }
 
@@ -21,7 +21,7 @@ readonly class ProductFactory
 
         $this->repository->add($product);
 
-        $this->domainEventPublisher->publish(...$product->pullDomainEvents());
+        $this->domainEventBus->publish(...$product->pullDomainEvents());
 
         return $product;
     }

@@ -6,14 +6,14 @@ use App\Catalog\Product\Application\Find\ProductFinder;
 use App\Catalog\Product\Domain\Event\ProductDeleted;
 use App\Catalog\Product\Domain\Model\ProductId;
 use App\Catalog\Product\Domain\Repository\ProductRepository;
-use Ddd\Domain\Event\DomainEventPublisher;
+use Ddd\Domain\Event\DomainEventBus;
 
 readonly class ProductDeleter
 {
     public function __construct(
         private ProductFinder $finder,
         private ProductRepository $repository,
-        private DomainEventPublisher $domainEventPublisher,
+        private DomainEventBus $domainEventBus,
     ) {
     }
 
@@ -23,6 +23,6 @@ readonly class ProductDeleter
 
         $this->repository->remove($product);
 
-        $this->domainEventPublisher->publish(new ProductDeleted($id->value()));
+        $this->domainEventBus->publish(new ProductDeleted($id->value()));
     }
 }

@@ -1351,22 +1351,21 @@
         },
         {
             "name": "psr/container",
-            "version": "dev-master",
+            "version": "2.0.2",
             "source": {
                 "type": "git",
                 "url": "https://github.com/php-fig/container.git",
-                "reference": "707984727bd5b2b670e59559d3ed2500240cf875"
+                "reference": "c71ecc56dfe541dbd90c5360474fbc405f8d5963"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/php-fig/container/zipball/707984727bd5b2b670e59559d3ed2500240cf875",
-                "reference": "707984727bd5b2b670e59559d3ed2500240cf875",
+                "url": "https://api.github.com/repos/php-fig/container/zipball/c71ecc56dfe541dbd90c5360474fbc405f8d5963",
+                "reference": "c71ecc56dfe541dbd90c5360474fbc405f8d5963",
                 "shasum": ""
             },
             "require": {
                 "php": ">=7.4.0"
             },
-            "default-branch": true,
             "type": "library",
             "extra": {
                 "branch-alias": {
@@ -1399,9 +1398,9 @@
             ],
             "support": {
                 "issues": "https://github.com/php-fig/container/issues",
-                "source": "https://github.com/php-fig/container"
+                "source": "https://github.com/php-fig/container/tree/2.0.2"
             },
-            "time": "2023-09-22T11:11:30+00:00"
+            "time": "2021-11-05T16:47:00+00:00"
         },
         {
             "name": "psr/event-dispatcher",
@@ -4544,17 +4543,17 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/yceruto/cqs.git",
-                "reference": "8076f9476129d1a385e4e4b1c514e4d71114dd54"
+                "reference": "1da8e22f122647e6491089db61690428b664dbad"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/yceruto/cqs/zipball/8076f9476129d1a385e4e4b1c514e4d71114dd54",
-                "reference": "8076f9476129d1a385e4e4b1c514e4d71114dd54",
+                "url": "https://api.github.com/repos/yceruto/cqs/zipball/1da8e22f122647e6491089db61690428b664dbad",
+                "reference": "1da8e22f122647e6491089db61690428b664dbad",
                 "shasum": ""
             },
             "require": {
                 "php": ">=8.2",
-                "psr/container": "2.0.x-dev"
+                "yceruto/messenger": "dev-main"
             },
             "require-dev": {
                 "phpunit/phpunit": "^10.0",
@@ -4583,7 +4582,7 @@
                 "issues": "https://github.com/yceruto/cqs/issues",
                 "source": "https://github.com/yceruto/cqs/tree/main"
             },
-            "time": "2023-11-01T21:11:29+00:00"
+            "time": "2023-11-05T03:42:41+00:00"
         },
         {
             "name": "yceruto/cqs-bundle",
@@ -4591,12 +4590,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/yceruto/cqs-bundle.git",
-                "reference": "bbd292d8c7dd7b62fa1927525d24c42dee3cdcdf"
+                "reference": "d66ce9a2863b7112cb86d789263c454836d36f48"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/yceruto/cqs-bundle/zipball/bbd292d8c7dd7b62fa1927525d24c42dee3cdcdf",
-                "reference": "bbd292d8c7dd7b62fa1927525d24c42dee3cdcdf",
+                "url": "https://api.github.com/repos/yceruto/cqs-bundle/zipball/d66ce9a2863b7112cb86d789263c454836d36f48",
+                "reference": "d66ce9a2863b7112cb86d789263c454836d36f48",
                 "shasum": ""
             },
             "require": {
@@ -4631,7 +4630,7 @@
                 "issues": "https://github.com/yceruto/cqs-bundle/issues",
                 "source": "https://github.com/yceruto/cqs-bundle/tree/main"
             },
-            "time": "2023-11-03T14:43:22+00:00"
+            "time": "2023-11-05T06:32:35+00:00"
         },
         {
             "name": "yceruto/ddd",
@@ -4639,18 +4638,19 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/yceruto/ddd.git",
-                "reference": "64e16790c20c092fa792c630b2610e0d5984e0d0"
+                "reference": "6e0174171a8eb65bd611d8d0bdb5fefa291ada8e"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/yceruto/ddd/zipball/64e16790c20c092fa792c630b2610e0d5984e0d0",
-                "reference": "64e16790c20c092fa792c630b2610e0d5984e0d0",
+                "url": "https://api.github.com/repos/yceruto/ddd/zipball/6e0174171a8eb65bd611d8d0bdb5fefa291ada8e",
+                "reference": "6e0174171a8eb65bd611d8d0bdb5fefa291ada8e",
                 "shasum": ""
             },
             "require": {
                 "php": ">=8.2",
                 "symfony/string": "^7.0",
-                "symfony/uid": "^7.0"
+                "symfony/uid": "^7.0",
+                "yceruto/messenger": "dev-main"
             },
             "require-dev": {
                 "phpunit/phpunit": "^10.0",
@@ -4679,7 +4679,7 @@
                 "issues": "https://github.com/yceruto/ddd/issues",
                 "source": "https://github.com/yceruto/ddd/tree/main"
             },
-            "time": "2023-11-01T20:49:49+00:00"
+            "time": "2023-11-05T05:25:12+00:00"
         },
         {
             "name": "yceruto/ddd-bundle",
@@ -4687,19 +4687,20 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/yceruto/ddd-bundle.git",
-                "reference": "815bf9ec89c50b98879226c5a98b47686411d75f"
+                "reference": "f1bfb97a33d58d1fff063948d505484f9776c139"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/yceruto/ddd-bundle/zipball/815bf9ec89c50b98879226c5a98b47686411d75f",
-                "reference": "815bf9ec89c50b98879226c5a98b47686411d75f",
+                "url": "https://api.github.com/repos/yceruto/ddd-bundle/zipball/f1bfb97a33d58d1fff063948d505484f9776c139",
+                "reference": "f1bfb97a33d58d1fff063948d505484f9776c139",
                 "shasum": ""
             },
             "require": {
                 "php": ">=8.2",
                 "symfony/dependency-injection": "^7.0",
                 "symfony/http-kernel": "^7.0",
-                "yceruto/ddd": "dev-main"
+                "yceruto/ddd": "dev-main",
+                "yceruto/messenger": "dev-main"
             },
             "require-dev": {
                 "phpunit/phpunit": "^10.0"
@@ -4726,7 +4727,55 @@
                 "issues": "https://github.com/yceruto/ddd-bundle/issues",
                 "source": "https://github.com/yceruto/ddd-bundle/tree/main"
             },
-            "time": "2023-10-26T20:51:33+00:00"
+            "time": "2023-11-05T06:40:34+00:00"
+        },
+        {
+            "name": "yceruto/messenger",
+            "version": "dev-main",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/yceruto/messenger.git",
+                "reference": "ec97d3df319021f8e670223cb1b5d0e149727eb6"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/yceruto/messenger/zipball/ec97d3df319021f8e670223cb1b5d0e149727eb6",
+                "reference": "ec97d3df319021f8e670223cb1b5d0e149727eb6",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=8.2",
+                "psr/container": "^2.0"
+            },
+            "require-dev": {
+                "phpunit/phpunit": "^10.0",
+                "psalm/plugin-phpunit": "^0.18",
+                "symfony/dependency-injection": "^7.0",
+                "vimeo/psalm": "^6.0"
+            },
+            "default-branch": true,
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "Yceruto\\Messenger\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Yonel Ceruto",
+                    "email": "yonelceruto@gmail.com"
+                }
+            ],
+            "description": "Simple Messenger Component",
+            "support": {
+                "issues": "https://github.com/yceruto/messenger/issues",
+                "source": "https://github.com/yceruto/messenger/tree/main"
+            },
+            "time": "2023-11-05T06:29:50+00:00"
         },
         {
             "name": "yceruto/open-api-bundle",

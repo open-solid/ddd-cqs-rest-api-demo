@@ -19,7 +19,7 @@ doctrine:
                 type: xml
                 dir: '%kernel.project_dir%/src/Catalog/Product/Infrastructure/Persistence/Doctrine/Mapping'
                 prefix: 'App\Catalog\Product\Domain\Model'
-            Money:
+            Money: # TODO: add default money mapping in MoneyBundle
                 type: xml
                 dir: '%kernel.project_dir%/src/Catalog/Product/Infrastructure/Persistence/Doctrine/Money/Mapping'
                 prefix: 'Money'
