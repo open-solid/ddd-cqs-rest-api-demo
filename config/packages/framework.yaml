@@ -19,8 +19,6 @@ framework:
         log: true
 
     exceptions:
-#        Symfony\Component\Validator\Exception\ValidationFailedException:
-#            status_code: 400
         Ddd\Domain\Error\EntityNotFound:
             status_code: 404
         Ddd\Domain\Error\DomainError:
