@@ -137,6 +137,9 @@
     "yceruto/ddd-bundle": {
         "version": "dev-main"
     },
+    "yceruto/money-bundle": {
+        "version": "v1.3.2"
+    },
     "yceruto/open-api-bundle": {
         "version": "dev-main"
     }

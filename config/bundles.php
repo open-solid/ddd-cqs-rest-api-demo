@@ -5,5 +5,6 @@ return [
     Yceruto\OpenApiBundle\OpenApiBundle::class => ['all' => true],
     Yceruto\DddBundle\DddBundle::class => ['all' => true],
     Yceruto\CqsBundle\CqsBundle::class => ['all' => true],
+    Yceruto\MoneyBundle\MoneyBundle::class => ['all' => true],
     Doctrine\Bundle\DoctrineBundle\DoctrineBundle::class => ['all' => true],
 ];

@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "43e6415e7031a48c879320a0614a78b0",
+    "content-hash": "2ed2a4ca46517671d05ab89518bc871b",
     "packages": [
         {
             "name": "doctrine/annotations",
@@ -4735,12 +4735,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/yceruto/messenger.git",
-                "reference": "19976bc015c8474a927488a9dee0f520d80a3e33"
+                "reference": "99cac4fff13d513f9c883795ea2094363454e36d"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/yceruto/messenger/zipball/19976bc015c8474a927488a9dee0f520d80a3e33",
-                "reference": "19976bc015c8474a927488a9dee0f520d80a3e33",
+                "url": "https://api.github.com/repos/yceruto/messenger/zipball/99cac4fff13d513f9c883795ea2094363454e36d",
+                "reference": "99cac4fff13d513f9c883795ea2094363454e36d",
                 "shasum": ""
             },
             "require": {
@@ -4775,7 +4775,74 @@
                 "issues": "https://github.com/yceruto/messenger/issues",
                 "source": "https://github.com/yceruto/messenger/tree/main"
             },
-            "time": "2023-11-07T01:25:26+00:00"
+            "time": "2023-11-07T02:05:06+00:00"
+        },
+        {
+            "name": "yceruto/money-bundle",
+            "version": "v1.3.3",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/yceruto/money-bundle.git",
+                "reference": "b533d0b253c1baa21a5c80ee90ad8d3656bdc7bb"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/yceruto/money-bundle/zipball/b533d0b253c1baa21a5c80ee90ad8d3656bdc7bb",
+                "reference": "b533d0b253c1baa21a5c80ee90ad8d3656bdc7bb",
+                "shasum": ""
+            },
+            "require": {
+                "moneyphp/money": "^4.1",
+                "php": ">=8.1",
+                "symfony/config": "^5.4|^6.0|^7.0",
+                "symfony/dependency-injection": "^5.4|^6.0|^7.0",
+                "symfony/http-kernel": "^5.4|^6.0|^7.0"
+            },
+            "require-dev": {
+                "doctrine/doctrine-bundle": "^2.8",
+                "doctrine/orm": "^2.14",
+                "ext-gmp": "*",
+                "ext-intl": "*",
+                "phpunit/phpunit": "^9.5",
+                "psalm/plugin-phpunit": "^0.18.4",
+                "psalm/plugin-symfony": "^5.0",
+                "roave/security-advisories": "dev-latest",
+                "symfony/form": "^6.2",
+                "symfony/twig-bridge": "^6.2",
+                "twig/twig": "^3.5",
+                "vimeo/psalm": "^5.4"
+            },
+            "type": "symfony-bundle",
+            "extra": {
+                "branch-alias": {
+                    "dev-main": "1.x-dev"
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Yceruto\\MoneyBundle\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Yonel Ceruto Gonzalez",
+                    "email": "yonelceruto@gmail.com"
+                }
+            ],
+            "description": "Symfony bundle for Money PHP",
+            "keywords": [
+                "money",
+                "symfony-bundle"
+            ],
+            "support": {
+                "issues": "https://github.com/yceruto/money-bundle/issues",
+                "source": "https://github.com/yceruto/money-bundle/tree/v1.3.3"
+            },
+            "time": "2023-11-07T02:33:54+00:00"
         },
         {
             "name": "yceruto/open-api-bundle",
