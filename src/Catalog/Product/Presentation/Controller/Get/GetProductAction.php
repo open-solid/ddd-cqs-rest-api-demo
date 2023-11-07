@@ -15,8 +15,9 @@ class GetProductAction extends QueryAction
         summary: 'Get a product',
         tags: ['Product'],
     )]
-    public function __invoke(#[Path(format: 'uuid')] string $id): ProductView
-    {
+    public function __invoke(
+        #[Path(example: 'f81d4fae-7dec-11d0-a765-00a0c91e6bf9', format: 'uuid')] string $id,
+    ): ProductView {
         return $this->queryBus()->ask(new FindProduct($id));
     }
 }

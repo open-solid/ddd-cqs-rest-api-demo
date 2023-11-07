@@ -17,15 +17,19 @@ class PatchProductAction extends CqsAction
         summary: 'Update a product partially',
         tags: ['Product'],
     )]
-    public function __invoke(#[Path(format: 'uuid')] string $id, #[Payload] PatchProductPayload $payload): ProductView
-    {
+    public function __invoke(
+        #[Path(example: 'f81d4fae-7dec-11d0-a765-00a0c91e6bf9', format: 'uuid')] string $id,
+        #[Payload] PatchProductPayload $payload,
+    ): ProductView {
         $product = $this->queryBus()->ask(new FindProduct($id));
 
         return $this->commandBus()->execute(new UpdateProduct(
             $id,
             $payload->name ?? $product->name,
             $payload->description ?? $product->description,
-            $payload->status ?? $product->status,
+            $payload->price?->amount ?? $product->price->amount,
+            $payload->price?->currency ?? $product->price->currency,
+            $payload->status ?? $product->status->value,
         ));
     }
 }

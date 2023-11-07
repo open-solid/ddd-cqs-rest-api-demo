@@ -18,12 +18,16 @@ class PutProductAction extends CommandAction
         summary: 'Update a product',
         tags: ['Product'],
     )]
-    public function __invoke(#[Path(format: 'uuid')] string $id, #[Payload] PutProductPayload $payload): ProductView
-    {
+    public function __invoke(
+        #[Path(example: 'f81d4fae-7dec-11d0-a765-00a0c91e6bf9', format: 'uuid')] string $id,
+        #[Payload] PutProductPayload $payload,
+    ): ProductView {
         return $this->commandBus()->execute(new UpdateProduct(
             $id,
             $payload->name,
             $payload->description,
+            $payload->price->amount,
+            $payload->price->currency,
             $payload->status,
         ));
     }
