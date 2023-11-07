@@ -4,13 +4,11 @@ namespace App\Catalog\Product\Presentation\Controller\Put;
 
 use App\Catalog\Product\Application\Update\UpdateProduct;
 use App\Catalog\Product\Domain\View\ProductView;
-use Symfony\Component\HttpKernel\Attribute\AsController;
 use Yceruto\CqsBundle\Controller\CommandAction;
 use Yceruto\OpenApiBundle\Attribute\Path;
 use Yceruto\OpenApiBundle\Attribute\Payload;
 use Yceruto\OpenApiBundle\Routing\Attribute\Put;
 
-#[AsController]
 class PutProductAction extends CommandAction
 {
     #[Put(

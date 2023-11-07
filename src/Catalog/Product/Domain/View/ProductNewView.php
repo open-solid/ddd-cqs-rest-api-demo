@@ -5,7 +5,6 @@ namespace App\Catalog\Product\Domain\View;
 use App\Catalog\Product\Domain\Model\Product;
 use App\Catalog\Product\Domain\Model\ProductStatus;
 use DateTimeImmutable;
-use Money\Money;
 use OpenApi\Attributes\Schema;
 use Yceruto\OpenApiBundle\Attribute\Property;
 
