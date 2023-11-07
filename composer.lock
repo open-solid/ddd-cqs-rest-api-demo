@@ -518,12 +518,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/doctrine/DoctrineBundle.git",
-                "reference": "888d37fab86dea08119ff3920c39a218e70b9c36"
+                "reference": "3cdc41115e1ba97e8890eceddb78760529434516"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/doctrine/DoctrineBundle/zipball/888d37fab86dea08119ff3920c39a218e70b9c36",
-                "reference": "888d37fab86dea08119ff3920c39a218e70b9c36",
+                "url": "https://api.github.com/repos/doctrine/DoctrineBundle/zipball/3cdc41115e1ba97e8890eceddb78760529434516",
+                "reference": "3cdc41115e1ba97e8890eceddb78760529434516",
                 "shasum": ""
             },
             "require": {
@@ -548,7 +548,7 @@
             },
             "require-dev": {
                 "doctrine/annotations": "^1 || ^2",
-                "doctrine/coding-standard": "^9.0",
+                "doctrine/coding-standard": "^12",
                 "doctrine/deprecations": "^1.0",
                 "doctrine/orm": "^2.14 || ^3.0",
                 "friendsofphp/proxy-manager-lts": "^1.0",
@@ -628,7 +628,7 @@
                     "type": "tidelift"
                 }
             ],
-            "time": "2023-10-30T10:14:27+00:00"
+            "time": "2023-11-06T07:45:48+00:00"
         },
         {
             "name": "doctrine/event-manager",
@@ -966,12 +966,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/doctrine/orm.git",
-                "reference": "16028e4fd3202e21cecbd87071e46b40f7eda8bf"
+                "reference": "be62f72b3804c6ff70311fe5b3f882579ffae9fc"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/doctrine/orm/zipball/16028e4fd3202e21cecbd87071e46b40f7eda8bf",
-                "reference": "16028e4fd3202e21cecbd87071e46b40f7eda8bf",
+                "url": "https://api.github.com/repos/doctrine/orm/zipball/be62f72b3804c6ff70311fe5b3f882579ffae9fc",
+                "reference": "be62f72b3804c6ff70311fe5b3f882579ffae9fc",
                 "shasum": ""
             },
             "require": {
@@ -1059,7 +1059,7 @@
                 "issues": "https://github.com/doctrine/orm/issues",
                 "source": "https://github.com/doctrine/orm/tree/2.17.x"
             },
-            "time": "2023-10-21T17:52:04+00:00"
+            "time": "2023-11-06T19:08:18+00:00"
         },
         {
             "name": "doctrine/persistence",
@@ -4590,12 +4590,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/yceruto/cqs-bundle.git",
-                "reference": "d66ce9a2863b7112cb86d789263c454836d36f48"
+                "reference": "3658e3f99c7ba3c30e01dea4a665ee0f90e57b77"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/yceruto/cqs-bundle/zipball/d66ce9a2863b7112cb86d789263c454836d36f48",
-                "reference": "d66ce9a2863b7112cb86d789263c454836d36f48",
+                "url": "https://api.github.com/repos/yceruto/cqs-bundle/zipball/3658e3f99c7ba3c30e01dea4a665ee0f90e57b77",
+                "reference": "3658e3f99c7ba3c30e01dea4a665ee0f90e57b77",
                 "shasum": ""
             },
             "require": {
@@ -4630,7 +4630,7 @@
                 "issues": "https://github.com/yceruto/cqs-bundle/issues",
                 "source": "https://github.com/yceruto/cqs-bundle/tree/main"
             },
-            "time": "2023-11-05T06:32:35+00:00"
+            "time": "2023-11-07T01:26:51+00:00"
         },
         {
             "name": "yceruto/ddd",
@@ -4687,12 +4687,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/yceruto/ddd-bundle.git",
-                "reference": "f1bfb97a33d58d1fff063948d505484f9776c139"
+                "reference": "30010ab64545ce3f9f5c3f983ed503e354e0e65d"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/yceruto/ddd-bundle/zipball/f1bfb97a33d58d1fff063948d505484f9776c139",
-                "reference": "f1bfb97a33d58d1fff063948d505484f9776c139",
+                "url": "https://api.github.com/repos/yceruto/ddd-bundle/zipball/30010ab64545ce3f9f5c3f983ed503e354e0e65d",
+                "reference": "30010ab64545ce3f9f5c3f983ed503e354e0e65d",
                 "shasum": ""
             },
             "require": {
@@ -4727,7 +4727,7 @@
                 "issues": "https://github.com/yceruto/ddd-bundle/issues",
                 "source": "https://github.com/yceruto/ddd-bundle/tree/main"
             },
-            "time": "2023-11-05T06:40:34+00:00"
+            "time": "2023-11-07T01:29:14+00:00"
         },
         {
             "name": "yceruto/messenger",
@@ -4735,12 +4735,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/yceruto/messenger.git",
-                "reference": "ec97d3df319021f8e670223cb1b5d0e149727eb6"
+                "reference": "19976bc015c8474a927488a9dee0f520d80a3e33"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/yceruto/messenger/zipball/ec97d3df319021f8e670223cb1b5d0e149727eb6",
-                "reference": "ec97d3df319021f8e670223cb1b5d0e149727eb6",
+                "url": "https://api.github.com/repos/yceruto/messenger/zipball/19976bc015c8474a927488a9dee0f520d80a3e33",
+                "reference": "19976bc015c8474a927488a9dee0f520d80a3e33",
                 "shasum": ""
             },
             "require": {
@@ -4775,7 +4775,7 @@
                 "issues": "https://github.com/yceruto/messenger/issues",
                 "source": "https://github.com/yceruto/messenger/tree/main"
             },
-            "time": "2023-11-05T06:29:50+00:00"
+            "time": "2023-11-07T01:25:26+00:00"
         },
         {
             "name": "yceruto/open-api-bundle",
@@ -5633,12 +5633,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/Roave/SecurityAdvisories.git",
-                "reference": "705b497810d1620aaac8779e6b82ef3d266fc6c1"
+                "reference": "acf687d343a847d98f175a9ce4e16483848246fd"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/Roave/SecurityAdvisories/zipball/705b497810d1620aaac8779e6b82ef3d266fc6c1",
-                "reference": "705b497810d1620aaac8779e6b82ef3d266fc6c1",
+                "url": "https://api.github.com/repos/Roave/SecurityAdvisories/zipball/acf687d343a847d98f175a9ce4e16483848246fd",
+                "reference": "acf687d343a847d98f175a9ce4e16483848246fd",
                 "shasum": ""
             },
             "conflict": {
@@ -5802,7 +5802,7 @@
                 "fluidtypo3/vhs": "<5.1.1",
                 "fof/byobu": ">=0.3.0.0-beta2,<1.1.7",
                 "fof/upload": "<1.2.3",
-                "foodcoopshop/foodcoopshop": "<3.6.1",
+                "foodcoopshop/foodcoopshop": ">=3.2,<3.6.1",
                 "fooman/tcpdf": "<6.2.22",
                 "forkcms/forkcms": "<5.11.1",
                 "fossar/tcpdf-parser": "<6.2.22",
@@ -6314,7 +6314,7 @@
                     "type": "tidelift"
                 }
             ],
-            "time": "2023-11-03T20:04:24+00:00"
+            "time": "2023-11-06T17:04:05+00:00"
         },
         {
             "name": "sebastian/cli-parser",
