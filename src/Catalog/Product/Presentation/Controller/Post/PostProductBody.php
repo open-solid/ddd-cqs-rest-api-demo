@@ -3,7 +3,7 @@
 namespace App\Catalog\Product\Presentation\Controller\Post;
 
 use App\Catalog\Product\Domain\Model\ProductStatus;
-use App\Catalog\Product\Presentation\Payload\ProductPricePayload;
+use App\Catalog\Product\Presentation\Model\ProductPriceBody;
 use OpenApi\Attributes\Schema;
 use Yceruto\OpenApiBundle\Attribute\Property;
 
@@ -12,7 +12,7 @@ use Yceruto\OpenApiBundle\Attribute\Property;
     description: 'Create a new product',
     writeOnly: true,
 )]
-class PostProductPayload
+class PostProductBody
 {
     #[Property(
         description: 'The unique identifier of the new product',
@@ -35,7 +35,7 @@ class PostProductPayload
     public string $description;
 
     #[Property(description: 'The price of the product')]
-    public ProductPricePayload $price;
+    public ProductPriceBody $price;
 
     #[Property(
         description: 'The initial status of the product',

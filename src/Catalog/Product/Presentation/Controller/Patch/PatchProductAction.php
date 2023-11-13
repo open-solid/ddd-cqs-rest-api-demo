@@ -7,7 +7,7 @@ use App\Catalog\Product\Application\Update\UpdateProduct;
 use App\Catalog\Product\Domain\View\ProductView;
 use Yceruto\CqsBundle\Controller\CqsAction;
 use Yceruto\OpenApiBundle\Attribute\Path;
-use Yceruto\OpenApiBundle\Attribute\Payload;
+use Yceruto\OpenApiBundle\Attribute\Body;
 use Yceruto\OpenApiBundle\Routing\Attribute\Patch;
 
 class PatchProductAction extends CqsAction
@@ -19,17 +19,17 @@ class PatchProductAction extends CqsAction
     )]
     public function __invoke(
         #[Path(example: 'f81d4fae-7dec-11d0-a765-00a0c91e6bf9', format: 'uuid')] string $id,
-        #[Payload] PatchProductPayload $payload,
+        #[Body] PatchProductBody $body,
     ): ProductView {
         $product = $this->queryBus()->ask(new FindProduct($id));
 
         return $this->commandBus()->execute(new UpdateProduct(
             $id,
-            $payload->name ?? $product->name,
-            $payload->description ?? $product->description,
-            $payload->price?->amount ?? $product->price->amount,
-            $payload->price?->currency ?? $product->price->currency,
-            $payload->status ?? $product->status->value,
+            $body->name ?? $product->name,
+            $body->description ?? $product->description,
+            $body->price?->amount ?? $product->price->amount,
+            $body->price?->currency ?? $product->price->currency,
+            $body->status ?? $product->status->value,
         ));
     }
 }

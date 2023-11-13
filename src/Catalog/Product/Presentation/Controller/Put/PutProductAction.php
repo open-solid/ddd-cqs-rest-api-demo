@@ -6,7 +6,7 @@ use App\Catalog\Product\Application\Update\UpdateProduct;
 use App\Catalog\Product\Domain\View\ProductView;
 use Yceruto\CqsBundle\Controller\CommandAction;
 use Yceruto\OpenApiBundle\Attribute\Path;
-use Yceruto\OpenApiBundle\Attribute\Payload;
+use Yceruto\OpenApiBundle\Attribute\Body;
 use Yceruto\OpenApiBundle\Routing\Attribute\Put;
 
 class PutProductAction extends CommandAction
@@ -18,15 +18,15 @@ class PutProductAction extends CommandAction
     )]
     public function __invoke(
         #[Path(example: 'f81d4fae-7dec-11d0-a765-00a0c91e6bf9', format: 'uuid')] string $id,
-        #[Payload] PutProductPayload $payload,
+        #[Body] PutProductBody $body,
     ): ProductView {
         return $this->commandBus()->execute(new UpdateProduct(
             $id,
-            $payload->name,
-            $payload->description,
-            $payload->price->amount,
-            $payload->price->currency,
-            $payload->status,
+            $body->name,
+            $body->description,
+            $body->price->amount,
+            $body->price->currency,
+            $body->status,
         ));
     }
 }

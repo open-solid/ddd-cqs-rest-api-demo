@@ -6,7 +6,7 @@ use App\Catalog\Product\Application\Create\CreateProduct;
 use App\Catalog\Product\Domain\Model\ProductId;
 use App\Catalog\Product\Domain\View\ProductNewView;
 use Yceruto\CqsBundle\Controller\CommandAction;
-use Yceruto\OpenApiBundle\Attribute\Payload;
+use Yceruto\OpenApiBundle\Attribute\Body;
 use Yceruto\OpenApiBundle\Routing\Attribute\Post;
 
 class PostProductAction extends CommandAction
@@ -16,15 +16,15 @@ class PostProductAction extends CommandAction
         summary: 'Create a product',
         tags: ['Product'],
     )]
-    public function __invoke(#[Payload] PostProductPayload $payload): ProductNewView
+    public function __invoke(#[Body] PostProductBody $body): ProductNewView
     {
         return $this->commandBus()->execute(new CreateProduct(
-            $payload->id ?? ProductId::generate(),
-            $payload->name,
-            $payload->description,
-            $payload->price->amount,
-            $payload->price->currency,
-            $payload->status,
+            $body->id ?? ProductId::generate(),
+            $body->name,
+            $body->description,
+            $body->price->amount,
+            $body->price->currency,
+            $body->status,
         ));
     }
 }

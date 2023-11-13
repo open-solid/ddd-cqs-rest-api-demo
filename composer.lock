@@ -514,16 +514,16 @@
         },
         {
             "name": "doctrine/doctrine-bundle",
-            "version": "2.11.x-dev",
+            "version": "2.11.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/doctrine/DoctrineBundle.git",
-                "reference": "e168b42a64742e03e412d893274bd19d72b1117c"
+                "reference": "ca64ca70247d7b1b56a57c3b147b77253eaea2f5"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/doctrine/DoctrineBundle/zipball/e168b42a64742e03e412d893274bd19d72b1117c",
-                "reference": "e168b42a64742e03e412d893274bd19d72b1117c",
+                "url": "https://api.github.com/repos/doctrine/DoctrineBundle/zipball/ca64ca70247d7b1b56a57c3b147b77253eaea2f5",
+                "reference": "ca64ca70247d7b1b56a57c3b147b77253eaea2f5",
                 "shasum": ""
             },
             "require": {
@@ -539,11 +539,12 @@
                 "symfony/deprecation-contracts": "^2.1 || ^3",
                 "symfony/doctrine-bridge": "^5.4.19 || ^6.0.7 || ^7.0",
                 "symfony/framework-bundle": "^5.4 || ^6.0 || ^7.0",
+                "symfony/polyfill-php80": "^1.15",
                 "symfony/service-contracts": "^1.1.1 || ^2.0 || ^3"
             },
             "conflict": {
                 "doctrine/annotations": ">=3.0",
-                "doctrine/orm": "<2.11 || >=3.0",
+                "doctrine/orm": "<2.14 || >=4.0",
                 "twig/twig": "<1.34 || >=2.0 <2.4"
             },
             "require-dev": {
@@ -612,7 +613,7 @@
             ],
             "support": {
                 "issues": "https://github.com/doctrine/DoctrineBundle/issues",
-                "source": "https://github.com/doctrine/DoctrineBundle/tree/2.11.x"
+                "source": "https://github.com/doctrine/DoctrineBundle/tree/2.11.0"
             },
             "funding": [
                 {
@@ -628,7 +629,7 @@
                     "type": "tidelift"
                 }
             ],
-            "time": "2023-11-11T09:47:04+00:00"
+            "time": "2023-11-12T18:59:02+00:00"
         },
         {
             "name": "doctrine/event-manager",
@@ -4852,24 +4853,28 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/yceruto/open-api-bundle.git",
-                "reference": "2f84d21ccd52d2c8369a7fa1b69b953e168a088f"
+                "reference": "8bf556b51e0d5ac8841d29823316d277339275ce"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/yceruto/open-api-bundle/zipball/2f84d21ccd52d2c8369a7fa1b69b953e168a088f",
-                "reference": "2f84d21ccd52d2c8369a7fa1b69b953e168a088f",
+                "url": "https://api.github.com/repos/yceruto/open-api-bundle/zipball/8bf556b51e0d5ac8841d29823316d277339275ce",
+                "reference": "8bf556b51e0d5ac8841d29823316d277339275ce",
                 "shasum": ""
             },
             "require": {
                 "php": ">=8.2",
                 "symfony/framework-bundle": "^7.0",
+                "symfony/property-access": "^7.0",
                 "symfony/serializer": "^7.0",
                 "symfony/validator": "^7.0",
                 "zircote/swagger-php": "^4.7"
             },
             "require-dev": {
                 "phpunit/phpunit": "^10.0",
-                "roave/security-advisories": "dev-latest"
+                "psalm/plugin-phpunit": "^0.18",
+                "roave/security-advisories": "dev-latest",
+                "symfony/browser-kit": "^7.0",
+                "vimeo/psalm": "^6.0"
             },
             "default-branch": true,
             "type": "symfony-bundle",
@@ -4899,7 +4904,7 @@
                 "issues": "https://github.com/yceruto/open-api-bundle/issues",
                 "source": "https://github.com/yceruto/open-api-bundle/tree/main"
             },
-            "time": "2023-11-01T18:16:27+00:00"
+            "time": "2023-11-12T23:36:17+00:00"
         },
         {
             "name": "zircote/swagger-php",
@@ -5702,12 +5707,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/Roave/SecurityAdvisories.git",
-                "reference": "387a415b0a301c7c1f6fd9caa74bb4bf382ab99c"
+                "reference": "46ed208a0bc44f90d8248bc94adf8a490cff9ef1"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/Roave/SecurityAdvisories/zipball/387a415b0a301c7c1f6fd9caa74bb4bf382ab99c",
-                "reference": "387a415b0a301c7c1f6fd9caa74bb4bf382ab99c",
+                "url": "https://api.github.com/repos/Roave/SecurityAdvisories/zipball/46ed208a0bc44f90d8248bc94adf8a490cff9ef1",
+                "reference": "46ed208a0bc44f90d8248bc94adf8a490cff9ef1",
                 "shasum": ""
             },
             "conflict": {
@@ -5884,7 +5889,7 @@
                 "friendsoftypo3/mediace": ">=7.6.2,<7.6.5",
                 "friendsoftypo3/openid": ">=4.5,<4.5.31|>=4.7,<4.7.16|>=6,<6.0.11|>=6.1,<6.1.6",
                 "froala/wysiwyg-editor": "<3.2.7|>=4.0.1,<=4.1.1",
-                "froxlor/froxlor": "<2.1",
+                "froxlor/froxlor": "<2.1.0.0-beta1",
                 "fuel/core": "<1.8.1",
                 "funadmin/funadmin": "<=3.2|>=3.3.2,<=3.3.3",
                 "gaoming13/wechat-php-sdk": "<=1.10.2",
@@ -6180,7 +6185,7 @@
                 "spoonity/tcpdf": "<6.2.22",
                 "squizlabs/php_codesniffer": ">=1,<2.8.1|>=3,<3.0.1",
                 "ssddanbrown/bookstack": "<22.02.3",
-                "statamic/cms": "<4.10",
+                "statamic/cms": "<4.33",
                 "stormpath/sdk": "<9.9.99",
                 "studio-42/elfinder": "<2.1.62",
                 "subhh/libconnect": "<7.0.8|>=8,<8.1",
@@ -6388,7 +6393,7 @@
                     "type": "tidelift"
                 }
             ],
-            "time": "2023-11-10T18:04:24+00:00"
+            "time": "2023-11-12T16:04:17+00:00"
         },
         {
             "name": "sebastian/cli-parser",

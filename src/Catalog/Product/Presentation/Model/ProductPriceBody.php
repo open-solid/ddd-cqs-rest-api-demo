@@ -1,6 +1,6 @@
 <?php
 
-namespace App\Catalog\Product\Presentation\Payload;
+namespace App\Catalog\Product\Presentation\Model;
 
 use OpenApi\Attributes\Schema;
 use Yceruto\OpenApiBundle\Attribute\Property;
@@ -9,7 +9,7 @@ use Yceruto\OpenApiBundle\Attribute\Property;
     title: 'Product price',
     writeOnly: true
 )]
-class ProductPricePayload
+class ProductPriceBody
 {
     #[Property(
         description: 'The product price amount in cents',
