@@ -45,6 +45,7 @@ class Product
         $this->price = $props->price;
         $this->status = $props->status;
         $this->updatedAt = new DateTimeImmutable();
+
         $this->pushDomainEvent(new ProductUpdated($this->id->value()));
     }
 
