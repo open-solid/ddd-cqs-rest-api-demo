@@ -5,8 +5,8 @@ namespace App\Catalog\Product\Presentation\Controller\Patch;
 use App\Catalog\Product\Application\Find\FindProduct;
 use App\Catalog\Product\Application\Update\UpdateProduct;
 use App\Catalog\Product\Domain\View\ProductView;
+use App\Shared\Presentation\OpenApi\Attribute\Id;
 use Yceruto\CqsBundle\Controller\CqsAction;
-use Yceruto\OpenApiBundle\Attribute\Path;
 use Yceruto\OpenApiBundle\Attribute\Body;
 use Yceruto\OpenApiBundle\Routing\Attribute\Patch;
 
@@ -17,10 +17,8 @@ class PatchProductAction extends CqsAction
         summary: 'Update a product partially',
         tags: ['Product'],
     )]
-    public function __invoke(
-        #[Path(example: 'f81d4fae-7dec-11d0-a765-00a0c91e6bf9', format: 'uuid')] string $id,
-        #[Body] PatchProductBody $body,
-    ): ProductView {
+    public function __invoke(#[Id] string $id, #[Body] PatchProductBody $body): ProductView
+    {
         $product = $this->queryBus()->ask(new FindProduct($id));
 
         return $this->commandBus()->execute(new UpdateProduct(

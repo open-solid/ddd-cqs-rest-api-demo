@@ -4853,12 +4853,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/yceruto/open-api-bundle.git",
-                "reference": "8bf556b51e0d5ac8841d29823316d277339275ce"
+                "reference": "e2e537c2170c129036f4d1fffa88cc30978d06e7"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/yceruto/open-api-bundle/zipball/8bf556b51e0d5ac8841d29823316d277339275ce",
-                "reference": "8bf556b51e0d5ac8841d29823316d277339275ce",
+                "url": "https://api.github.com/repos/yceruto/open-api-bundle/zipball/e2e537c2170c129036f4d1fffa88cc30978d06e7",
+                "reference": "e2e537c2170c129036f4d1fffa88cc30978d06e7",
                 "shasum": ""
             },
             "require": {
@@ -4904,7 +4904,7 @@
                 "issues": "https://github.com/yceruto/open-api-bundle/issues",
                 "source": "https://github.com/yceruto/open-api-bundle/tree/main"
             },
-            "time": "2023-11-12T23:36:17+00:00"
+            "time": "2023-11-14T00:48:52+00:00"
         },
         {
             "name": "zircote/swagger-php",
