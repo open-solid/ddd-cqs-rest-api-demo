@@ -4592,12 +4592,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/yceruto/cqs-bundle.git",
-                "reference": "82a5c436aa6ff028069b2c76bd2c4a8c55131533"
+                "reference": "a06b6593604c7605e0d229b8efa61a69706959d4"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/yceruto/cqs-bundle/zipball/82a5c436aa6ff028069b2c76bd2c4a8c55131533",
-                "reference": "82a5c436aa6ff028069b2c76bd2c4a8c55131533",
+                "url": "https://api.github.com/repos/yceruto/cqs-bundle/zipball/a06b6593604c7605e0d229b8efa61a69706959d4",
+                "reference": "a06b6593604c7605e0d229b8efa61a69706959d4",
                 "shasum": ""
             },
             "require": {
@@ -4632,7 +4632,7 @@
                 "issues": "https://github.com/yceruto/cqs-bundle/issues",
                 "source": "https://github.com/yceruto/cqs-bundle/tree/main"
             },
-            "time": "2023-11-07T03:14:50+00:00"
+            "time": "2023-11-14T20:23:17+00:00"
         },
         {
             "name": "yceruto/ddd",
@@ -4640,12 +4640,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/yceruto/ddd.git",
-                "reference": "6e0174171a8eb65bd611d8d0bdb5fefa291ada8e"
+                "reference": "b5088989a5ac71217e33610d49305d14d83026e7"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/yceruto/ddd/zipball/6e0174171a8eb65bd611d8d0bdb5fefa291ada8e",
-                "reference": "6e0174171a8eb65bd611d8d0bdb5fefa291ada8e",
+                "url": "https://api.github.com/repos/yceruto/ddd/zipball/b5088989a5ac71217e33610d49305d14d83026e7",
+                "reference": "b5088989a5ac71217e33610d49305d14d83026e7",
                 "shasum": ""
             },
             "require": {
@@ -4657,7 +4657,7 @@
             "require-dev": {
                 "phpunit/phpunit": "^10.0",
                 "psalm/plugin-phpunit": "^0.18",
-                "vimeo/psalm": "^6.0"
+                "vimeo/psalm": "^5.0"
             },
             "default-branch": true,
             "type": "library",
@@ -4681,7 +4681,7 @@
                 "issues": "https://github.com/yceruto/ddd/issues",
                 "source": "https://github.com/yceruto/ddd/tree/main"
             },
-            "time": "2023-11-05T05:25:12+00:00"
+            "time": "2023-11-14T19:07:49+00:00"
         },
         {
             "name": "yceruto/ddd-bundle",
@@ -4689,12 +4689,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/yceruto/ddd-bundle.git",
-                "reference": "549182fef561107dd4a803bec3077bc3ae9fbcc3"
+                "reference": "394306216cf967e14348c8821dbb3603c0d85f57"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/yceruto/ddd-bundle/zipball/549182fef561107dd4a803bec3077bc3ae9fbcc3",
-                "reference": "549182fef561107dd4a803bec3077bc3ae9fbcc3",
+                "url": "https://api.github.com/repos/yceruto/ddd-bundle/zipball/394306216cf967e14348c8821dbb3603c0d85f57",
+                "reference": "394306216cf967e14348c8821dbb3603c0d85f57",
                 "shasum": ""
             },
             "require": {
@@ -4729,7 +4729,7 @@
                 "issues": "https://github.com/yceruto/ddd-bundle/issues",
                 "source": "https://github.com/yceruto/ddd-bundle/tree/main"
             },
-            "time": "2023-11-07T03:21:05+00:00"
+            "time": "2023-11-14T20:25:51+00:00"
         },
         {
             "name": "yceruto/messenger",
@@ -4737,12 +4737,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/yceruto/messenger.git",
-                "reference": "f7ff42a5e5bddce5ff29d99f85b1c504d6868138"
+                "reference": "24f5bff2f8d7a7deb15132041f16bcdbd6e64492"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/yceruto/messenger/zipball/f7ff42a5e5bddce5ff29d99f85b1c504d6868138",
-                "reference": "f7ff42a5e5bddce5ff29d99f85b1c504d6868138",
+                "url": "https://api.github.com/repos/yceruto/messenger/zipball/24f5bff2f8d7a7deb15132041f16bcdbd6e64492",
+                "reference": "24f5bff2f8d7a7deb15132041f16bcdbd6e64492",
                 "shasum": ""
             },
             "require": {
@@ -4754,7 +4754,7 @@
                 "phpunit/phpunit": "^10.0",
                 "psalm/plugin-phpunit": "^0.18",
                 "symfony/dependency-injection": "^7.0",
-                "vimeo/psalm": "^6.0"
+                "vimeo/psalm": "^5.0"
             },
             "default-branch": true,
             "type": "library",
@@ -4778,7 +4778,7 @@
                 "issues": "https://github.com/yceruto/messenger/issues",
                 "source": "https://github.com/yceruto/messenger/tree/main"
             },
-            "time": "2023-11-07T02:57:41+00:00"
+            "time": "2023-11-14T19:05:28+00:00"
         },
         {
             "name": "yceruto/money-bundle",
@@ -5707,12 +5707,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/Roave/SecurityAdvisories.git",
-                "reference": "46ed208a0bc44f90d8248bc94adf8a490cff9ef1"
+                "reference": "33d9da7bed2a1ddbb3b3d6532be6c1018debba70"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/Roave/SecurityAdvisories/zipball/46ed208a0bc44f90d8248bc94adf8a490cff9ef1",
-                "reference": "46ed208a0bc44f90d8248bc94adf8a490cff9ef1",
+                "url": "https://api.github.com/repos/Roave/SecurityAdvisories/zipball/33d9da7bed2a1ddbb3b3d6532be6c1018debba70",
+                "reference": "33d9da7bed2a1ddbb3b3d6532be6c1018debba70",
                 "shasum": ""
             },
             "conflict": {
@@ -5826,8 +5826,10 @@
                 "doctrine/orm": ">=2,<2.4.8|>=2.5,<2.5.1|>=2.8.3,<2.8.4",
                 "dolibarr/dolibarr": "<18.0.2",
                 "dompdf/dompdf": "<2.0.2|==2.0.2",
+                "doublethreedigital/guest-entries": "<3.1.2",
                 "drupal/core": "<9.4.14|>=9.5,<9.5.8|>=10,<10.0.8",
                 "drupal/drupal": ">=6,<6.38|>=7,<7.80|>=8,<8.9.16|>=9,<9.1.12|>=9.2,<9.2.4",
+                "duncanmcclean/guest-entries": "<3.1.2",
                 "dweeves/magmi": "<=0.7.24",
                 "ecodev/newsletter": "<=4",
                 "ectouch/ectouch": "<=2.7.2",
@@ -6262,7 +6264,7 @@
                 "twig/twig": "<1.44.7|>=2,<2.15.3|>=3,<3.4.3",
                 "typo3/cms": "<9.5.29|>=10,<10.4.35|>=11,<11.5.23|>=12,<12.2",
                 "typo3/cms-backend": ">=7,<=7.6.50|>=8,<=8.7.39|>=9,<=9.5.24|>=10,<=10.4.13|>=11,<=11.1",
-                "typo3/cms-core": "<8.7.51|>=9,<9.5.42|>=10,<10.4.39|>=11,<11.5.30|>=12,<12.4.4",
+                "typo3/cms-core": "<=8.7.54|>=9,<=9.5.43|>=10,<=10.4.40|>=11,<=11.5.32|>=12,<=12.4.7",
                 "typo3/cms-extbase": "<6.2.24|>=7,<7.6.8|==8.1.1",
                 "typo3/cms-form": ">=8,<=8.7.39|>=9,<=9.5.24|>=10,<=10.4.13|>=11,<=11.1",
                 "typo3/cms-rte-ckeditor": ">=9.5,<9.5.42|>=10,<10.4.39|>=11,<11.5.30",
@@ -6393,7 +6395,7 @@
                     "type": "tidelift"
                 }
             ],
-            "time": "2023-11-12T16:04:17+00:00"
+            "time": "2023-11-14T19:03:52+00:00"
         },
         {
             "name": "sebastian/cli-parser",
