@@ -967,12 +967,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/doctrine/orm.git",
-                "reference": "b41de2a39dcec69167b2658df7f66733de0deb9d"
+                "reference": "1267f482efc926244dfc93a10a3487d3764281df"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/doctrine/orm/zipball/b41de2a39dcec69167b2658df7f66733de0deb9d",
-                "reference": "b41de2a39dcec69167b2658df7f66733de0deb9d",
+                "url": "https://api.github.com/repos/doctrine/orm/zipball/1267f482efc926244dfc93a10a3487d3764281df",
+                "reference": "1267f482efc926244dfc93a10a3487d3764281df",
                 "shasum": ""
             },
             "require": {
@@ -1060,7 +1060,7 @@
                 "issues": "https://github.com/doctrine/orm/issues",
                 "source": "https://github.com/doctrine/orm/tree/2.17.x"
             },
-            "time": "2023-11-11T11:30:09+00:00"
+            "time": "2023-11-14T07:16:00+00:00"
         },
         {
             "name": "doctrine/persistence",
@@ -4853,12 +4853,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/yceruto/open-api-bundle.git",
-                "reference": "e2e537c2170c129036f4d1fffa88cc30978d06e7"
+                "reference": "11cdc4aa7be31683b0a8168719c8355008ff7be5"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/yceruto/open-api-bundle/zipball/e2e537c2170c129036f4d1fffa88cc30978d06e7",
-                "reference": "e2e537c2170c129036f4d1fffa88cc30978d06e7",
+                "url": "https://api.github.com/repos/yceruto/open-api-bundle/zipball/11cdc4aa7be31683b0a8168719c8355008ff7be5",
+                "reference": "11cdc4aa7be31683b0a8168719c8355008ff7be5",
                 "shasum": ""
             },
             "require": {
@@ -4874,7 +4874,7 @@
                 "psalm/plugin-phpunit": "^0.18",
                 "roave/security-advisories": "dev-latest",
                 "symfony/browser-kit": "^7.0",
-                "vimeo/psalm": "^6.0"
+                "vimeo/psalm": "^5.0"
             },
             "default-branch": true,
             "type": "symfony-bundle",
@@ -4904,7 +4904,7 @@
                 "issues": "https://github.com/yceruto/open-api-bundle/issues",
                 "source": "https://github.com/yceruto/open-api-bundle/tree/main"
             },
-            "time": "2023-11-14T00:48:52+00:00"
+            "time": "2023-11-14T14:47:40+00:00"
         },
         {
             "name": "zircote/swagger-php",
