@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "2ed2a4ca46517671d05ab89518bc871b",
+    "content-hash": "00a6d4101a3895dc76dbeb5821a3cb5a",
     "packages": [
         {
             "name": "doctrine/annotations",
@@ -1351,6 +1351,54 @@
             "time": "2021-02-03T23:26:27+00:00"
         },
         {
+            "name": "psr/clock",
+            "version": "1.0.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/php-fig/clock.git",
+                "reference": "e41a24703d4560fd0acb709162f73b8adfc3aa0d"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/php-fig/clock/zipball/e41a24703d4560fd0acb709162f73b8adfc3aa0d",
+                "reference": "e41a24703d4560fd0acb709162f73b8adfc3aa0d",
+                "shasum": ""
+            },
+            "require": {
+                "php": "^7.0 || ^8.0"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "Psr\\Clock\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "PHP-FIG",
+                    "homepage": "https://www.php-fig.org/"
+                }
+            ],
+            "description": "Common interface for reading the clock.",
+            "homepage": "https://github.com/php-fig/clock",
+            "keywords": [
+                "clock",
+                "now",
+                "psr",
+                "psr-20",
+                "time"
+            ],
+            "support": {
+                "issues": "https://github.com/php-fig/clock/issues",
+                "source": "https://github.com/php-fig/clock/tree/1.0.0"
+            },
+            "time": "2022-11-25T14:36:26+00:00"
+        },
+        {
             "name": "psr/container",
             "version": "2.0.2",
             "source": {
@@ -1674,6 +1722,80 @@
                 }
             ],
             "time": "2023-09-25T12:52:38+00:00"
+        },
+        {
+            "name": "symfony/clock",
+            "version": "v7.0.0-RC1",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/symfony/clock.git",
+                "reference": "a5f577ead1554b74f58a932e8d6d84f6680f6d3c"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/symfony/clock/zipball/a5f577ead1554b74f58a932e8d6d84f6680f6d3c",
+                "reference": "a5f577ead1554b74f58a932e8d6d84f6680f6d3c",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=8.2",
+                "psr/clock": "^1.0",
+                "symfony/polyfill-php83": "^1.28"
+            },
+            "provide": {
+                "psr/clock-implementation": "1.0"
+            },
+            "type": "library",
+            "autoload": {
+                "files": [
+                    "Resources/now.php"
+                ],
+                "psr-4": {
+                    "Symfony\\Component\\Clock\\": ""
+                },
+                "exclude-from-classmap": [
+                    "/Tests/"
+                ]
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Nicolas Grekas",
+                    "email": "p@tchwork.com"
+                },
+                {
+                    "name": "Symfony Community",
+                    "homepage": "https://symfony.com/contributors"
+                }
+            ],
+            "description": "Decouples applications from the system clock",
+            "homepage": "https://symfony.com",
+            "keywords": [
+                "clock",
+                "psr20",
+                "time"
+            ],
+            "support": {
+                "source": "https://github.com/symfony/clock/tree/v7.0.0-RC1"
+            },
+            "funding": [
+                {
+                    "url": "https://symfony.com/sponsor",
+                    "type": "custom"
+                },
+                {
+                    "url": "https://github.com/fabpot",
+                    "type": "github"
+                },
+                {
+                    "url": "https://tidelift.com/funding/github/packagist/symfony/symfony",
+                    "type": "tidelift"
+                }
+            ],
+            "time": "2023-10-19T14:20:43+00:00"
         },
         {
             "name": "symfony/config",
@@ -3072,6 +3194,92 @@
                 }
             ],
             "time": "2023-10-28T23:12:22+00:00"
+        },
+        {
+            "name": "symfony/messenger",
+            "version": "v7.0.0-RC1",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/symfony/messenger.git",
+                "reference": "5c972ca0be7c40a1f746e3a6ce397555a4e202e3"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/symfony/messenger/zipball/5c972ca0be7c40a1f746e3a6ce397555a4e202e3",
+                "reference": "5c972ca0be7c40a1f746e3a6ce397555a4e202e3",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=8.2",
+                "psr/log": "^1|^2|^3",
+                "symfony/clock": "^6.4|^7.0"
+            },
+            "conflict": {
+                "symfony/console": "<6.4",
+                "symfony/event-dispatcher": "<6.4",
+                "symfony/event-dispatcher-contracts": "<2.5",
+                "symfony/framework-bundle": "<6.4",
+                "symfony/http-kernel": "<6.4",
+                "symfony/serializer": "<6.4"
+            },
+            "require-dev": {
+                "psr/cache": "^1.0|^2.0|^3.0",
+                "symfony/console": "^6.4|^7.0",
+                "symfony/dependency-injection": "^6.4|^7.0",
+                "symfony/event-dispatcher": "^6.4|^7.0",
+                "symfony/http-kernel": "^6.4|^7.0",
+                "symfony/process": "^6.4|^7.0",
+                "symfony/property-access": "^6.4|^7.0",
+                "symfony/rate-limiter": "^6.4|^7.0",
+                "symfony/routing": "^6.4|^7.0",
+                "symfony/serializer": "^6.4|^7.0",
+                "symfony/service-contracts": "^2.5|^3",
+                "symfony/stopwatch": "^6.4|^7.0",
+                "symfony/validator": "^6.4|^7.0"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "Symfony\\Component\\Messenger\\": ""
+                },
+                "exclude-from-classmap": [
+                    "/Tests/"
+                ]
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Samuel Roze",
+                    "email": "samuel.roze@gmail.com"
+                },
+                {
+                    "name": "Symfony Community",
+                    "homepage": "https://symfony.com/contributors"
+                }
+            ],
+            "description": "Helps applications send and receive messages to/from other applications or via message queues",
+            "homepage": "https://symfony.com",
+            "support": {
+                "source": "https://github.com/symfony/messenger/tree/v7.0.0-RC1"
+            },
+            "funding": [
+                {
+                    "url": "https://symfony.com/sponsor",
+                    "type": "custom"
+                },
+                {
+                    "url": "https://github.com/fabpot",
+                    "type": "github"
+                },
+                {
+                    "url": "https://tidelift.com/funding/github/packagist/symfony/symfony",
+                    "type": "tidelift"
+                }
+            ],
+            "time": "2023-11-14T22:58:13+00:00"
         },
         {
             "name": "symfony/polyfill-intl-grapheme",
@@ -4593,12 +4801,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/yceruto/cqs-bundle.git",
-                "reference": "3f1aa18ec8ecd37019cad2a9c542310b0b249b77"
+                "reference": "2612f38167922c26102740c32dd9661020f392eb"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/yceruto/cqs-bundle/zipball/3f1aa18ec8ecd37019cad2a9c542310b0b249b77",
-                "reference": "3f1aa18ec8ecd37019cad2a9c542310b0b249b77",
+                "url": "https://api.github.com/repos/yceruto/cqs-bundle/zipball/2612f38167922c26102740c32dd9661020f392eb",
+                "reference": "2612f38167922c26102740c32dd9661020f392eb",
                 "shasum": ""
             },
             "require": {
@@ -4637,7 +4845,7 @@
                 "issues": "https://github.com/yceruto/cqs-bundle/issues",
                 "source": "https://github.com/yceruto/cqs-bundle/tree/main"
             },
-            "time": "2023-11-18T22:49:22+00:00"
+            "time": "2023-11-19T06:34:03+00:00"
         },
         {
             "name": "yceruto/ddd",
@@ -4694,12 +4902,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/yceruto/ddd-bundle.git",
-                "reference": "394306216cf967e14348c8821dbb3603c0d85f57"
+                "reference": "10154954106e6d2c43f821a5e4f0539803b6fa36"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/yceruto/ddd-bundle/zipball/394306216cf967e14348c8821dbb3603c0d85f57",
-                "reference": "394306216cf967e14348c8821dbb3603c0d85f57",
+                "url": "https://api.github.com/repos/yceruto/ddd-bundle/zipball/10154954106e6d2c43f821a5e4f0539803b6fa36",
+                "reference": "10154954106e6d2c43f821a5e4f0539803b6fa36",
                 "shasum": ""
             },
             "require": {
@@ -4734,7 +4942,7 @@
                 "issues": "https://github.com/yceruto/ddd-bundle/issues",
                 "source": "https://github.com/yceruto/ddd-bundle/tree/main"
             },
-            "time": "2023-11-14T20:25:51+00:00"
+            "time": "2023-11-19T06:35:23+00:00"
         },
         {
             "name": "yceruto/messenger",
@@ -4742,12 +4950,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/yceruto/messenger.git",
-                "reference": "12970e299bdd313bce50308cac6a95544c94a61e"
+                "reference": "0c2c487d1cad232c9387c764a56469e5ebab3d89"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/yceruto/messenger/zipball/12970e299bdd313bce50308cac6a95544c94a61e",
-                "reference": "12970e299bdd313bce50308cac6a95544c94a61e",
+                "url": "https://api.github.com/repos/yceruto/messenger/zipball/0c2c487d1cad232c9387c764a56469e5ebab3d89",
+                "reference": "0c2c487d1cad232c9387c764a56469e5ebab3d89",
                 "shasum": ""
             },
             "require": {
@@ -4783,7 +4991,7 @@
                 "issues": "https://github.com/yceruto/messenger/issues",
                 "source": "https://github.com/yceruto/messenger/tree/main"
             },
-            "time": "2023-11-16T21:48:29+00:00"
+            "time": "2023-11-19T06:32:12+00:00"
         },
         {
             "name": "yceruto/money-bundle",
