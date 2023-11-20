@@ -14,5 +14,4 @@
 
 # TODO
 
- - [ ] Invoke ProductListener from InMemoryProductRepository on `test` mode to publish domain events
  - [ ] Improve logs with "Command/Query/Event" wording depending on the case instead of "Message"
