@@ -1,0 +1,6 @@
+cqs:
+    bus:
+        strategy: native
+ddd:
+    bus:
+        strategy: native
