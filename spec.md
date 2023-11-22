@@ -11,7 +11,3 @@
  * Command Bus
  * Query Bus
  * Domain Event Bus
-
-# TODO
-
- - [ ] Improve logs with "Command/Query/Event" wording depending on the case instead of "Message"

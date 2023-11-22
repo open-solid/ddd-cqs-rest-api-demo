@@ -4873,12 +4873,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/yceruto/cqs-bundle.git",
-                "reference": "478ef1f31d80d36c1f4db52b3eb23d0129866d00"
+                "reference": "022223bbba53b8bb9666d72778909abb3408778c"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/yceruto/cqs-bundle/zipball/478ef1f31d80d36c1f4db52b3eb23d0129866d00",
-                "reference": "478ef1f31d80d36c1f4db52b3eb23d0129866d00",
+                "url": "https://api.github.com/repos/yceruto/cqs-bundle/zipball/022223bbba53b8bb9666d72778909abb3408778c",
+                "reference": "022223bbba53b8bb9666d72778909abb3408778c",
                 "shasum": ""
             },
             "require": {
@@ -4917,7 +4917,7 @@
                 "issues": "https://github.com/yceruto/cqs-bundle/issues",
                 "source": "https://github.com/yceruto/cqs-bundle/tree/main"
             },
-            "time": "2023-11-19T07:45:01+00:00"
+            "time": "2023-11-22T03:15:18+00:00"
         },
         {
             "name": "yceruto/ddd",
@@ -4975,12 +4975,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/yceruto/ddd-bundle.git",
-                "reference": "7b2cc371e9b9c3e71329f76f6b934318b687ddc6"
+                "reference": "1720978bc9f30b9ed479e84a8b53e0b98d4acf72"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/yceruto/ddd-bundle/zipball/7b2cc371e9b9c3e71329f76f6b934318b687ddc6",
-                "reference": "7b2cc371e9b9c3e71329f76f6b934318b687ddc6",
+                "url": "https://api.github.com/repos/yceruto/ddd-bundle/zipball/1720978bc9f30b9ed479e84a8b53e0b98d4acf72",
+                "reference": "1720978bc9f30b9ed479e84a8b53e0b98d4acf72",
                 "shasum": ""
             },
             "require": {
@@ -5015,7 +5015,7 @@
                 "issues": "https://github.com/yceruto/ddd-bundle/issues",
                 "source": "https://github.com/yceruto/ddd-bundle/tree/main"
             },
-            "time": "2023-11-19T07:38:50+00:00"
+            "time": "2023-11-22T03:14:34+00:00"
         },
         {
             "name": "yceruto/messenger",
@@ -5023,12 +5023,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/yceruto/messenger.git",
-                "reference": "0c2c487d1cad232c9387c764a56469e5ebab3d89"
+                "reference": "fe3e79b531aff4853d84b6c05d46976e29b416ae"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/yceruto/messenger/zipball/0c2c487d1cad232c9387c764a56469e5ebab3d89",
-                "reference": "0c2c487d1cad232c9387c764a56469e5ebab3d89",
+                "url": "https://api.github.com/repos/yceruto/messenger/zipball/fe3e79b531aff4853d84b6c05d46976e29b416ae",
+                "reference": "fe3e79b531aff4853d84b6c05d46976e29b416ae",
                 "shasum": ""
             },
             "require": {
@@ -5064,7 +5064,7 @@
                 "issues": "https://github.com/yceruto/messenger/issues",
                 "source": "https://github.com/yceruto/messenger/tree/main"
             },
-            "time": "2023-11-19T06:32:12+00:00"
+            "time": "2023-11-22T03:08:18+00:00"
         },
         {
             "name": "yceruto/money-bundle",

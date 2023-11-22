@@ -5,27 +5,27 @@ namespace App\Catalog\Product\Infrastructure\Persistence\Doctrine;
 use App\Catalog\Product\Domain\Model\Product;
 use App\Catalog\Product\Domain\Model\ProductId;
 use App\Catalog\Product\Domain\Repository\ProductRepository;
-use Doctrine\ORM\EntityManagerInterface;
+use Doctrine\Persistence\ObjectManager;
 
-readonly class OrmProductRepository implements ProductRepository
+readonly class DoctrineProductRepository implements ProductRepository
 {
-    public function __construct(private EntityManagerInterface $em)
+    public function __construct(private ObjectManager $om)
     {
     }
 
     public function add(Product $product): void
     {
-        $this->em->persist($product);
+        $this->om->persist($product);
     }
 
     public function remove(Product $product): void
     {
-        $this->em->remove($product);
+        $this->om->remove($product);
     }
 
     public function ofId(ProductId $id): ?Product
     {
-        return $this->em
+        return $this->om
             ->getRepository(Product::class)
             ->findOneBy(['id.value' => $id->value()]);
     }
@@ -35,7 +35,7 @@ readonly class OrmProductRepository implements ProductRepository
      */
     public function all(): array
     {
-        return $this->em
+        return $this->om
             ->getRepository(Product::class)
             ->findAll();
     }

@@ -9,7 +9,7 @@ services:
             - '../src/Kernel.php'
 
     App\Catalog\Product\Domain\Repository\ProductRepository:
-        alias: App\Catalog\Product\Infrastructure\Persistence\Doctrine\OrmProductRepository
+        alias: App\Catalog\Product\Infrastructure\Persistence\Doctrine\DoctrineProductRepository
 
 when@test:
     services:
