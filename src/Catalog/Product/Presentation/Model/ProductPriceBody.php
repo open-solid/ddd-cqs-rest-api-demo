@@ -3,7 +3,7 @@
 namespace App\Catalog\Product\Presentation\Model;
 
 use OpenApi\Attributes\Schema;
-use Yceruto\OpenApiBundle\Attribute\Property;
+use OpenSolid\OpenApiBundle\Attribute\Property;
 
 #[Schema(
     title: 'Product price',

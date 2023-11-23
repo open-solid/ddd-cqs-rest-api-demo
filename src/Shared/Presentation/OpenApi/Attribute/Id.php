@@ -2,8 +2,8 @@
 
 namespace App\Shared\Presentation\OpenApi\Attribute;
 
-use Yceruto\OpenApiBundle\Attribute\Path;
-use Yceruto\OpenApiBundle\Attribute\PathDefaults;
+use OpenSolid\OpenApiBundle\Attribute\Path;
+use OpenSolid\OpenApiBundle\Attribute\PathDefaults;
 
 #[\Attribute(\Attribute::TARGET_CLASS | \Attribute::TARGET_METHOD | \Attribute::TARGET_PROPERTY | \Attribute::TARGET_PARAMETER | \Attribute::IS_REPEATABLE)]
 class Id extends Path

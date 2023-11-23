@@ -6,8 +6,8 @@ use App\Catalog\Product\Application\Create\CreateProduct;
 use App\Catalog\Product\Domain\Model\ProductId;
 use App\Catalog\Product\Domain\View\ProductNewView;
 use Yceruto\CqsBundle\Controller\CommandAction;
-use Yceruto\OpenApiBundle\Attribute\Body;
-use Yceruto\OpenApiBundle\Routing\Attribute\Post;
+use OpenSolid\OpenApiBundle\Attribute\Body;
+use OpenSolid\OpenApiBundle\Routing\Attribute\Post;
 
 class PostProductAction extends CommandAction
 {

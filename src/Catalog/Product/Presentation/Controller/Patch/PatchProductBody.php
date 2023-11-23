@@ -5,7 +5,7 @@ namespace App\Catalog\Product\Presentation\Controller\Patch;
 use App\Catalog\Product\Domain\Model\ProductStatus;
 use App\Catalog\Product\Presentation\Model\ProductPriceBody;
 use OpenApi\Attributes\Schema;
-use Yceruto\OpenApiBundle\Attribute\Property;
+use OpenSolid\OpenApiBundle\Attribute\Property;
 
 #[Schema(writeOnly: true)]
 class PatchProductBody

@@ -4,7 +4,7 @@ namespace App\Catalog\Product\Domain\View;
 
 use Money\Money;
 use OpenApi\Attributes\Schema;
-use Yceruto\OpenApiBundle\Attribute\Property;
+use OpenSolid\OpenApiBundle\Attribute\Property;
 
 #[Schema]
 readonly class ProductPriceView

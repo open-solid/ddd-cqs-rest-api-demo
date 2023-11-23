@@ -5,8 +5,8 @@ namespace App\Catalog\Product\Presentation\Controller\Get;
 use App\Catalog\Product\Application\Find\FindProducts;
 use App\Catalog\Product\Domain\View\ProductListItemView;
 use Yceruto\CqsBundle\Controller\QueryAction;
-use Yceruto\OpenApiBundle\Attribute\Query;
-use Yceruto\OpenApiBundle\Routing\Attribute\Get;
+use OpenSolid\OpenApiBundle\Attribute\Query;
+use OpenSolid\OpenApiBundle\Routing\Attribute\Get;
 
 class GetProductsAction extends QueryAction
 {

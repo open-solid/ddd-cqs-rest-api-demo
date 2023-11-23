@@ -22,6 +22,9 @@
             "src/Repository/.gitignore"
         ]
     },
+    "open-solid/open-api-bundle": {
+        "version": "dev-main"
+    },
     "phpunit/phpunit": {
         "version": "9.6",
         "recipe": {
@@ -151,8 +154,5 @@
     },
     "yceruto/money-bundle": {
         "version": "v1.3.2"
-    },
-    "yceruto/open-api-bundle": {
-        "version": "dev-main"
     }
 }

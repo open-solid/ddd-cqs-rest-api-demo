@@ -7,8 +7,8 @@ use App\Catalog\Product\Application\Update\UpdateProduct;
 use App\Catalog\Product\Domain\View\ProductView;
 use App\Shared\Presentation\OpenApi\Attribute\Id;
 use Yceruto\CqsBundle\Controller\CqsAction;
-use Yceruto\OpenApiBundle\Attribute\Body;
-use Yceruto\OpenApiBundle\Routing\Attribute\Patch;
+use OpenSolid\OpenApiBundle\Attribute\Body;
+use OpenSolid\OpenApiBundle\Routing\Attribute\Patch;
 
 class PatchProductAction extends CqsAction
 {

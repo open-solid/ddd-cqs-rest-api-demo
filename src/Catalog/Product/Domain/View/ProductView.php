@@ -6,7 +6,7 @@ use App\Catalog\Product\Domain\Model\Product;
 use App\Catalog\Product\Domain\Model\ProductStatus;
 use DateTimeImmutable;
 use OpenApi\Attributes\Schema;
-use Yceruto\OpenApiBundle\Attribute\Property;
+use OpenSolid\OpenApiBundle\Attribute\Property;
 
 #[Schema]
 readonly class ProductView
