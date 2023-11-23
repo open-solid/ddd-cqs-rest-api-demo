@@ -4,7 +4,7 @@ namespace App\Catalog\Product\Infrastructure\Persistence\Doctrine\Listener;
 
 use App\Catalog\Product\Domain\Event\ProductDeleted;
 use App\Catalog\Product\Domain\Model\Product;
-use Ddd\Domain\Event\DomainEventBus;
+use OpenSolid\Ddd\Domain\Event\DomainEventBus;
 use Doctrine\Bundle\DoctrineBundle\Attribute\AsEntityListener;
 use Doctrine\ORM\Events;
 

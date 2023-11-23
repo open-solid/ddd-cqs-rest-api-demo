@@ -10,7 +10,7 @@ use App\Catalog\Product\Domain\Model\Props\CreateProductProps;
 use App\Catalog\Product\Domain\View\ProductNewView;
 use Money\Currency;
 use Money\Money;
-use Yceruto\CqsBundle\Attribute\AsCommandHandler;
+use OpenSolid\CqsBundle\Attribute\AsCommandHandler;
 
 #[AsCommandHandler]
 readonly class CreateProductHandler

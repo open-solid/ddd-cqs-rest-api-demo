@@ -22,6 +22,12 @@
             "src/Repository/.gitignore"
         ]
     },
+    "open-solid/cqs-bundle": {
+        "version": "dev-main"
+    },
+    "open-solid/ddd-bundle": {
+        "version": "dev-main"
+    },
     "open-solid/open-api-bundle": {
         "version": "dev-main"
     },
@@ -145,12 +151,6 @@
         "files": [
             "config/packages/validator.yaml"
         ]
-    },
-    "yceruto/cqs-bundle": {
-        "version": "dev-main"
-    },
-    "yceruto/ddd-bundle": {
-        "version": "dev-main"
     },
     "yceruto/money-bundle": {
         "version": "v1.3.2"

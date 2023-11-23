@@ -2,7 +2,7 @@
 
 namespace App\Catalog\Product\Application\Delete;
 
-use Cqs\Command\Command;
+use OpenSolid\Cqs\Command\Command;
 
 /**
  * @template-implements Command<void>

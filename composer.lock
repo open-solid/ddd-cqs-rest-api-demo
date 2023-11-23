@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "51024a6b22637d003c46fe846ce4900a",
+    "content-hash": "0c23d7dd0108d86ac06273d17124ccb7",
     "packages": [
         {
             "name": "doctrine/annotations",
@@ -1301,17 +1301,264 @@
             "time": "2023-11-22T09:46:30+00:00"
         },
         {
+            "name": "open-solid/cqs",
+            "version": "dev-main",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/open-solid/cqs.git",
+                "reference": "e340d4f245b77e53ee7f940d5e6acbb66cbbe67f"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/open-solid/cqs/zipball/e340d4f245b77e53ee7f940d5e6acbb66cbbe67f",
+                "reference": "e340d4f245b77e53ee7f940d5e6acbb66cbbe67f",
+                "shasum": ""
+            },
+            "require": {
+                "open-solid/messenger": "dev-main",
+                "php": ">=8.2"
+            },
+            "require-dev": {
+                "phpunit/phpunit": "^10.0",
+                "psalm/plugin-phpunit": "^0.18",
+                "symfony/messenger": "^7.0",
+                "vimeo/psalm": "^5.0"
+            },
+            "default-branch": true,
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "OpenSolid\\Cqs\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Yonel Ceruto",
+                    "email": "yonelceruto@gmail.com"
+                }
+            ],
+            "description": "Contract for Command Query Separation pattern",
+            "support": {
+                "issues": "https://github.com/open-solid/cqs/issues",
+                "source": "https://github.com/open-solid/cqs/tree/main"
+            },
+            "time": "2023-11-23T04:45:29+00:00"
+        },
+        {
+            "name": "open-solid/cqs-bundle",
+            "version": "dev-main",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/open-solid/cqs-bundle.git",
+                "reference": "086fc6a82a7009d47efff9a091adcff116cf4c4d"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/open-solid/cqs-bundle/zipball/086fc6a82a7009d47efff9a091adcff116cf4c4d",
+                "reference": "086fc6a82a7009d47efff9a091adcff116cf4c4d",
+                "shasum": ""
+            },
+            "require": {
+                "open-solid/cqs": "dev-main",
+                "php": ">=8.2",
+                "symfony/framework-bundle": "^7.0",
+                "symfony/yaml": "^7.0"
+            },
+            "require-dev": {
+                "doctrine/doctrine-bundle": "2.12.x-dev",
+                "doctrine/orm": "^3.0",
+                "phpunit/phpunit": "^10.0",
+                "roave/security-advisories": "dev-latest",
+                "symfony/browser-kit": "^7.0",
+                "symfony/messenger": "^7.0"
+            },
+            "default-branch": true,
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "OpenSolid\\CqsBundle\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Yonel Ceruto",
+                    "email": "yonelceruto@gmail.com"
+                }
+            ],
+            "description": "Symfony integration for Command Query Separation pattern",
+            "support": {
+                "issues": "https://github.com/open-solid/cqs-bundle/issues",
+                "source": "https://github.com/open-solid/cqs-bundle/tree/main"
+            },
+            "time": "2023-11-23T04:53:57+00:00"
+        },
+        {
+            "name": "open-solid/ddd",
+            "version": "dev-main",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/open-solid/ddd.git",
+                "reference": "ef86e3a0f73bce0d972369bbeaf904cefc377e9c"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/open-solid/ddd/zipball/ef86e3a0f73bce0d972369bbeaf904cefc377e9c",
+                "reference": "ef86e3a0f73bce0d972369bbeaf904cefc377e9c",
+                "shasum": ""
+            },
+            "require": {
+                "open-solid/messenger": "dev-main",
+                "php": ">=8.2",
+                "symfony/string": "^7.0",
+                "symfony/uid": "^7.0"
+            },
+            "require-dev": {
+                "phpunit/phpunit": "^10.0",
+                "psalm/plugin-phpunit": "^0.18",
+                "symfony/messenger": "^7.0",
+                "vimeo/psalm": "^5.0"
+            },
+            "default-branch": true,
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "OpenSolid\\Ddd\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Yonel Ceruto",
+                    "email": "yonelceruto@gmail.com"
+                }
+            ],
+            "description": "Domain-Driven Design building blocks",
+            "support": {
+                "issues": "https://github.com/open-solid/ddd/issues",
+                "source": "https://github.com/open-solid/ddd/tree/main"
+            },
+            "time": "2023-11-23T04:33:14+00:00"
+        },
+        {
+            "name": "open-solid/ddd-bundle",
+            "version": "dev-main",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/open-solid/ddd-bundle.git",
+                "reference": "49913488e61735b378f0320f4f2f5151ca2986f7"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/open-solid/ddd-bundle/zipball/49913488e61735b378f0320f4f2f5151ca2986f7",
+                "reference": "49913488e61735b378f0320f4f2f5151ca2986f7",
+                "shasum": ""
+            },
+            "require": {
+                "open-solid/ddd": "dev-main",
+                "open-solid/messenger": "dev-main",
+                "php": ">=8.2",
+                "symfony/framework-bundle": "^7.0"
+            },
+            "require-dev": {
+                "phpunit/phpunit": "^10.0",
+                "symfony/messenger": "^7.0"
+            },
+            "default-branch": true,
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "OpenSolid\\DddBundle\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Yonel Ceruto",
+                    "email": "yonelceruto@gmail.com"
+                }
+            ],
+            "description": "DDD (Domain-Driven Design) building blocks for Symfony framework",
+            "support": {
+                "issues": "https://github.com/open-solid/ddd-bundle/issues",
+                "source": "https://github.com/open-solid/ddd-bundle/tree/main"
+            },
+            "time": "2023-11-23T04:37:52+00:00"
+        },
+        {
+            "name": "open-solid/messenger",
+            "version": "dev-main",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/open-solid/messenger.git",
+                "reference": "16829dc45e2f8b6ca5f5a463672c31e851e22e65"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/open-solid/messenger/zipball/16829dc45e2f8b6ca5f5a463672c31e851e22e65",
+                "reference": "16829dc45e2f8b6ca5f5a463672c31e851e22e65",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=8.2",
+                "psr/container": "^2.0",
+                "psr/log": "^3.0"
+            },
+            "require-dev": {
+                "phpunit/phpunit": "^10.0",
+                "psalm/plugin-phpunit": "^0.18",
+                "symfony/dependency-injection": "^7.0",
+                "vimeo/psalm": "^5.0"
+            },
+            "default-branch": true,
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "OpenSolid\\Messenger\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Yonel Ceruto",
+                    "email": "yonelceruto@gmail.com"
+                }
+            ],
+            "description": "Simple Messenger Component",
+            "support": {
+                "issues": "https://github.com/open-solid/messenger/issues",
+                "source": "https://github.com/open-solid/messenger/tree/main"
+            },
+            "time": "2023-11-23T04:28:52+00:00"
+        },
+        {
             "name": "open-solid/open-api-bundle",
             "version": "dev-main",
             "source": {
                 "type": "git",
                 "url": "https://github.com/open-solid/open-api-bundle.git",
-                "reference": "b33d34c528bbeb6200ef4700b76f0f0631c14f3b"
+                "reference": "d7c4a03a24a163795a045dae4b872bb325ee6b10"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/open-solid/open-api-bundle/zipball/b33d34c528bbeb6200ef4700b76f0f0631c14f3b",
-                "reference": "b33d34c528bbeb6200ef4700b76f0f0631c14f3b",
+                "url": "https://api.github.com/repos/open-solid/open-api-bundle/zipball/d7c4a03a24a163795a045dae4b872bb325ee6b10",
+                "reference": "d7c4a03a24a163795a045dae4b872bb325ee6b10",
                 "shasum": ""
             },
             "require": {
@@ -1358,7 +1605,7 @@
                 "issues": "https://github.com/open-solid/open-api-bundle/issues",
                 "source": "https://github.com/open-solid/open-api-bundle/tree/main"
             },
-            "time": "2023-11-23T03:50:50+00:00"
+            "time": "2023-11-23T04:15:05+00:00"
         },
         {
             "name": "psr/cache",
@@ -4879,253 +5126,6 @@
             "time": "2023-11-07T10:26:03+00:00"
         },
         {
-            "name": "yceruto/cqs",
-            "version": "dev-main",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/yceruto/cqs.git",
-                "reference": "42978f8939d2f02fa5b7d0b47d56b050b81a9b41"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/yceruto/cqs/zipball/42978f8939d2f02fa5b7d0b47d56b050b81a9b41",
-                "reference": "42978f8939d2f02fa5b7d0b47d56b050b81a9b41",
-                "shasum": ""
-            },
-            "require": {
-                "php": ">=8.2",
-                "yceruto/messenger": "dev-main"
-            },
-            "require-dev": {
-                "phpunit/phpunit": "^10.0",
-                "psalm/plugin-phpunit": "^0.18",
-                "symfony/messenger": "^7.0",
-                "vimeo/psalm": "^5.0"
-            },
-            "default-branch": true,
-            "type": "library",
-            "autoload": {
-                "psr-4": {
-                    "Cqs\\": "src/"
-                }
-            },
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "MIT"
-            ],
-            "authors": [
-                {
-                    "name": "Yonel Ceruto",
-                    "email": "yonelceruto@gmail.com"
-                }
-            ],
-            "description": "Contract for Command Query Separation pattern",
-            "support": {
-                "issues": "https://github.com/yceruto/cqs/issues",
-                "source": "https://github.com/yceruto/cqs/tree/main"
-            },
-            "time": "2023-11-16T03:57:15+00:00"
-        },
-        {
-            "name": "yceruto/cqs-bundle",
-            "version": "dev-main",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/yceruto/cqs-bundle.git",
-                "reference": "022223bbba53b8bb9666d72778909abb3408778c"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/yceruto/cqs-bundle/zipball/022223bbba53b8bb9666d72778909abb3408778c",
-                "reference": "022223bbba53b8bb9666d72778909abb3408778c",
-                "shasum": ""
-            },
-            "require": {
-                "php": ">=8.2",
-                "symfony/framework-bundle": "^7.0",
-                "symfony/yaml": "^7.0",
-                "yceruto/cqs": "dev-main"
-            },
-            "require-dev": {
-                "doctrine/doctrine-bundle": "2.12.x-dev",
-                "doctrine/orm": "^3.0",
-                "phpunit/phpunit": "^10.0",
-                "roave/security-advisories": "dev-latest",
-                "symfony/browser-kit": "^7.0",
-                "symfony/messenger": "^7.0"
-            },
-            "default-branch": true,
-            "type": "library",
-            "autoload": {
-                "psr-4": {
-                    "Yceruto\\CqsBundle\\": "src/"
-                }
-            },
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "MIT"
-            ],
-            "authors": [
-                {
-                    "name": "Yonel Ceruto",
-                    "email": "yonelceruto@gmail.com"
-                }
-            ],
-            "description": "Symfony integration for Command Query Separation pattern",
-            "support": {
-                "issues": "https://github.com/yceruto/cqs-bundle/issues",
-                "source": "https://github.com/yceruto/cqs-bundle/tree/main"
-            },
-            "time": "2023-11-22T03:15:18+00:00"
-        },
-        {
-            "name": "yceruto/ddd",
-            "version": "dev-main",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/yceruto/ddd.git",
-                "reference": "147dffd911b6c4cc7a5144dde7801e38660049ce"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/yceruto/ddd/zipball/147dffd911b6c4cc7a5144dde7801e38660049ce",
-                "reference": "147dffd911b6c4cc7a5144dde7801e38660049ce",
-                "shasum": ""
-            },
-            "require": {
-                "php": ">=8.2",
-                "symfony/string": "^7.0",
-                "symfony/uid": "^7.0",
-                "yceruto/messenger": "dev-main"
-            },
-            "require-dev": {
-                "phpunit/phpunit": "^10.0",
-                "psalm/plugin-phpunit": "^0.18",
-                "symfony/messenger": "^7.0",
-                "vimeo/psalm": "^5.0"
-            },
-            "default-branch": true,
-            "type": "library",
-            "autoload": {
-                "psr-4": {
-                    "Ddd\\": "src/"
-                }
-            },
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "MIT"
-            ],
-            "authors": [
-                {
-                    "name": "Yonel Ceruto",
-                    "email": "yonelceruto@gmail.com"
-                }
-            ],
-            "description": "Domain-Driven Design building blocks",
-            "support": {
-                "issues": "https://github.com/yceruto/ddd/issues",
-                "source": "https://github.com/yceruto/ddd/tree/main"
-            },
-            "time": "2023-11-19T07:08:54+00:00"
-        },
-        {
-            "name": "yceruto/ddd-bundle",
-            "version": "dev-main",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/yceruto/ddd-bundle.git",
-                "reference": "1720978bc9f30b9ed479e84a8b53e0b98d4acf72"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/yceruto/ddd-bundle/zipball/1720978bc9f30b9ed479e84a8b53e0b98d4acf72",
-                "reference": "1720978bc9f30b9ed479e84a8b53e0b98d4acf72",
-                "shasum": ""
-            },
-            "require": {
-                "php": ">=8.2",
-                "symfony/framework-bundle": "^7.0",
-                "yceruto/ddd": "dev-main",
-                "yceruto/messenger": "dev-main"
-            },
-            "require-dev": {
-                "phpunit/phpunit": "^10.0",
-                "symfony/messenger": "^7.0"
-            },
-            "default-branch": true,
-            "type": "library",
-            "autoload": {
-                "psr-4": {
-                    "Yceruto\\DddBundle\\": "src/"
-                }
-            },
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "MIT"
-            ],
-            "authors": [
-                {
-                    "name": "Yonel Ceruto",
-                    "email": "yonelceruto@gmail.com"
-                }
-            ],
-            "description": "DDD (Domain-Driven Design) building blocks for Symfony framework",
-            "support": {
-                "issues": "https://github.com/yceruto/ddd-bundle/issues",
-                "source": "https://github.com/yceruto/ddd-bundle/tree/main"
-            },
-            "time": "2023-11-22T03:14:34+00:00"
-        },
-        {
-            "name": "yceruto/messenger",
-            "version": "dev-main",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/yceruto/messenger.git",
-                "reference": "fe3e79b531aff4853d84b6c05d46976e29b416ae"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/yceruto/messenger/zipball/fe3e79b531aff4853d84b6c05d46976e29b416ae",
-                "reference": "fe3e79b531aff4853d84b6c05d46976e29b416ae",
-                "shasum": ""
-            },
-            "require": {
-                "php": ">=8.2",
-                "psr/container": "^2.0",
-                "psr/log": "^3.0"
-            },
-            "require-dev": {
-                "phpunit/phpunit": "^10.0",
-                "psalm/plugin-phpunit": "^0.18",
-                "symfony/dependency-injection": "^7.0",
-                "vimeo/psalm": "^5.0"
-            },
-            "default-branch": true,
-            "type": "library",
-            "autoload": {
-                "psr-4": {
-                    "Yceruto\\Messenger\\": "src/"
-                }
-            },
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "MIT"
-            ],
-            "authors": [
-                {
-                    "name": "Yonel Ceruto",
-                    "email": "yonelceruto@gmail.com"
-                }
-            ],
-            "description": "Simple Messenger Component",
-            "support": {
-                "issues": "https://github.com/yceruto/messenger/issues",
-                "source": "https://github.com/yceruto/messenger/tree/main"
-            },
-            "time": "2023-11-22T03:08:18+00:00"
-        },
-        {
             "name": "yceruto/money-bundle",
             "version": "v1.3.3",
             "source": {
@@ -5993,12 +5993,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/Roave/SecurityAdvisories.git",
-                "reference": "ec77ac73fe989601450c32ff4796bb7264ba97db"
+                "reference": "2b23329e299c9a6cd98a82f5137ab4909c8e506d"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/Roave/SecurityAdvisories/zipball/ec77ac73fe989601450c32ff4796bb7264ba97db",
-                "reference": "ec77ac73fe989601450c32ff4796bb7264ba97db",
+                "url": "https://api.github.com/repos/Roave/SecurityAdvisories/zipball/2b23329e299c9a6cd98a82f5137ab4909c8e506d",
+                "reference": "2b23329e299c9a6cd98a82f5137ab4909c8e506d",
                 "shasum": ""
             },
             "conflict": {
@@ -6419,6 +6419,7 @@
                 "really-simple-plugins/complianz-gdpr": "<6.4.2",
                 "remdex/livehelperchat": "<3.99",
                 "reportico-web/reportico": "<=7.1.21",
+                "rhukster/dom-sanitizer": "<1.0.7",
                 "rmccue/requests": ">=1.6,<1.8",
                 "robrichards/xmlseclibs": "<3.0.4",
                 "roots/soil": "<4.1",
@@ -6688,7 +6689,7 @@
                     "type": "tidelift"
                 }
             ],
-            "time": "2023-11-23T01:27:56+00:00"
+            "time": "2023-11-23T04:04:32+00:00"
         },
         {
             "name": "sebastian/cli-parser",
@@ -7989,9 +7990,9 @@
     "aliases": [],
     "minimum-stability": "dev",
     "stability-flags": {
-        "yceruto/cqs-bundle": 20,
-        "yceruto/ddd-bundle": 20,
         "open-solid/open-api-bundle": 20,
+        "open-solid/cqs-bundle": 20,
+        "open-solid/ddd-bundle": 20,
         "roave/security-advisories": 20
     },
     "prefer-stable": true,

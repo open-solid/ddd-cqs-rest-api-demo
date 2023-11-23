@@ -5,7 +5,7 @@ namespace App\Catalog\Product\Presentation\Controller\Post;
 use App\Catalog\Product\Application\Create\CreateProduct;
 use App\Catalog\Product\Domain\Model\ProductId;
 use App\Catalog\Product\Domain\View\ProductNewView;
-use Yceruto\CqsBundle\Controller\CommandAction;
+use OpenSolid\CqsBundle\Controller\CommandAction;
 use OpenSolid\OpenApiBundle\Attribute\Body;
 use OpenSolid\OpenApiBundle\Routing\Attribute\Post;
 

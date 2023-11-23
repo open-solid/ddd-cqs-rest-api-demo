@@ -2,7 +2,7 @@
 
 namespace App\Catalog\Product\Domain\Event;
 
-use Ddd\Domain\Event\DomainEvent;
+use OpenSolid\Ddd\Domain\Event\DomainEvent;
 
 readonly class ProductUpdated extends DomainEvent
 {

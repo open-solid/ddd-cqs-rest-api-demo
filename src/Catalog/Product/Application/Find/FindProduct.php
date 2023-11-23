@@ -3,7 +3,7 @@
 namespace App\Catalog\Product\Application\Find;
 
 use App\Catalog\Product\Domain\View\ProductView;
-use Cqs\Query\Query;
+use OpenSolid\Cqs\Query\Query;
 
 /**
  * @template-implements Query<ProductView>

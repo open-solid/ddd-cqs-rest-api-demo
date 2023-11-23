@@ -5,7 +5,7 @@ namespace App\Catalog\Product\Presentation\Controller\Put;
 use App\Catalog\Product\Application\Update\UpdateProduct;
 use App\Catalog\Product\Domain\View\ProductView;
 use App\Shared\Presentation\OpenApi\Attribute\Id;
-use Yceruto\CqsBundle\Controller\CommandAction;
+use OpenSolid\CqsBundle\Controller\CommandAction;
 use OpenSolid\OpenApiBundle\Attribute\Body;
 use OpenSolid\OpenApiBundle\Routing\Attribute\Put;
 

@@ -3,7 +3,7 @@
 namespace App\Catalog\Product\Domain\Error;
 
 use App\Catalog\Product\Domain\Model\ProductId;
-use Ddd\Domain\Error\EntityNotFound;
+use OpenSolid\Ddd\Domain\Error\EntityNotFound;
 
 class ProductNotFound extends EntityNotFound
 {

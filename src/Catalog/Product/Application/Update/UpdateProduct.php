@@ -3,7 +3,7 @@
 namespace App\Catalog\Product\Application\Update;
 
 use App\Catalog\Product\Domain\View\ProductView;
-use Cqs\Command\Command;
+use OpenSolid\Cqs\Command\Command;
 
 /**
  * @template-implements Command<ProductView>

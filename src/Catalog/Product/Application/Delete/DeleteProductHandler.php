@@ -3,7 +3,7 @@
 namespace App\Catalog\Product\Application\Delete;
 
 use App\Catalog\Product\Domain\Model\ProductId;
-use Yceruto\CqsBundle\Attribute\AsCommandHandler;
+use OpenSolid\CqsBundle\Attribute\AsCommandHandler;
 
 #[AsCommandHandler]
 readonly class DeleteProductHandler

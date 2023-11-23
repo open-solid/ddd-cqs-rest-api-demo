@@ -4,7 +4,7 @@ namespace App\Catalog\Product\Application\Find;
 
 use App\Catalog\Product\Domain\Model\ProductId;
 use App\Catalog\Product\Domain\View\ProductView;
-use Yceruto\CqsBundle\Attribute\AsQueryHandler;
+use OpenSolid\CqsBundle\Attribute\AsQueryHandler;
 
 #[AsQueryHandler]
 readonly class FindProductHandler

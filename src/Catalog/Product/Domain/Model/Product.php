@@ -7,8 +7,8 @@ use App\Catalog\Product\Domain\Event\ProductUpdated;
 use App\Catalog\Product\Domain\Model\Props\CreateProductProps;
 use App\Catalog\Product\Domain\Model\Props\UpdateProductProps;
 use DateTimeImmutable;
-use Ddd\Domain\Entity\AggregateRoot;
-use Ddd\Domain\Trait\Time\Timestamp;
+use OpenSolid\Ddd\Domain\Entity\AggregateRoot;
+use OpenSolid\Ddd\Domain\Trait\Time\Timestamp;
 use Money\Money;
 
 class Product
