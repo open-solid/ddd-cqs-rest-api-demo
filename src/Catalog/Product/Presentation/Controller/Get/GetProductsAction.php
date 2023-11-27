@@ -16,8 +16,8 @@ class GetProductsAction extends QueryAction
         tags: ['Product'],
         itemsType: ProductListItemView::class,
     )]
-    public function __invoke(#[Query] GetProductsQuery $query = null): array
+    public function __invoke(#[Query] GetProductsParams $params = null): array
     {
-        return $this->queryBus()->ask(new FindProducts($query?->name));
+        return $this->queryBus()->ask(new FindProducts($params?->name));
     }
 }

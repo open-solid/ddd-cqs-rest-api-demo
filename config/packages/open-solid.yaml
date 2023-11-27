@@ -1,6 +1,11 @@
 cqs:
     bus:
         strategy: native
+
 ddd:
     bus:
         strategy: native
+
+openapi:
+    paths:
+        - '%kernel.project_dir%/config/openapi.yaml'
