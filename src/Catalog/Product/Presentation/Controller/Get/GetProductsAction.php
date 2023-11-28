@@ -18,6 +18,6 @@ class GetProductsAction extends QueryAction
     )]
     public function __invoke(#[Query] GetProductsParams $params = null): array
     {
-        return $this->queryBus()->ask(new FindProducts($params?->name));
+        return $this->queryBus()->ask(new FindProducts($params?->sort));
     }
 }

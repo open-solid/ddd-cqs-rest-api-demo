@@ -1553,12 +1553,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/open-solid/open-api-bundle.git",
-                "reference": "1183b2b41946509524734672cd5160a7a856a287"
+                "reference": "3ae438e2b6b99fcd41bb8fc240706f35d3a80bde"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/open-solid/open-api-bundle/zipball/1183b2b41946509524734672cd5160a7a856a287",
-                "reference": "1183b2b41946509524734672cd5160a7a856a287",
+                "url": "https://api.github.com/repos/open-solid/open-api-bundle/zipball/3ae438e2b6b99fcd41bb8fc240706f35d3a80bde",
+                "reference": "3ae438e2b6b99fcd41bb8fc240706f35d3a80bde",
                 "shasum": ""
             },
             "require": {
@@ -1605,7 +1605,7 @@
                 "issues": "https://github.com/open-solid/open-api-bundle/issues",
                 "source": "https://github.com/open-solid/open-api-bundle/tree/main"
             },
-            "time": "2023-11-28T16:20:39+00:00"
+            "time": "2023-11-28T18:03:27+00:00"
         },
         {
             "name": "psr/cache",
