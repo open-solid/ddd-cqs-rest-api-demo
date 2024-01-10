@@ -9,14 +9,14 @@ use App\Catalog\Product\Domain\Model\ProductName;
 use App\Catalog\Product\Domain\Model\ProductStatus;
 use App\Catalog\Product\Domain\Model\Props\CreateProductProps;
 use App\Catalog\Product\Domain\Repository\ProductRepository;
-use App\Catalog\Product\Infrastructure\Persistence\Doctrine\Listener\ProductListener;
+use App\Shared\Infrastructure\Persistence\Doctrine\PublishDomainEventsListener;
 use Money\Money;
 
 class InMemoryProductRepository implements ProductRepository
 {
     private array $products = [];
 
-    public function __construct(private readonly ProductListener $productListener)
+    public function __construct(private readonly PublishDomainEventsListener $domainEventsListener)
     {
         $props = new CreateProductProps(
             $id = ProductId::from('f81d4fae-7dec-11d0-a765-00a0c91e6bf9'),
@@ -32,13 +32,13 @@ class InMemoryProductRepository implements ProductRepository
     public function add(Product $product): void
     {
         $this->products[$product->id()->value()] = $product;
-        $this->productListener->postPersist($product);
+        $this->domainEventsListener->__invoke($product);
     }
 
     public function remove(Product $product): void
     {
         unset($this->products[$product->id()->value()]);
-        $this->productListener->postRemove($product);
+        $this->domainEventsListener->__invoke($product);
     }
 
     public function ofId(ProductId $id): ?Product

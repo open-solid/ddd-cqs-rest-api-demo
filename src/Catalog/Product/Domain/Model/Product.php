@@ -3,6 +3,7 @@
 namespace App\Catalog\Product\Domain\Model;
 
 use App\Catalog\Product\Domain\Event\ProductCreated;
+use App\Catalog\Product\Domain\Event\ProductDeleted;
 use App\Catalog\Product\Domain\Event\ProductUpdated;
 use App\Catalog\Product\Domain\Model\Props\CreateProductProps;
 use App\Catalog\Product\Domain\Model\Props\UpdateProductProps;
@@ -47,6 +48,11 @@ class Product
         $this->updatedAt = new DateTimeImmutable();
 
         $this->pushDomainEvent(new ProductUpdated($this->id->value()));
+    }
+
+    public function delete(): void
+    {
+        $this->pushDomainEvent(new ProductDeleted($this->id->value()));
     }
 
     public function id(): ProductId
