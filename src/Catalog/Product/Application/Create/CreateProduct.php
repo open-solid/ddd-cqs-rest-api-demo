@@ -6,7 +6,7 @@ use App\Catalog\Product\Domain\View\ProductNewView;
 use OpenSolid\Cqs\Command\Command;
 
 /**
- * @template-implements Command<ProductNewView>
+ * @implements Command<ProductNewView>
  */
 readonly class CreateProduct implements Command
 {

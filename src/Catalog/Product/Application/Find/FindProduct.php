@@ -6,7 +6,7 @@ use App\Catalog\Product\Domain\View\ProductView;
 use OpenSolid\Cqs\Query\Query;
 
 /**
- * @template-implements Query<ProductView>
+ * @implements Query<ProductView>
  */
 readonly class FindProduct implements Query
 {

@@ -6,7 +6,7 @@ use App\Catalog\Product\Domain\View\ProductView;
 use OpenSolid\Cqs\Command\Command;
 
 /**
- * @template-implements Command<ProductView>
+ * @implements Command<ProductView>
  */
 class UpdateProduct implements Command
 {

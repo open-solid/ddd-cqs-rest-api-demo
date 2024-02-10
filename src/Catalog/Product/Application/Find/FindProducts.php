@@ -6,7 +6,7 @@ use App\Catalog\Product\Domain\View\ProductListItemView;
 use OpenSolid\Cqs\Query\Query;
 
 /**
- * @template-implements Query<ProductListItemView[]>
+ * @implements Query<ProductListItemView[]>
  */
 readonly class FindProducts implements Query
 {
