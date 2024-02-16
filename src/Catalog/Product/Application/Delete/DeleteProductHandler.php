@@ -8,8 +8,9 @@ use OpenSolid\CqsBundle\Attribute\AsCommandHandler;
 #[AsCommandHandler]
 readonly class DeleteProductHandler
 {
-    public function __construct(private ProductDeleter $deleter)
-    {
+    public function __construct(
+        private ProductDeleter $deleter,
+    ) {
     }
 
     public function __invoke(DeleteProduct $command): void

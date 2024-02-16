@@ -9,8 +9,9 @@ use OpenSolid\CqsBundle\Attribute\AsQueryHandler;
 #[AsQueryHandler]
 readonly class FindProductHandler
 {
-    public function __construct(private ProductFinder $finder)
-    {
+    public function __construct(
+        private ProductFinder $finder,
+    ) {
     }
 
     public function __invoke(FindProduct $query): ProductView

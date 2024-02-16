@@ -19,7 +19,7 @@ doctrine:
         mappings:
             Catalog\Product:
                 type: xml
-                dir: '%kernel.project_dir%/src/Catalog/Product/Infrastructure/Persistence/Doctrine/Mapping'
+                dir: '%kernel.project_dir%/src/Catalog/Product/Infrastructure/Resources/config/doctrine/mapping'
                 prefix: 'App\Catalog\Product\Domain\Model'
 
 when@test:

@@ -9,8 +9,9 @@ use App\Catalog\Product\Domain\Repository\ProductRepository;
 
 readonly class ProductFinder
 {
-    public function __construct(private ProductRepository $repository)
-    {
+    public function __construct(
+        private ProductRepository $repository,
+    ) {
     }
 
     public function findOne(ProductId $id): Product

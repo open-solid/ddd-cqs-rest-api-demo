@@ -15,8 +15,9 @@ use OpenSolid\CqsBundle\Attribute\AsCommandHandler;
 #[AsCommandHandler]
 readonly class UpdateProductHandler
 {
-    public function __construct(private ProductUpdater $updater)
-    {
+    public function __construct(
+        private ProductUpdater $updater,
+    ) {
     }
 
     public function __invoke(UpdateProduct $command): ProductView

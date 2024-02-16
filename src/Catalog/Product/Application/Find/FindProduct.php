@@ -10,7 +10,8 @@ use OpenSolid\Cqs\Query\Query;
  */
 readonly class FindProduct implements Query
 {
-    public function __construct(public string $id)
-    {
+    public function __construct(
+        public string $id
+    ) {
     }
 }

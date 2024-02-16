@@ -16,8 +16,9 @@ class InMemoryProductRepository implements ProductRepository
 {
     private array $products = [];
 
-    public function __construct(private readonly PublishDomainEventsListener $domainEventsListener)
-    {
+    public function __construct(
+        private readonly PublishDomainEventsListener $domainEventsListener,
+    ) {
         $props = new CreateProductProps(
             $id = ProductId::from('f81d4fae-7dec-11d0-a765-00a0c91e6bf9'),
             ProductName::from('Product A'),

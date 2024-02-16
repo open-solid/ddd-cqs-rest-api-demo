@@ -8,8 +8,9 @@ use App\Catalog\Product\Domain\Repository\ProductRepository;
 
 readonly class ProductFactory
 {
-    public function __construct(private ProductRepository $repository)
-    {
+    public function __construct(
+        private ProductRepository $repository,
+    ) {
     }
 
     public function create(CreateProductProps $props): Product

@@ -9,8 +9,9 @@ use App\Catalog\Product\Domain\Model\Props\UpdateProductProps;
 
 readonly class ProductUpdater
 {
-    public function __construct(private ProductFinder $finder)
-    {
+    public function __construct(
+        private ProductFinder $finder,
+    ) {
     }
 
     public function update(ProductId $id, UpdateProductProps $props): Product

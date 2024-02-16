@@ -15,8 +15,9 @@ use OpenSolid\CqsBundle\Attribute\AsCommandHandler;
 #[AsCommandHandler]
 readonly class CreateProductHandler
 {
-    public function __construct(private ProductFactory $factory)
-    {
+    public function __construct(
+        private ProductFactory $factory,
+    ) {
     }
 
     public function __invoke(CreateProduct $command): ProductNewView
