@@ -4,13 +4,14 @@ namespace App\Catalog\Product\Presentation\Controller\Patch;
 
 use App\Catalog\Product\Application\Find\FindProduct;
 use App\Catalog\Product\Application\Update\UpdateProduct;
-use App\Catalog\Product\Domain\View\ProductView;
+use App\Catalog\Product\Presentation\View\ProductView;
 use App\Shared\Presentation\OpenApi\Attribute\Id;
+use OpenSolid\CqsBundle\Controller\CommandAction;
 use OpenSolid\CqsBundle\Controller\CqsAction;
 use OpenSolid\OpenApiBundle\Attribute\Body;
 use OpenSolid\OpenApiBundle\Routing\Attribute\Patch;
 
-class PatchProductAction extends CqsAction
+class PatchProductAction extends CommandAction
 {
     #[Patch(
         path: '/products/{id}',
@@ -19,15 +20,15 @@ class PatchProductAction extends CqsAction
     )]
     public function __invoke(#[Id] string $id, #[Body] PatchProductBody $body): ProductView
     {
-        $product = $this->queryBus()->ask(new FindProduct($id));
-
-        return $this->commandBus()->execute(new UpdateProduct(
+        $product = $this->commandBus()->execute(new UpdateProduct(
             $id,
-            $body->name ?? $product->name,
-            $body->description ?? $product->description,
-            $body->price?->amount ?? $product->price->amount,
-            $body->price?->currency ?? $product->price->currency,
-            $body->status ?? $product->status->value,
+            $body->name,
+            $body->description,
+            $body->price?->amount,
+            $body->price?->currency,
+            $body->status,
         ));
+
+        return ProductView::from($product);
     }
 }

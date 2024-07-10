@@ -4,8 +4,8 @@ namespace App\Shared\Infrastructure\Persistence\Doctrine;
 
 use Doctrine\Bundle\DoctrineBundle\Attribute\AsEntityListener;
 use Doctrine\ORM\Events;
-use OpenSolid\Ddd\Domain\Entity\AggregateRoot;
-use OpenSolid\Ddd\Domain\Event\DomainEventBus;
+use OpenSolid\Ddd\Domain\Aggregate\AggregateRoot;
+use OpenSolid\DomainEvent\Bus\DomainEventBus;
 
 #[AsEntityListener(event: Events::postPersist)]
 #[AsEntityListener(event: Events::postUpdate)]

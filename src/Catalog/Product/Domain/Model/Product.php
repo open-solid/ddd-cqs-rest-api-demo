@@ -8,7 +8,7 @@ use App\Catalog\Product\Domain\Event\ProductUpdated;
 use App\Catalog\Product\Domain\Model\Props\CreateProductProps;
 use App\Catalog\Product\Domain\Model\Props\UpdateProductProps;
 use DateTimeImmutable;
-use OpenSolid\Ddd\Domain\Entity\AggregateRoot;
+use OpenSolid\Ddd\Domain\Aggregate\AggregateRoot;
 use OpenSolid\Ddd\Domain\Trait\Time\Timestamp;
 use Money\Money;
 
@@ -41,10 +41,10 @@ class Product
 
     public function update(UpdateProductProps $props): void
     {
-        $this->name = $props->name;
-        $this->description = $props->description;
-        $this->price = $props->price;
-        $this->status = $props->status;
+        $this->name = $props->name ?? $this->name;
+        $this->description = $props->description ?? $this->description;
+        $this->price = $props->price ?? $this->price;
+        $this->status = $props->status ?? $this->status;
         $this->updatedAt = new DateTimeImmutable();
 
         $this->pushDomainEvent(new ProductUpdated($this->id->value()));

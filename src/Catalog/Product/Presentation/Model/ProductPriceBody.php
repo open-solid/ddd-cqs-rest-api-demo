@@ -6,7 +6,6 @@ use OpenApi\Attributes\Schema;
 use OpenSolid\OpenApiBundle\Attribute\Property;
 
 #[Schema(
-    title: 'Product price',
     writeOnly: true
 )]
 class ProductPriceBody

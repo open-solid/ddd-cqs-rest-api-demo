@@ -2,7 +2,7 @@ cqs:
     bus:
         strategy: native
 
-ddd:
+domain_event:
     bus:
         strategy: native
 

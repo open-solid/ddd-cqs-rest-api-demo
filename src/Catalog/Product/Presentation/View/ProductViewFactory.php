@@ -1,6 +1,6 @@
 <?php
 
-namespace App\Catalog\Product\Domain\View;
+namespace App\Catalog\Product\Presentation\View;
 
 use App\Catalog\Product\Domain\Model\Product;
 

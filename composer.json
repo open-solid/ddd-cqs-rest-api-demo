@@ -1,7 +1,6 @@
 {
     "type": "project",
-    "license": "proprietary",
-    "minimum-stability": "dev",
+    "license": "MIT",
     "prefer-stable": true,
     "require": {
         "php": ">=8.2",
@@ -9,9 +8,10 @@
         "ext-iconv": "*",
         "doctrine/doctrine-bundle": "^2.10",
         "doctrine/orm": "^2.16",
-        "open-solid/cqs-bundle": "dev-main",
-        "open-solid/ddd-bundle": "dev-main",
-        "open-solid/open-api-bundle": "dev-main",
+        "open-solid/cqs-bundle": "^1.0",
+        "open-solid/ddd": "*",
+        "open-solid/domain-event-bundle": "^1.0",
+        "open-solid/open-api-bundle": "^0",
         "symfony/console": "^7.0",
         "symfony/doctrine-messenger": "^7.0",
         "symfony/dotenv": "^7.0",
