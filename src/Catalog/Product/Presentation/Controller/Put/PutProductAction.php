@@ -3,7 +3,7 @@
 namespace App\Catalog\Product\Presentation\Controller\Put;
 
 use App\Catalog\Product\Application\Update\UpdateProduct;
-use App\Catalog\Product\Presentation\View\ProductView;
+use App\Catalog\Product\Domain\View\ProductView;
 use App\Shared\Presentation\OpenApi\Attribute\Id;
 use OpenSolid\CqsBundle\Controller\CommandAction;
 use OpenSolid\OpenApiBundle\Attribute\Body;

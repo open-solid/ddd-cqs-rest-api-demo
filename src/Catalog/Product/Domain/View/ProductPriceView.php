@@ -1,6 +1,6 @@
 <?php
 
-namespace App\Catalog\Product\Presentation\View;
+namespace App\Catalog\Product\Domain\View;
 
 use Money\Money;
 use OpenApi\Attributes\Schema;

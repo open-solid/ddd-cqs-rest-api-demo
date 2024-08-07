@@ -10,10 +10,10 @@ use Money\Money;
 readonly class UpdateProductProps
 {
     public function __construct(
-        public ?ProductName $name,
-        public ?ProductDescription $description,
-        public ?Money $price,
-        public ?ProductStatus $status,
+        public ProductName $name,
+        public ProductDescription $description,
+        public Money $price,
+        public ProductStatus $status,
     ) {
     }
 }

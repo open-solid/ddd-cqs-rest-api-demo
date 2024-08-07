@@ -1,6 +1,6 @@
 <?php
 
-namespace App\Catalog\Product\Presentation\View;
+namespace App\Catalog\Product\Domain\View;
 
 use App\Catalog\Product\Domain\Model\Product;
 use App\Catalog\Product\Domain\Model\ProductStatus;
@@ -9,7 +9,7 @@ use OpenApi\Attributes\Schema;
 use OpenSolid\OpenApiBundle\Attribute\Property;
 
 #[Schema]
-readonly class ProductNewView
+readonly class ProductView
 {
     use ProductViewFactory;
 
@@ -31,6 +31,9 @@ readonly class ProductNewView
     #[Property]
     public DateTimeImmutable $createdAt;
 
+    #[Property]
+    public ?DateTimeImmutable $updatedAt;
+
     private function __construct(Product $product)
     {
         $this->id = $product->id();
@@ -39,5 +42,6 @@ readonly class ProductNewView
         $this->price = ProductPriceView::from($product->price());
         $this->status = $product->status();
         $this->createdAt = $product->createdAt();
+        $this->updatedAt = $product->updatedAt();
     }
 }

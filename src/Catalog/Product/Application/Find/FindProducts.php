@@ -2,11 +2,11 @@
 
 namespace App\Catalog\Product\Application\Find;
 
-use App\Catalog\Product\Domain\Model\Product;
+use App\Catalog\Product\Domain\View\ProductListItemView;
 use OpenSolid\Cqs\Query\Query;
 
 /**
- * @implements Query<Product[]>
+ * @implements Query<ProductListItemView[]>
  */
 readonly class FindProducts implements Query
 {

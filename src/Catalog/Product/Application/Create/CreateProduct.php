@@ -2,11 +2,11 @@
 
 namespace App\Catalog\Product\Application\Create;
 
-use App\Catalog\Product\Domain\Model\Product;
+use App\Catalog\Product\Domain\View\ProductNewView;
 use OpenSolid\Cqs\Command\Command;
 
 /**
- * @implements Command<Product>
+ * @implements Command<ProductNewView>
  */
 readonly class CreateProduct implements Command
 {

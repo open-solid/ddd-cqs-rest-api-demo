@@ -1,6 +1,6 @@
 <?php
 
-namespace App\Catalog\Product\Presentation\View;
+namespace App\Catalog\Product\Domain\View;
 
 use App\Catalog\Product\Domain\Model\Product;
 use App\Catalog\Product\Domain\Model\ProductStatus;
@@ -9,7 +9,7 @@ use OpenApi\Attributes\Schema;
 use OpenSolid\OpenApiBundle\Attribute\Property;
 
 #[Schema]
-readonly class ProductListItemView
+readonly class ProductNewView
 {
     use ProductViewFactory;
 
@@ -18,6 +18,9 @@ readonly class ProductListItemView
 
     #[Property]
     public string $name;
+
+    #[Property]
+    public string $description;
 
     #[Property]
     public ProductPriceView $price;
@@ -32,6 +35,7 @@ readonly class ProductListItemView
     {
         $this->id = $product->id();
         $this->name = $product->name();
+        $this->description = $product->description();
         $this->price = ProductPriceView::from($product->price());
         $this->status = $product->status();
         $this->createdAt = $product->createdAt();

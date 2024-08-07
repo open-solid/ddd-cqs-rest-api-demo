@@ -6,7 +6,7 @@ use App\Catalog\Product\Domain\Model\Product;
 use App\Catalog\Product\Domain\Model\Props\CreateProductProps;
 use App\Catalog\Product\Domain\Repository\ProductRepository;
 
-readonly class ProductCreator
+readonly class ProductFactory
 {
     public function __construct(
         private ProductRepository $repository,

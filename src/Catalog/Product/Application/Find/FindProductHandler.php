@@ -2,8 +2,8 @@
 
 namespace App\Catalog\Product\Application\Find;
 
-use App\Catalog\Product\Domain\Model\Product;
 use App\Catalog\Product\Domain\Model\ProductId;
+use App\Catalog\Product\Domain\View\ProductView;
 use OpenSolid\CqsBundle\Attribute\AsQueryHandler;
 
 #[AsQueryHandler]
@@ -14,8 +14,10 @@ readonly class FindProductHandler
     ) {
     }
 
-    public function __invoke(FindProduct $query): Product
+    public function __invoke(FindProduct $query): ProductView
     {
-        return $this->finder->findOne(ProductId::from($query->id));
+        $product = $this->finder->findOne(ProductId::from($query->id));
+
+        return ProductView::from($product);
     }
 }
