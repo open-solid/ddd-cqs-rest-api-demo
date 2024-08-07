@@ -19,7 +19,7 @@
 
 * Command Bus
 * Query Bus
-* Domain Event Bus
+* Event Bus
 
 ## Security
 

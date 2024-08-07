@@ -4,7 +4,7 @@ namespace App\Catalog\Product\Presentation\Controller\Patch;
 
 use App\Catalog\Product\Application\Find\FindProduct;
 use App\Catalog\Product\Application\Update\UpdateProduct;
-use App\Catalog\Product\Domain\View\ProductView;
+use App\Catalog\Product\Presentation\View\ProductView;
 use App\Shared\Presentation\OpenApi\Attribute\Id;
 use OpenSolid\CqsBundle\Controller\CqsAction;
 use OpenSolid\OpenApiBundle\Attribute\Body;
@@ -21,7 +21,7 @@ class PatchProductAction extends CqsAction
     {
         $product = $this->queryBus()->ask(new FindProduct($id));
 
-        return $this->commandBus()->execute(new UpdateProduct(
+        $product = $this->commandBus()->execute(new UpdateProduct(
             $id,
             $body->name ?? $product->name,
             $body->description ?? $product->description,
@@ -29,5 +29,7 @@ class PatchProductAction extends CqsAction
             $body->price?->currency ?? $product->price->currency,
             $body->status ?? $product->status->value,
         ));
+
+        return ProductView::from($product);
     }
 }

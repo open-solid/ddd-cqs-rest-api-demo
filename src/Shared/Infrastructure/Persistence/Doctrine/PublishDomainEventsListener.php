@@ -2,23 +2,27 @@
 
 namespace App\Shared\Infrastructure\Persistence\Doctrine;
 
-use Doctrine\Bundle\DoctrineBundle\Attribute\AsEntityListener;
+use Doctrine\Bundle\DoctrineBundle\Attribute\AsDoctrineListener;
 use Doctrine\ORM\Events;
-use OpenSolid\Ddd\Domain\Entity\AggregateRoot;
-use OpenSolid\Ddd\Domain\Event\DomainEventBus;
+use Doctrine\Persistence\Event\LifecycleEventArgs;
+use OpenSolid\Domain\Event\Bus\EventBus;
+use OpenSolid\Domain\Event\Store\InMemoryEventStoreTrait;
 
-#[AsEntityListener(event: Events::postPersist)]
-#[AsEntityListener(event: Events::postUpdate)]
-#[AsEntityListener(event: Events::postRemove)]
-readonly class PublishDomainEventsListener
+#[AsDoctrineListener(event: Events::postPersist)]
+#[AsDoctrineListener(event: Events::postUpdate)]
+#[AsDoctrineListener(event: Events::postRemove)]
+final readonly class PublishDomainEventsListener
 {
-    public function __construct(private DomainEventBus $eventBus)
-    {
+    public function __construct(
+        private EventBus $eventBus,
+    ) {
     }
 
-    public function __invoke(object $entity): void
+    public function __invoke(LifecycleEventArgs $event): void
     {
-        if (in_array(AggregateRoot::class, class_uses($entity), true)) {
+        $entity = $event->getObject();
+
+        if (in_array(InMemoryEventStoreTrait::class, class_uses($entity), true)) {
             $this->eventBus->publish(...$entity->pullDomainEvents());
         }
     }

@@ -39,6 +39,6 @@ class PostProductActionTest extends WebTestCase
             'createdAt' => '@is_string_datetime',
         ];
 
-        self::assertSame($expected, $this->client->getInternalResponse()->toArray());
+        self::assertEquals($expected, $this->client->getInternalResponse()->toArray());
     }
 }

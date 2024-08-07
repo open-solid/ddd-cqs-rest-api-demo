@@ -8,14 +8,14 @@ use App\Catalog\Product\Domain\Event\ProductUpdated;
 use App\Catalog\Product\Domain\Model\Props\CreateProductProps;
 use App\Catalog\Product\Domain\Model\Props\UpdateProductProps;
 use DateTimeImmutable;
-use OpenSolid\Ddd\Domain\Entity\AggregateRoot;
-use OpenSolid\Ddd\Domain\Trait\Time\Timestamp;
 use Money\Money;
+use OpenSolid\Domain\Event\Store\InMemoryEventStoreTrait;
+use OpenSolid\Domain\Model\Time\TimestampTrait;
 
 class Product
 {
-    use AggregateRoot;
-    use Timestamp;
+    use InMemoryEventStoreTrait;
+    use TimestampTrait;
 
     private int $pk;
     private readonly ProductId $id;

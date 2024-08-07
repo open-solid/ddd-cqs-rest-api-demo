@@ -28,6 +28,9 @@
     "open-solid/ddd-bundle": {
         "version": "dev-main"
     },
+    "open-solid/domain-bundle": {
+        "version": "dev-main"
+    },
     "open-solid/open-api-bundle": {
         "version": "dev-main"
     },

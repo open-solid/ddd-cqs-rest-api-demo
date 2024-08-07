@@ -3,7 +3,7 @@
 namespace App\Catalog\Product\Presentation\Controller\Get;
 
 use App\Catalog\Product\Application\Find\FindProducts;
-use App\Catalog\Product\Domain\View\ProductListItemView;
+use App\Catalog\Product\Presentation\View\ProductListItemView;
 use OpenSolid\CqsBundle\Controller\QueryAction;
 use OpenSolid\OpenApiBundle\Attribute\Query;
 use OpenSolid\OpenApiBundle\Routing\Attribute\Get;
@@ -18,6 +18,8 @@ class GetProductsAction extends QueryAction
     )]
     public function __invoke(#[Query] GetProductsParams $params = null): array
     {
-        return $this->queryBus()->ask(new FindProducts($params?->sort));
+        $products = $this->queryBus()->ask(new FindProducts($params?->sort));
+
+        return ProductListItemView::fromMany($products);
     }
 }

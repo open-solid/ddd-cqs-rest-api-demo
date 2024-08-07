@@ -2,13 +2,13 @@
 
 namespace App\Catalog\Product\Application\Update;
 
-use App\Catalog\Product\Domain\View\ProductView;
+use App\Catalog\Product\Domain\Model\Product;
 use OpenSolid\Cqs\Command\Command;
 
 /**
- * @implements Command<ProductView>
+ * @implements Command<Product>
  */
-class UpdateProduct implements Command
+readonly class UpdateProduct extends Command
 {
     public function __construct(
         public string $id,

@@ -2,7 +2,7 @@
 
 namespace App\Catalog\Product\Domain\Model;
 
-use OpenSolid\Ddd\Domain\ValueObject\String\NonEmptyString;
+use OpenSolid\Domain\Model\String\NonEmptyString;
 
 class ProductName extends NonEmptyString
 {

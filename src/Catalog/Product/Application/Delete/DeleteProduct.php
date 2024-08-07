@@ -7,7 +7,7 @@ use OpenSolid\Cqs\Command\Command;
 /**
  * @implements Command<void>
  */
-readonly class DeleteProduct implements Command
+readonly class DeleteProduct extends Command
 {
     public function __construct(
         public string $id,

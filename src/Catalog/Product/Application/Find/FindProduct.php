@@ -2,16 +2,16 @@
 
 namespace App\Catalog\Product\Application\Find;
 
-use App\Catalog\Product\Domain\View\ProductView;
+use App\Catalog\Product\Domain\Model\Product;
 use OpenSolid\Cqs\Query\Query;
 
 /**
- * @implements Query<ProductView>
+ * @implements Query<Product>
  */
-readonly class FindProduct implements Query
+readonly class FindProduct extends Query
 {
     public function __construct(
-        public string $id
+        public string $id,
     ) {
     }
 }
