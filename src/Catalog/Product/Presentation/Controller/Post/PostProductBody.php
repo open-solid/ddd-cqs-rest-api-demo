@@ -8,7 +8,6 @@ use OpenApi\Attributes\Schema;
 use OpenSolid\OpenApiBundle\Attribute\Property;
 
 #[Schema(
-    title: 'Create Product',
     description: 'Create a new product',
     writeOnly: true,
 )]

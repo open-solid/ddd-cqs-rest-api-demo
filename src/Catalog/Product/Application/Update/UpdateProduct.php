@@ -12,11 +12,11 @@ readonly class UpdateProduct extends Command
 {
     public function __construct(
         public string $id,
-        public string $name,
-        public string $description,
-        public string $priceAmount,
-        public string $priceCurrency,
-        public string $status,
+        public ?string $name,
+        public ?string $description,
+        public ?string $priceAmount,
+        public ?string $priceCurrency,
+        public ?string $status,
     ) {
     }
 }

@@ -1,7 +1,6 @@
 {
     "type": "project",
-    "license": "proprietary",
-    "minimum-stability": "dev",
+    "license": "MIT",
     "prefer-stable": true,
     "require": {
         "php": ">=8.2",
