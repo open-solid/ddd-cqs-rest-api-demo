@@ -5,7 +5,7 @@ namespace App\Catalog\Product\Domain\Error;
 use App\Catalog\Product\Domain\Model\ProductId;
 use OpenSolid\Domain\Error\EntityNotFound;
 
-class ProductNotFound extends EntityNotFound
+final class ProductNotFound extends EntityNotFound
 {
     public static function from(ProductId $id): self
     {

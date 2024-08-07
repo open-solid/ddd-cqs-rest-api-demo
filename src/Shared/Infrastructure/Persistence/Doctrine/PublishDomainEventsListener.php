@@ -6,7 +6,6 @@ use Doctrine\Bundle\DoctrineBundle\Attribute\AsDoctrineListener;
 use Doctrine\ORM\Events;
 use Doctrine\Persistence\Event\LifecycleEventArgs;
 use OpenSolid\Domain\Event\Bus\EventBus;
-use OpenSolid\Domain\Event\Store\InMemoryEventStoreTrait;
 
 #[AsDoctrineListener(event: Events::postPersist)]
 #[AsDoctrineListener(event: Events::postUpdate)]
@@ -22,7 +21,7 @@ final readonly class PublishDomainEventsListener
     {
         $entity = $event->getObject();
 
-        if (in_array(InMemoryEventStoreTrait::class, class_uses($entity), true)) {
+        if (method_exists($entity, 'pullDomainEvents')) {
             $this->eventBus->publish(...$entity->pullDomainEvents());
         }
     }

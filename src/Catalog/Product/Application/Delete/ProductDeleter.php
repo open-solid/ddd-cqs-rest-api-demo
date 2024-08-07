@@ -17,6 +17,7 @@ readonly class ProductDeleter
     public function delete(ProductId $id): void
     {
         $product = $this->finder->findOne($id);
+
         $product->delete();
 
         $this->repository->remove($product);

@@ -7,7 +7,7 @@ use App\Catalog\Product\Domain\Model\ProductName;
 use App\Catalog\Product\Domain\Model\ProductStatus;
 use Money\Money;
 
-readonly class UpdateProductProps
+final readonly class UpdateProductProps
 {
     public function __construct(
         public ?ProductName $name,

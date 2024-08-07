@@ -8,7 +8,7 @@ use App\Catalog\Product\Domain\Model\ProductName;
 use App\Catalog\Product\Domain\Model\ProductStatus;
 use Money\Money;
 
-readonly class CreateProductProps
+final readonly class CreateProductProps
 {
     public function __construct(
         public ProductId $id,
