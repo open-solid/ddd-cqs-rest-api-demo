@@ -6,7 +6,7 @@ use App\Catalog\Product\Domain\Model\Product;
 use OpenSolid\Cqs\Query\Query;
 
 /**
- * @implements Query<Product>
+ * @extends Query<Product>
  */
 readonly class FindProduct extends Query
 {

@@ -6,7 +6,7 @@ use App\Catalog\Product\Domain\Model\Product;
 use OpenSolid\Cqs\Command\Command;
 
 /**
- * @implements Command<Product>
+ * @extends Command<Product>
  */
 readonly class UpdateProduct extends Command
 {

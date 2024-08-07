@@ -5,7 +5,7 @@ namespace App\Catalog\Product\Application\Delete;
 use OpenSolid\Cqs\Command\Command;
 
 /**
- * @implements Command<void>
+ * @extends Command<void>
  */
 readonly class DeleteProduct extends Command
 {
